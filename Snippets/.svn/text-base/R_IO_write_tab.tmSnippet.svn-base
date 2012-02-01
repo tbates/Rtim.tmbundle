@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>write.table(${1:data},file="${2:dataFileName.xls}",sep='${3:\t}', append = FALSE, quote = TRUE, eol = "\n", na = "NA", dec = ".", row.names = TRUE, col.names = TRUE, qmethod = c("escape", "double")))</string>
+	<key>name</key>
+	<string>R.IO.write.tab</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>write</string>
+	<key>uuid</key>
+	<string>CDAFDF6C-E1D3-41DD-AA0A-9CDDD2EB2BE5</string>
+</dict>
+</plist>

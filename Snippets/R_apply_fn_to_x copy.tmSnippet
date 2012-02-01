@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>apply(X=${1:data[,c(1,2,3,NA)]}, MARGIN=${2:1=rows,2=columns}, FUN=${3:fn name, i.e., mean}, ${4:na.rm=TRUE})</string>
+	<key>name</key>
+	<string>R.apply.fn.to.x.</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>apply</string>
+	<key>uuid</key>
+	<string>2A83C13F-31D7-4D88-93F5-2AC6AC4D6B95</string>
+</dict>
+</plist>

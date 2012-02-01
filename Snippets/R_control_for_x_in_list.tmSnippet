@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>for(${1:n} in ${2:c(1,2,3)}) {
+   ${3:your code}
+}</string>
+	<key>name</key>
+	<string>R.control.for.x.in.list</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>for</string>
+	<key>uuid</key>
+	<string>B81E9DF5-A715-43CE-A751-AFB60CDDAE01</string>
+</dict>
+</plist>

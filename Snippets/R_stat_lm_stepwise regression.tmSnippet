@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># Stepwise Regression
+library(MASS)
+${1:mod} &lt;- lm(${2:y} ~ ${3:IV}, data=${4:data})
+$1_step &lt;- stepAIC($1, direction="both")
+$1_step\$anova # display results</string>
+	<key>name</key>
+	<string>R.stat.lm.stepwise regression</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>stat</string>
+	<key>uuid</key>
+	<string>FA8B5D7F-0F5D-4FBD-AA06-C916ADEA0BDF</string>
+</dict>
+</plist>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>save("${1:dataFrame}", file="$1.rda")
+system(paste("open ",getwd()))
+</string>
+	<key>name</key>
+	<string>R.IO.save</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>save</string>
+	<key>uuid</key>
+	<string>2746D53C-D004-48DD-830E-AD10DFD96B3D</string>
+</dict>
+</plist>

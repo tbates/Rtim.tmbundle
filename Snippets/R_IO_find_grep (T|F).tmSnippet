@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>grep(${1:pattern}, ${2:x}, ignore.case = ${3:FALSE}, extended = TRUE, perl = FALSE, value = FALSE) #returns 1 if found</string>
+	<key>name</key>
+	<string>R.data.find.grep (T|F)</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>grep</string>
+	<key>uuid</key>
+	<string>D18B9A5A-AB19-40B5-B2EE-93D817BB7F75</string>
+</dict>
+</plist>

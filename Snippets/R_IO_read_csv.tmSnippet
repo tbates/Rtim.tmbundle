@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:dataObject} &lt;- read.csv("${2:file.csv}", header=T, sep=',', quote="\"", dec=".", fill=T, comment.char="")</string>
+	<key>name</key>
+	<string>R.IO.read.csv</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>read</string>
+	<key>uuid</key>
+	<string>14864C0B-B319-4287-B06B-EEF1E42A1461</string>
+</dict>
+</plist>

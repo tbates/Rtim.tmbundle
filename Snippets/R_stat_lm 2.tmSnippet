@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>lm(${2:formula}, data=${1:data}, use="complete.obs")</string>
+	<key>name</key>
+	<string>R.stat.lm</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>lm</string>
+	<key>uuid</key>
+	<string>8B1CB265-1C7A-4B6A-80F3-8263E54AFF15</string>
+</dict>
+</plist>

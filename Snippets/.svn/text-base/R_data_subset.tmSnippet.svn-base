@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>subset(${1:var}, ${2:Temp &gt; 80}, ${3:select=c(Ozone, Temp)}, drop = FALSE)
+
+with(airquality, subset(Ozone, Temp:Wind))
+</string>
+	<key>name</key>
+	<string>R.data.subset</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>subset</string>
+	<key>uuid</key>
+	<string>232827E4-1241-40CC-8F10-6D87C777954E</string>
+</dict>
+</plist>

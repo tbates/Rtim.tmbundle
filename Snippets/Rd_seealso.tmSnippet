@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>\seealso{
+  \code{\link{${1:scan}}},
+
+}</string>
+	<key>name</key>
+	<string>Rd.seealso</string>
+	<key>scope</key>
+	<string>source.rd</string>
+	<key>tabTrigger</key>
+	<string>see</string>
+	<key>uuid</key>
+	<string>E13584CA-948E-4AF7-912D-86C4688D4A7C</string>
+</dict>
+</plist>

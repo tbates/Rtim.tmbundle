@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>xtabs(formula=${1:Freq ~ Gender + Admit}, data=${2:DF})) #summary() will do chi^2</string>
+	<key>name</key>
+	<string>R.stat.Contingency</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>xtab</string>
+	<key>uuid</key>
+	<string>A720BD5C-3F97-4F4B-8BD7-4DD151EE7E85</string>
+</dict>
+</plist>

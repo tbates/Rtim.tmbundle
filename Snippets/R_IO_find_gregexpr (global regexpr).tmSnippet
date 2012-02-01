@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>gregexpr(${1:pattern}, text, extended = TRUE, perl = FALSE) #global version of regexp</string>
+	<key>name</key>
+	<string>R.data.find.gregexpr (global regexpr)</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>grep</string>
+	<key>uuid</key>
+	<string>B61137AB-DB5A-4D25-A869-66FFC6C973BD</string>
+</dict>
+</plist>

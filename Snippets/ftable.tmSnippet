@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>ftable(${1|Gender,column var 1|} ${2:+ ${3|Admit,column Var 2|}} ~ ${4|Dept,row variable 1|}, data=${5|UCBAdmissions,dataframe|})</string>
+	<key>name</key>
+	<string>ftable</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>ftable</string>
+	<key>uuid</key>
+	<string>B86FD5D0-2982-4DD5-B34F-B753133618D9</string>
+</dict>
+</plist>

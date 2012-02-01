@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>merge(${1:set1}, ${2:set2}, by.x = c(${3:"SID"}), by.y = c($3), all = TRUE)</string>
+	<key>name</key>
+	<string>R.data.merge</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>merge</string>
+	<key>uuid</key>
+	<string>5619AC44-E8CF-41D2-A68C-9DD630ECF6D6</string>
+</dict>
+</plist>

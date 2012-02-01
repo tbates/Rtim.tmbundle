@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>sapply(${1:x}, ${2:mean}, simplify = TRUE, USE.NAMES = TRUE) # returns list x with a fn applied to each element</string>
+	<key>name</key>
+	<string>R.sapply.fn.to.x</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>apply</string>
+	<key>uuid</key>
+	<string>9BA8D22E-6F6E-4049-ADD6-88898E06CE62</string>
+</dict>
+</plist>

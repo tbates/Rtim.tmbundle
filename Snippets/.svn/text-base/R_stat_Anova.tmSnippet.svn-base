@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:mod1}&lt;-lm(${2:conformity}~${3:fcategory*partner.status}, data=${3:Moore}, 
+  contrasts=list(${5:fcategory=contr.sum, partner.status=contr.sum}))
+Anova($1) # depends library(car) (companion to regression)</string>
+	<key>name</key>
+	<string>R.stat.Anova</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>stat</string>
+	<key>uuid</key>
+	<string>560B9392-C2ED-4865-B40D-D8E9E2012522</string>
+</dict>
+</plist>

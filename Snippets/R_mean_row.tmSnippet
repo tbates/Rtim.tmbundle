@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>rowMeans(${1:x}, na.rm = ${2:FALSE}, dims = ${3:1}) #</string>
+	<key>name</key>
+	<string>R.mean.row</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>sum</string>
+	<key>uuid</key>
+	<string>C9F5B223-1A41-4DB3-83F7-9488BBC08FE2</string>
+</dict>
+</plist>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># http://www.statmethods.net/stats/regression.html
+${1:mod1}&lt;-lm(${2:DV}~${3:IV}, data=${4:data}, na.action = na.exclude)
+coef($1) # as.vector(coef($1))[2] # gets the slope, (value only, as.vecotr used to drop names
+summary($1) # show results
+# diagnostic plots 
+layout(matrix(c(1,2,3,4),2,2)) # optional 4 graphs/page 
+plot(fit)
+residuals($1)
+coefficients($1)
+fitted.values($1)
+contrasts($1)</string>
+	<key>name</key>
+	<string>R.stat.lm</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>lm</string>
+	<key>uuid</key>
+	<string>F553F2DC-96B4-41CE-8250-114A08E4652F</string>
+</dict>
+</plist>

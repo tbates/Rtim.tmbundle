@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># compare models
+${1:mod}_1 &lt;- lm(${2:y} ~ ${3:IV}, data=${4:data})
+$1_2 &lt;- lm($2 ~ ${5:$3})
+anova($1_1, $1_2)</string>
+	<key>name</key>
+	<string>R.stat.lm.compare models</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>stat</string>
+	<key>uuid</key>
+	<string>70C517CF-4F93-420C-BE31-CB5174DF34BD</string>
+</dict>
+</plist>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>matrix(data=${1:c(1:9)},nrow=${2:3}, ${3:byrow = ${4:FALSE}},  dimnames=list(r=paste("r", 1:$2, sep=""), c=paste("c", 1:$2, sep="")))
+</string>
+	<key>name</key>
+	<string>R.data.matrix</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>matrix</string>
+	<key>uuid</key>
+	<string>255E0BBC-817A-4E7A-B22A-F6E5BFB710FD</string>
+</dict>
+</plist>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>length(${1:frameName}\$${2:varName}[$1\$$2 !=NA]); range($1\$$2,na.rm=T); mean ($1\$$2,na.rm=T); sd   ($1\$$2,na.rm=T);</string>
+	<key>name</key>
+	<string>R.stat.desc.rangeMean_SD</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>desc</string>
+	<key>uuid</key>
+	<string>25F9D6DD-E8EB-491B-925C-B8D1DFA16478</string>
+</dict>
+</plist>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>plot(${1:x},${2:y}, xlab="${3:x axis}", ylab="${4:y axis}", main="${5:Title}", type="${6:b}", ${7:ylim=c(0,20), xlim=c(0,20), pch=15, col="blue"})
+#"p" for points, "l" for lines, "b" for both,"s" for stair steps
+</string>
+	<key>name</key>
+	<string>R.plot.x.y</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>plot</string>
+	<key>uuid</key>
+	<string>60AC8948-53B2-4C93-B6CC-706A4D181EEB</string>
+</dict>
+</plist>

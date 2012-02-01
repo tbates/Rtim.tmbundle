@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${7:name for new wide set} = reshape(${1:dataFrame}, v.names = ${2:c("${3:DV column to make wide}")}, timevar = "${4:twinID (variable with repeated measures}",idvar = "${5:famID row identifier}",drop = ${6:NULL}, direction="wide"); head($7)
+</string>
+	<key>name</key>
+	<string>R.IO.data.reshape.wide</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>reshape</string>
+	<key>uuid</key>
+	<string>A6A45683-03A1-43EE-A799-DEE9E912F6C8</string>
+</dict>
+</plist>

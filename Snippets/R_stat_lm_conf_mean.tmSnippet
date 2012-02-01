@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># x &lt;- c(6,11,5,14,30,11,17,3,9,3,8,8)
+confint(lm(${1:x~1}), level=${2:.9}) # confidence interval of the mean of vector x
+</string>
+	<key>name</key>
+	<string>R.stat.lm.conf.mean</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>stat</string>
+	<key>uuid</key>
+	<string>24E539ED-13C6-49B4-B9D3-686B9FFE25FC</string>
+</dict>
+</plist>
