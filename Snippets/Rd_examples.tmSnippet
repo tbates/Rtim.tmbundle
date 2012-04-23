@@ -7,11 +7,11 @@
 ${1:}
 }</string>
 	<key>name</key>
-	<string>Rd.examples</string>
+	<string>Rd.examples (eg)</string>
 	<key>scope</key>
 	<string>source.rd</string>
 	<key>tabTrigger</key>
-	<string>ex</string>
+	<string>eg</string>
 	<key>uuid</key>
 	<string>CE9299F4-0D31-46CE-8B50-434623A4F75A</string>
 </dict>

@@ -5,7 +5,10 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>osascript -e 'on run(theCode)' \
+	<string>#!/usr/bin/env bash
+[[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
+
+osascript -e 'on run(theCode)' \
           -e 'tell application "R" to activate' \
           -e 'tell application "System Events" to keystroke "l" using {command down, option down}' \
           -e 'tell application "TextMate" to activate' \
@@ -16,15 +19,23 @@
 	<string>line</string>
 	<key>input</key>
 	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
 	<key>keyEquivalent</key>
 	<string>~@l</string>
 	<key>name</key>
 	<string>R.app clear console</string>
-	<key>output</key>
-	<string>showAsTooltip</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>toolTip</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>uuid</key>
 	<string>7E428440-5FC8-4367-B2DE-007389CE207E</string>
+	<key>version</key>
+	<integer>2</integer>
 </dict>
 </plist>

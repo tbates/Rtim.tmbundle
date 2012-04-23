@@ -8,7 +8,7 @@
 
 }</string>
 	<key>name</key>
-	<string>Rd.seealso</string>
+	<string>Rd.seealso (see)</string>
 	<key>scope</key>
 	<string>source.rd</string>
 	<key>tabTrigger</key>

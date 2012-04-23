@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>×</string>
 	<key>name</key>
-	<string>×</string>
+	<string>× (times)</string>
 	<key>tabTrigger</key>
 	<string>\times</string>
 	<key>uuid</key>
