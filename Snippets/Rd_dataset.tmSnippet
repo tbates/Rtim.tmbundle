@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>\name{${1:datafile}}
+\docType{data}
+\alias{$1}
+\title{${2:Lengths of Major North American Rivers}}
+\description{
+This data set gives the ${3:$2}.
+}
+\usage{$1}
+\format{A dataframe containing ${4:500} observations.}
+\source{${5:http://cran.r-project.org/doc/manuals/R-exts.html#Documenting-data-sets}.}
+\references{
+${6:McNeil, D. R. (1977) \emph{Interactive Data Analysis}.
+New York: Wiley.}
+}
+\keyword{datasets}
+</string>
+	<key>name</key>
+	<string>Rd.dataset</string>
+	<key>scope</key>
+	<string>source.rd</string>
+	<key>tabTrigger</key>
+	<string>dataset</string>
+	<key>uuid</key>
+	<string>65AA7BA9-8482-462E-A99E-DCD5886BCCBA</string>
+</dict>
+</plist>
