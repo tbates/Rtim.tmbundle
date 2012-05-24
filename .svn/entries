@@ -1,80 +1,0 @@
-10
-
-dir
-48
-svn+ssh://tim@spearman.psy.ed.ac.uk/Library/Subversion/Repository/RtimBundle/trunk
-svn+ssh://tim@spearman.psy.ed.ac.uk/Library/Subversion/Repository/RtimBundle
-
-
-
-2011-10-04T14:08:38.252861Z
-48
-tim
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-6609b75b-c563-4359-8843-f0c524673fce
-
-DragCommands
-dir
-
-Commands
-dir
-
-Preferences
-dir
-
-Snippets
-dir
-
-info.plist
-file
-
-
-
-
-2011-08-31T18:54:14.000000Z
-2aa1cd9a1b04df3bd8f614242cadff0f
-2011-09-03T09:33:21.306444Z
-45
-tim
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-11992
-
-Templates
-dir
-
-Syntaxes
-dir
-
