@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>grepSPSS_labels(df=${1:twindata}, grepString="${2:Sex}"${3:, output="${4:both|labels|names}", ignore.case=T, useNames=F})</string>
+	<string>grepSPSS_labels(df=${1:twindata}, grepString="${2:Sex}"${3:, output="${4|both,labels,names|}", ignore.case=T, useNames=F})</string>
 	<key>name</key>
 	<string>R.data.grep SPSS labels</string>
 	<key>scope</key>
