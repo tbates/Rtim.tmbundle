@@ -3,11 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1|⌃⌥⌘,⌃,⌥,⌘,␣,⎋,⇥,⇤,⇧,↩,↑,↓,←,→,⌤,⏏|}</string>
+	<string>${1|⇧⌃⌥⌘,⌃,⌥,⌘,␣,⎋,⇥,⇤,⇧,↩,↑,↓,←,→,⌤,⏏|}</string>
 	<key>keyEquivalent</key>
 	<string>^~@*</string>
 	<key>name</key>
 	<string>mac</string>
+	<key>scope</key>
+	<string>text.</string>
 	<key>tabTrigger</key>
 	<string>mac</string>
 	<key>uuid</key>

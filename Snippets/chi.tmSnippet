@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>chi</string>
 	<key>scope</key>
-	<string>source.r</string>
+	<string>source.r, text</string>
 	<key>tabTrigger</key>
 	<string>\chi</string>
 	<key>uuid</key>
