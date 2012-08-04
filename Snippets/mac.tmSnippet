@@ -7,9 +7,9 @@
 	<key>keyEquivalent</key>
 	<string>^~@*</string>
 	<key>name</key>
-	<string>mac</string>
+	<string>mac (⇧⌃⌥⌘) </string>
 	<key>scope</key>
-	<string>text.</string>
+	<string>text</string>
 	<key>tabTrigger</key>
 	<string>mac</string>
 	<key>uuid</key>
