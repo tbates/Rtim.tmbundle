@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>Χ</string>
 	<key>name</key>
-	<string>chi</string>
+	<string>Symbol: chi (Χ)</string>
 	<key>scope</key>
 	<string>source.r, text</string>
 	<key>tabTrigger</key>

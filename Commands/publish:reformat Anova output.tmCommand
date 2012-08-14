@@ -42,15 +42,23 @@ echo $twiddle;
 	<string>line</string>
 	<key>input</key>
 	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
 	<key>keyEquivalent</key>
 	<string>^@f</string>
 	<key>name</key>
 	<string>publish:reformat Anova output</string>
-	<key>output</key>
-	<string>replaceSelectedText</string>
+	<key>outputCaret</key>
+	<string>heuristic</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>replaceInput</string>
 	<key>scope</key>
 	<string>source.dot</string>
 	<key>uuid</key>
 	<string>A48241E5-9AD0-471E-8101-400EA89B235C</string>
+	<key>version</key>
+	<integer>2</integer>
 </dict>
 </plist>
