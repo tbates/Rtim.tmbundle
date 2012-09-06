@@ -5,31 +5,37 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string># input is selection or document
-rawText="`cat`"
+	<string>#!/usr/bin/env bash
+[[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
 
-curDir=''
-if [[ ${#TM_DIRECTORY} -gt 0 ]]; then
-	curDir="$TM_DIRECTORY"
-fi
+# input is selection or document
+rawText="`cat`"
 
 osascript -e 'on run(theCode)' \
 		  -e 'tell application "R" to cmd (item 1 of theCode)' \
-		  -e 'end run' -- "$rawText" "$curDir"
+		  -e 'end run' -- "$rawText"
 </string>
 	<key>fallbackInput</key>
 	<string>line</string>
 	<key>input</key>
 	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
 	<key>keyEquivalent</key>
 	<string>@</string>
 	<key>name</key>
 	<string>R.app</string>
-	<key>output</key>
-	<string>showAsTooltip</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>toolTip</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>uuid</key>
 	<string>E9B671A6-1662-4570-8774-7AB9B2D47607</string>
+	<key>version</key>
+	<integer>2</integer>
 </dict>
 </plist>
