@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>×</string>
+	<string>× </string>
 	<key>name</key>
 	<string>Symbol: × (times)</string>
 	<key>scope</key>
