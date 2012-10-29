@@ -9,7 +9,7 @@ ${2:fa1} &lt;- factanal($1, 3, rotation="varimax",scores="regression");
 print($2, cutoff = .3, sort = T)
 </string>
 	<key>name</key>
-	<string>Facotr analysis</string>
+	<string>Factor analysis</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>
