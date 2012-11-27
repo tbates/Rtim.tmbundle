@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>df &lt;- data.frame(x=rnorm(100),y=rnorm(100))</string>
+	<key>name</key>
+	<string>make a dataframe</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>df</string>
+	<key>uuid</key>
+	<string>8118F2EF-5503-48C9-8C02-021F220EE690</string>
+</dict>
+</plist>
