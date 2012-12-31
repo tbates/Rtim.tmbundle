@@ -35,9 +35,26 @@
 			<string>CCAB0FE5-5F66-4FF3-8A21-84731E389DC4</string>
 			<string>E9B671A6-1662-4570-8774-7AB9B2D47607</string>
 			<string>7E428440-5FC8-4367-B2DE-007389CE207E</string>
+			<string>E66FA900-D256-4599-AB2C-AD4D04F40E02</string>
 		</array>
 		<key>submenus</key>
 		<dict>
+			<key>E66FA900-D256-4599-AB2C-AD4D04F40E02</key>
+			<dict>
+				<key>name</key>
+				<string>Symbols</string>
+				<key>items</key>
+				<array>
+					<string>C395F51A-15FB-4862-9646-8A830F250ED9</string>
+					<string>9537EE2A-92E3-450A-B42C-13C98EB152C5</string>
+						<string>1B87B4B8-9524-411A-8660-33B70B798F79</string>
+						<string>C6452736-3FA3-4989-B396-BD9FA69B46DA</string>
+						<string>2F8A1820-D22B-4B1D-B4A7-B8E2156B81D6</string>
+				   	 <string>D521D1A8-B643-441C-8534-8C8E3C4C4770</string>
+					<string>CBE7A6B1-67F5-49D5-9845-165FC932DD3C</string>
+					<string>B3976F06-EF8A-46DD-9DDE-8765B5433341</string>
+				</array>
+			</dict>
 			<key>12B6A691-7FD9-438A-9E9F-D83B746A683A</key>
 			<dict>
 				<key>items</key>
