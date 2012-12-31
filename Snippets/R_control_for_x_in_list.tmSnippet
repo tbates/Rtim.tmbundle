@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>for(${1:i} in seq_along(${2:what}) {
+	<string>for(${1:i} in seq_along(${2:what})) {
    $2[,$1]
 }</string>
 	<key>name</key>
