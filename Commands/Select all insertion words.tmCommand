@@ -7,35 +7,30 @@
 	<key>command</key>
 	<string>#!/usr/bin/env bash
 [[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
-
-# input is selection or document
-rawText="`cat`"
-
 osascript -e 'on run(theCode)' \
-          -e 'tell application "R" to activate' \
-		  -e 'tell application "R" to cmd (item 1 of theCode)' \
-		  -e 'end run' -- "$rawText" &amp;&gt; /dev/null &amp;
+    -e 'tell application "TextMate" to activate' \
+    -e 'tell application "System Events" to keystroke "w" using {control down}' \
+    -e 'tell application "System Events" to keystroke "e" using {command down}' \
+    -e 'tell application "System Events" to keystroke "f" using {command down, option down}' \
+	-e 'end run' &amp;&gt; /dev/null &amp;
+
 </string>
-	<key>fallbackInput</key>
-	<string>line</string>
 	<key>input</key>
 	<string>selection</string>
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>keyEquivalent</key>
-	<string>~@</string>
+	<string>^~w</string>
 	<key>name</key>
-	<string>R.app and activate</string>
+	<string>Select all insertion words</string>
 	<key>outputCaret</key>
 	<string>afterOutput</string>
 	<key>outputFormat</key>
 	<string>text</string>
 	<key>outputLocation</key>
-	<string>toolTip</string>
-	<key>scope</key>
-	<string>source.r</string>
+	<string>replaceInput</string>
 	<key>uuid</key>
-	<string>CCAB0FE5-5F66-4FF3-8A21-84731E389DC4</string>
+	<string>8DFE4A06-4565-47AA-9DE4-30EB43A57892</string>
 	<key>version</key>
 	<integer>2</integer>
 </dict>

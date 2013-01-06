@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>𝛽</string>
+	<string>ζ</string>
 	<key>name</key>
-	<string>Symbol: (beta)</string>
+	<string>zeta (ζ)</string>
 	<key>scope</key>
 	<string>source.r, text</string>
 	<key>tabTrigger</key>
-	<string>\beta</string>
+	<string>\zeta</string>
 	<key>uuid</key>
-	<string>9537EE2A-92E3-450A-B42C-13C98EB152C5</string>
+	<string>1BCE026C-C524-47AD-A47B-1A8498F18543</string>
 </dict>
 </plist>

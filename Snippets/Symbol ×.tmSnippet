@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>× </string>
 	<key>name</key>
-	<string>Symbol: × (times)</string>
+	<string>times (×)</string>
 	<key>scope</key>
 	<string>source.r, text</string>
 	<key>tabTrigger</key>

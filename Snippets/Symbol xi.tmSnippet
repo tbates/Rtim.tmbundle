@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>α</string>
+	<string>ξ</string>
 	<key>name</key>
-	<string>α (alpha)</string>
+	<string>xi (ξ)</string>
 	<key>scope</key>
 	<string>source.r, text</string>
 	<key>tabTrigger</key>
-	<string>\alpha</string>
+	<string>\xi</string>
 	<key>uuid</key>
-	<string>1B87B4B8-9524-411A-8660-33B70B798F79</string>
+	<string>C0CA6897-C419-4BB8-9E14-346C4C28044E</string>
 </dict>
 </plist>

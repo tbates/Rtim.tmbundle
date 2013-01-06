@@ -12,8 +12,7 @@ osascript -e 'on run(theCode)' \
           -e 'tell application "R" to activate' \
           -e 'tell application "System Events" to keystroke "l" using {command down, option down}' \
           -e 'tell application "TextMate" to activate' \
-		  -e 'end run'
-
+		  -e 'end run' &amp;&gt; /dev/null &amp;
 </string>
 	<key>fallbackInput</key>
 	<string>line</string>

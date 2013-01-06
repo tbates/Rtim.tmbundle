@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>χ²(${1:1}) = </string>
 	<key>name</key>
-	<string>Symbol: chi (Χ)</string>
+	<string>Chi (Χ)</string>
 	<key>scope</key>
 	<string>source.r, text</string>
 	<key>tabTrigger</key>

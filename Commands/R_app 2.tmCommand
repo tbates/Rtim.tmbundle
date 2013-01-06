@@ -13,7 +13,8 @@ rawText="`cat`"
 
 osascript -e 'on run(theCode)' \
 		  -e 'tell application "R" to cmd (item 1 of theCode)' \
-		  -e 'end run' -- "$rawText"
+		  -e 'end run' -- "$rawText" &amp;&gt; /dev/null &amp;
+
 </string>
 	<key>fallbackInput</key>
 	<string>line</string>

@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>™</string>
+	<string>λ</string>
 	<key>name</key>
-	<string>Symbol: ™</string>
+	<string>lambda (λ)</string>
 	<key>scope</key>
 	<string>source.r, text</string>
 	<key>tabTrigger</key>
-	<string>\tm</string>
+	<string>\lambda</string>
 	<key>uuid</key>
-	<string>B3976F06-EF8A-46DD-9DDE-8765B5433341</string>
+	<string>5A790E06-04AD-43ED-8474-3C4FE105F76F</string>
 </dict>
 </plist>

@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>μ = </string>
+	<string>𝛽</string>
 	<key>name</key>
-	<string>μ (mu mean)</string>
+	<string>beta (𝛽)</string>
 	<key>scope</key>
 	<string>source.r, text</string>
 	<key>tabTrigger</key>
-	<string>\mu</string>
+	<string>\beta</string>
 	<key>uuid</key>
-	<string>C6452736-3FA3-4989-B396-BD9FA69B46DA</string>
+	<string>9537EE2A-92E3-450A-B42C-13C98EB152C5</string>
 </dict>
 </plist>
