@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;script src="https://raw.github.com/moski/gist-Blogger/master/public/gistLoader.js" type="text/javascript"&gt;&lt;/script&gt;</string>
+	<key>name</key>
+	<string>Insert Code to enable Blogger gists</string>
+	<key>scope</key>
+	<string>source.rMd, source.r, text.html, text.html.markdown</string>
+	<key>tabTrigger</key>
+	<string>gist</string>
+	<key>uuid</key>
+	<string>11AD9E7B-F6CD-4909-A704-6587C92E75D4</string>
+</dict>
+</plist>

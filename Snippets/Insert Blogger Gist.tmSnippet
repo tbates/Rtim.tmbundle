@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;div class="gistLoad" data-id="${1:GistID}" id="gist-$1"&gt;Loading ....&lt;/div&gt;
+
+&lt;div class="gistLoad" data-id="`
+    if [[ $(pbpaste|wc -l) -eq 0 ]]
+        then pbpaste
+        else echo GistID
+    fi
+`" id="gist-$1"&gt;Loading ....&lt;/div&gt;</string>
+	<key>name</key>
+	<string>Insert Blogger Gist by ID</string>
+	<key>scope</key>
+	<string>source.rMd, source.r, text.html, text.html.markdown</string>
+	<key>tabTrigger</key>
+	<string>gist</string>
+	<key>uuid</key>
+	<string>03672B3C-88B6-4CEB-AB07-A126F5B9C390</string>
+</dict>
+</plist>
