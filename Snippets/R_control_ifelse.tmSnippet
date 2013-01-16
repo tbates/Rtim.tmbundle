@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>ifelse(${1:${2:test}${3:==}${4:test}}, ${5:yes}, ${6:no})</string>
 	<key>name</key>
-	<string>R.control.ifelse</string>
+	<string>ifelse</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

@@ -7,7 +7,7 @@
    ${2:your code}
 }</string>
 	<key>name</key>
-	<string>R.control.while.x</string>
+	<string>While.x</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

@@ -12,7 +12,7 @@ factanal($1[,c($3)], 1, scores = "Bartlett")-&gt;factOut
 $1\$rk= factOut\$scores
 </string>
 	<key>name</key>
-	<string>R.stat.factanal</string>
+	<string>factanal</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

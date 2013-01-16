@@ -11,7 +11,7 @@ library(QuantPsyc) # lm.beta function
 library(OpenMx)    # for sem
 </string>
 	<key>name</key>
-	<string>R.load.libraries</string>
+	<string>Libraries</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

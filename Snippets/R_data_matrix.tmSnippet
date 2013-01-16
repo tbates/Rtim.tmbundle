@@ -6,7 +6,7 @@
 	<string>matrix(data=${1:c(1:9)},nrow=${2:3}, ${3:byrow = ${4:FALSE}},  dimnames=list(r=paste("r", 1:$2, sep=""), c=paste("c", 1:$2, sep="")))
 </string>
 	<key>name</key>
-	<string>R.data.matrix</string>
+	<string>Matrix</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

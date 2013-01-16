@@ -8,7 +8,7 @@
 with(airquality, subset(Ozone, Temp:Wind))
 </string>
 	<key>name</key>
-	<string>R.data.subset</string>
+	<string>Subset</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

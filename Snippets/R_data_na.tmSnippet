@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>na.omit(${1:data})</string>
 	<key>name</key>
-	<string>R.data.na.omit (na)</string>
+	<string>na.omit (na)</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>lm(${2:formula}, data=${1:data}, use="complete.obs")</string>
 	<key>name</key>
-	<string>R.stat.lm</string>
+	<string>lm</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

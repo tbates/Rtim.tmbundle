@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>apply(X=${1:data[,c(1,2,3,NA)]}, MARGIN=${2:1=rows,2=columns}, FUN=${3:fn name, i.e., mean}, ${4:na.rm=TRUE})</string>
 	<key>name</key>
-	<string>R.apply.fn.to.x.</string>
+	<string>Apply FUN to df</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>
