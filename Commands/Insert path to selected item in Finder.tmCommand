@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>command</key>
+	<string>#!/usr/bin/env bash
+osascript -e 'on run(theCode)' \
+  -e 'tell application "Finder" to to get quoted form of POSIX path of (target of front Finder window as text)' \
+	-e 'end run' &amp;&gt; /dev/null &amp;
+</string>
+	<key>name</key>
+	<string>Insert path to selected item in Finder</string>
+	<key>uuid</key>
+	<string>FC5E4AD6-4196-4934-8401-9997208269EE</string>
+</dict>
+</plist>
