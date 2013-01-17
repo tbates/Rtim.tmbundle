@@ -15,7 +15,7 @@ coefficients($1)
 fitted.values($1)
 contrasts($1)</string>
 	<key>name</key>
-	<string>R.stat.lm</string>
+	<string>lm</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

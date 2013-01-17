@@ -9,7 +9,7 @@ ${1:mod} &lt;- lm(${2:y} ~ ${3:IV}, data=${4:data})
 $1_step &lt;- stepAIC($1, direction="both")
 $1_step\$anova # display results</string>
 	<key>name</key>
-	<string>R.stat.lm.stepwise regression</string>
+	<string>Stepwise regression</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

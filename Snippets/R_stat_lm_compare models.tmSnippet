@@ -8,7 +8,7 @@ ${1:mod}_1 &lt;- lm(${2:y} ~ ${3:IV}, data=${4:data})
 $1_2 &lt;- lm($2 ~ ${5:$3})
 anova($1_1, $1_2)</string>
 	<key>name</key>
-	<string>R.stat.lm.compare models</string>
+	<string>compare models</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

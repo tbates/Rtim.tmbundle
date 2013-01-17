@@ -6,7 +6,7 @@
 	<string>${1:oxt36}\$${2:SLC_}$3 = recodeSNPtoNumeric($1\$${3:rs1042173})
 </string>
 	<key>name</key>
-	<string>R.data.recode SNP</string>
+	<string>Recode SNP</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

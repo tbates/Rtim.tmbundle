@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>sapply(${1:x}, ${2:mean}, simplify = TRUE, USE.NAMES = TRUE) # returns list x with a fn applied to each element</string>
 	<key>name</key>
-	<string>R.sapply.fn.to.x</string>
+	<string>Sapply FUN to data</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>
