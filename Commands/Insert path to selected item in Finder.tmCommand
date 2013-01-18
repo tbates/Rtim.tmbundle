@@ -2,15 +2,36 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
 	<key>command</key>
 	<string>#!/usr/bin/env bash
-osascript -e 'on run(theCode)' \
-  -e 'tell application "Finder" to to get quoted form of POSIX path of (target of front Finder window as text)' \
-	-e 'end run' &amp;&gt; /dev/null &amp;
-</string>
+osascript -e 'tell application "finder"
+             set thefiles to selection
+             set thelist to ""
+             repeat with f in thefiles
+                set thelist to thelist &amp; "\"" &amp; POSIX path of (f as alias) &amp; "\" "
+             end repeat
+           end tell'</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
 	<key>name</key>
 	<string>Insert path to selected item in Finder</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>replaceSelection</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>finder</string>
 	<key>uuid</key>
 	<string>FC5E4AD6-4196-4934-8401-9997208269EE</string>
+	<key>version</key>
+	<integer>2</integer>
 </dict>
 </plist>
