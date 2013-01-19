@@ -6,15 +6,12 @@
 	<string>nop</string>
 	<key>command</key>
 	<string>#!/usr/bin/env bash
-[[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
 osascript -e 'on run(theCode)' \
     -e 'tell application "TextMate" to activate' \
     -e 'tell application "System Events" to keystroke "w" using {control down}' \
     -e 'tell application "System Events" to keystroke "e" using {command down}' \
     -e 'tell application "System Events" to keystroke "f" using {command down, option down}' \
-	-e 'end run' &amp;&gt; /dev/null &amp;
-
-</string>
+	-e 'end run' &amp;&gt; /dev/null &amp;</string>
 	<key>input</key>
 	<string>selection</string>
 	<key>inputFormat</key>
