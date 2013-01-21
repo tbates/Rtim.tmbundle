@@ -6,7 +6,7 @@
 	<string>grep("${1:fa[rl].*}", names(${2:dataFrame}), value=T, ignore.case=T)
 </string>
 	<key>name</key>
-	<string>R.data.grep names</string>
+	<string>Grep names</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

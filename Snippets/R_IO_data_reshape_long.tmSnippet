@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>$1.l &lt;- reshape(${1:dataFrame}, idvar = "${2:SID}", varying = list(${3:c("r1","r2")}), v.names = "what we measured, i.e. RT", direction = "long")</string>
 	<key>name</key>
-	<string>R.IO.data.reshape.long</string>
+	<string>Reshape.long</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

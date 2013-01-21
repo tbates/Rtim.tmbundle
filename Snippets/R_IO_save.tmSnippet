@@ -7,7 +7,7 @@
 system(paste("open ",getwd()))
 </string>
 	<key>name</key>
-	<string>R.IO.save</string>
+	<string>Save df</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

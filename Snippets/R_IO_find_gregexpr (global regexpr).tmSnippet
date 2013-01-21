@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>gregexpr(${1:pattern}, text, extended = TRUE, perl = FALSE) #global version of regexp</string>
 	<key>name</key>
-	<string>R.data.find.gregexpr (global regexpr)</string>
+	<string>Find (global regexpr)</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

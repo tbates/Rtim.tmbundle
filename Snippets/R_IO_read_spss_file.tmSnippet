@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>${1:dataObject} &lt;- read.spss(${2:file}, use.value.labels=${3:T}, to.data.frame=${4:T}, max.value.labels=Inf, trim.factor.names=F)</string>
 	<key>name</key>
-	<string>R.IO.read.spss.file</string>
+	<string>Read.spss</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

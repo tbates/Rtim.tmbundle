@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>grep(${1:pattern}, ${2:x}, ignore.case = ${3:FALSE}, extended = TRUE, perl = FALSE, value = FALSE) #returns 1 if found</string>
 	<key>name</key>
-	<string>R.data.find.grep (T|F)</string>
+	<string>Find (grep)</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

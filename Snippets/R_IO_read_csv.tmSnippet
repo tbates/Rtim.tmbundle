@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>${1:dataObject} &lt;- read.csv("${2:file.csv}", header=T, sep=',', quote="\"", dec=".", fill=T, comment.char="")</string>
 	<key>name</key>
-	<string>R.IO.read.csv</string>
+	<string>Read.csv</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

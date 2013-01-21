@@ -47,7 +47,7 @@ echo $twiddle;
 	<key>keyEquivalent</key>
 	<string>^@f</string>
 	<key>name</key>
-	<string>publish:reformat Anova output</string>
+	<string>Format Anova output</string>
 	<key>outputCaret</key>
 	<string>heuristic</string>
 	<key>outputFormat</key>

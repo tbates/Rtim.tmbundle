@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>content</key>
 	<string>ctDate = ISOdatetime(${1:year=${2:1970}, month=${3:08}, day=${4:29}, hour=${5:14}, min=${6:05}, sec=${7:00}, tz="${8:GMT}"})</string>
 	<key>name</key>
-	<string>R.text.make.date</string>
+	<string>Date (ISOdatetime)</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

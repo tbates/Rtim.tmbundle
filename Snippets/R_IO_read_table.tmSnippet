@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>${1:dataObject} &lt;- read.table(pipe("pbpaste"), header=T, sep='\t')</string>
 	<key>name</key>
-	<string>R.IO.read.table</string>
+	<string>Read.table</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

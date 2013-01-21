@@ -6,12 +6,14 @@
 	<string>nop</string>
 	<key>command</key>
 	<string>#!/usr/bin/env bash
-osascript -e 'on run(theCode)' \
-    -e 'tell application "TextMate" to activate' \
-    -e 'tell application "System Events" to keystroke "w" using {control down}' \
-    -e 'tell application "System Events" to keystroke "e" using {command down}' \
-    -e 'tell application "System Events" to keystroke "f" using {command down, option down}' \
-	-e 'end run' &amp;&gt; /dev/null &amp;</string>
+osascript -e 'on run(theCode)
+tell application "TextMate" to activate
+tell application "System Events"
+keystroke "w" using {control down}
+keystroke "e" using {command down}
+keystroke "f" using {command down, option down}
+end tell
+end run' &amp;&gt; /dev/null &amp;</string>
 	<key>input</key>
 	<string>selection</string>
 	<key>inputFormat</key>

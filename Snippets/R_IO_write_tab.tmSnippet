@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>content</key>
 	<string>write.table(${1:data},file="${2:dataFileName.xls}",sep='${3:\t}', append = FALSE, quote = TRUE, eol = "\n", na = "NA", dec = ".", row.names = TRUE, col.names = TRUE, qmethod = c("escape", "double")))</string>
 	<key>name</key>
-	<string>R.IO.write.tab</string>
+	<string>write.table</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

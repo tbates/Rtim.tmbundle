@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>${1:data} = rename($1, c(${2:old}="${3:new}"))</string>
 	<key>name</key>
-	<string>R.IO.data.rename</string>
+	<string>Rename</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

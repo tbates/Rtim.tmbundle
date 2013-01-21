@@ -7,7 +7,7 @@
 gsub(${1:find}, ${2:replace}, ${3:x},ignore.case = FALSE, extended = TRUE, perl = FALSE) # replace globally
 </string>
 	<key>name</key>
-	<string>R.data.find.sub (find &amp; replace)</string>
+	<string>Find &amp; replace</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

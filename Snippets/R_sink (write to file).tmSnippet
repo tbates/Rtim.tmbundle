@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>content</key>
 	<string>sink("${1:filename.txt}") # "" = back to normal</string>
 	<key>name</key>
-	<string>R.IO.sink (write to file)</string>
+	<string>Sink (write to file)</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

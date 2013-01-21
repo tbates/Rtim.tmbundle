@@ -6,7 +6,7 @@
 	<string># require(doBy)
 summaryBy(${1:age} ~ ${2:Gender}, data = ${2:twinData}, FUN = function(x) { round(c(n=length(x), m = mean(x,na.rm=T), s = sd(x,na.rm=T)),2) } )</string>
 	<key>name</key>
-	<string>R.data.summarize by</string>
+	<string>SummaryBy</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

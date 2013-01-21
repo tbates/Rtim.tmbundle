@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>system(paste("open", shQuote("${1:test.md}")))</string>
 	<key>name</key>
-	<string>open file in owner</string>
+	<string>System open file</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

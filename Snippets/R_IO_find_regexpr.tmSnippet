@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>regexpr(${1:pattern}, text, extended = TRUE, perl = FALSE) # return more detail</string>
 	<key>name</key>
-	<string>R.data.find.regexpr</string>
+	<string>Find (regexpr)</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>
