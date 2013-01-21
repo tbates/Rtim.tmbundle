@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>command</key>
+	<string>#!/usr/bin/env bash
+osascript -e 'on run()
+	tell application "iTunes"
+		set theName to name of current track
+		set theArtist to album of current track
+			return "Currently listening to ‘" &amp; theName &amp; "’ from the album ‘" &amp; theArtist &amp; "’"
+	end tell
+end run'</string>
+	<key>input</key>
+	<string>none</string>
+	<key>name</key>
+	<string>Current iTunes Song</string>
+	<key>outputLocation</key>
+	<string>atCaret</string>
+	<key>tabTrigger</key>
+	<string>itunes</string>
+	<key>uuid</key>
+	<string>E1ABEC5E-DF5F-4C09-BA9F-E17504F456C0</string>
+</dict>
+</plist>
