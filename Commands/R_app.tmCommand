@@ -6,13 +6,10 @@
 	<string>nop</string>
 	<key>command</key>
 	<string>#!/usr/bin/env bash
-
-# input is selection or document
-rawText="`cat`"
-
-osascript -e 'on run(theCode)' \
-		  -e 'tell application "R" to cmd (item 1 of theCode)' \
-		  -e 'end run' -- "$rawText" &amp;&gt; /dev/null &amp;
+rawText="`cat`" # input is selection or document
+osascript -e 'on run(theCode)
+tell application "R" to cmd (item 1 of theCode)
+end run' -- "$rawText" &amp;&gt; /dev/null &amp;
 
 </string>
 	<key>fallbackInput</key>
