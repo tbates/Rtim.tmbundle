@@ -6,13 +6,13 @@
 	<string>nop</string>
 	<key>command</key>
 	<string>#!/usr/bin/env bash
-osascript -e 'tell application "finder"
-             set thefiles to selection
-             set thelist to ""
-             repeat with f in thefiles
-                set thelist to thelist &amp; "\"" &amp; POSIX path of (f as alias) &amp; "\" "
-             end repeat
-           end tell'</string>
+osascript -e 'tell application "Finder"
+ set theFiles to selection
+ set theList to ""
+ repeat with f in theFiles
+    set theList to theList &amp; "\"" &amp; POSIX path of (f as alias) &amp; "\" "
+ end repeat
+end tell'</string>
 	<key>input</key>
 	<string>selection</string>
 	<key>inputFormat</key>
