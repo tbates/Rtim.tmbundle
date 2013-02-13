@@ -10,8 +10,9 @@ osascript -e 'tell application "Finder"
  set theFiles to selection
  set theList to ""
  repeat with f in theFiles
-    set theList to theList &amp; "\"" &amp; POSIX path of (f as alias) &amp; "\" "
+    set theList to theList &amp; "\"" &amp; POSIX path of (f as alias) &amp; "\"\n"
  end repeat
+ return theList
 end tell'</string>
 	<key>input</key>
 	<string>selection</string>
