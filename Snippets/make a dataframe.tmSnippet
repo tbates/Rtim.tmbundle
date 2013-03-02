@@ -9,7 +9,7 @@
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>
-	<string>df</string>
+	<string>frame</string>
 	<key>uuid</key>
 	<string>8118F2EF-5503-48C9-8C02-021F220EE690</string>
 </dict>

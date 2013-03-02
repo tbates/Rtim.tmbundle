@@ -19,15 +19,13 @@ end tell'</string>
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>name</key>
-	<string>Insert path to selected item in Finder</string>
+	<string>Finder: Insert path to selected item</string>
 	<key>outputCaret</key>
 	<string>afterOutput</string>
 	<key>outputFormat</key>
 	<string>text</string>
 	<key>outputLocation</key>
 	<string>replaceSelection</string>
-	<key>scope</key>
-	<string>source.r</string>
 	<key>tabTrigger</key>
 	<string>finder</string>
 	<key>uuid</key>
