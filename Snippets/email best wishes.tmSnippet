@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1|Best wishes,cheers,always,Sincerely|},
+${2|Tim,Timothy Bates|}</string>
+	<key>name</key>
+	<string>email best wishes</string>
+	<key>tabTrigger</key>
+	<string>bw</string>
+	<key>uuid</key>
+	<string>014D60E1-6B1C-4A45-8262-DAE1393F9D67</string>
+</dict>
+</plist>
