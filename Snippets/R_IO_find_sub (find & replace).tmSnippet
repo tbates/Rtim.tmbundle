@@ -3,9 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>sub(${1:find}, ${2:replace}, ${3:x},ignore.case = FALSE, extended = TRUE, perl = FALSE) #replace first instance
-gsub(${1:find}, ${2:replace}, ${3:x},ignore.case = FALSE, extended = TRUE, perl = FALSE) # replace globally
-</string>
+	<string>${|gsub,sub|}(${1:find}, ${2:replace}, ${3:x}, ignore.case = F, extended = T, perl = F)</string>
 	<key>name</key>
 	<string>Find &amp; replace</string>
 	<key>scope</key>
