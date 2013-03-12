@@ -12,7 +12,7 @@
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>
-	<string>function</string>
+	<string>fun</string>
 	<key>uuid</key>
 	<string>5B7BAFCE-C6EE-4F55-8F5F-521BCB376B89</string>
 </dict>

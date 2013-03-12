@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>colSums(${1:x}, na.rm = ${2:FALSE}, dims = ${3:1}) #</string>
+	<string>colSums(${1:x}, ${2:na.rm = T,} dims = ${3:1}) #</string>
 	<key>name</key>
-	<string>Colsums</string>
+	<string>colSums</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

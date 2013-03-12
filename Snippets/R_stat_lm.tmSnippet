@@ -13,7 +13,8 @@ plot(fit)
 residuals($1)
 coefficients($1)
 fitted.values($1)
-contrasts($1)</string>
+contrasts($1)
+</string>
 	<key>name</key>
 	<string>lm</string>
 	<key>scope</key>
@@ -21,6 +22,6 @@ contrasts($1)</string>
 	<key>tabTrigger</key>
 	<string>lm</string>
 	<key>uuid</key>
-	<string>F553F2DC-96B4-41CE-8250-114A08E4652F</string>
+	<string>8B1CB265-1C7A-4B6A-80F3-8263E54AFF15</string>
 </dict>
 </plist>

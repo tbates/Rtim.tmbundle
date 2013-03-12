@@ -3,9 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>sample(${1:c(1,2,3)},${2:repetitions},replacement = ${3:FALSE})
-# sample(n) -&gt; 1:n
-# sample(1:3)-&gt; random permutation of list
+	<string>sample(${1:c(1,2,3)},${2:repetitions}, replacement = ${3|T,F|})
 </string>
 	<key>name</key>
 	<string>Sample data</string>

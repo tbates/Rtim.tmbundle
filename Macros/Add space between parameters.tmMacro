@@ -5,22 +5,29 @@
 	<key>commands</key>
 	<array>
 		<dict>
+			<key>argument</key>
+			<dict>
+				<key>action</key>
+				<string>replaceAll</string>
+				<key>findString</key>
+				<string>(?&lt;! )=(?! )</string>
+				<key>regularExpression</key>
+				<integer>1</integer>
+				<key>replaceAllScope</key>
+				<string>selection</string>
+				<key>replaceString</key>
+				<string> = </string>
+			</dict>
 			<key>command</key>
-			<string>copySelectionToFindPboard:</string>
-		</dict>
-		<dict>
-			<key>command</key>
-			<string>findNextAndModifySelection:</string>
+			<string>findWithOptions:</string>
 		</dict>
 	</array>
 	<key>isDisabled</key>
 	<false/>
-	<key>keyEquivalent</key>
-	<string>^w</string>
 	<key>name</key>
 	<string>Add space between parameters</string>
 	<key>scope</key>
-	<string>dyn.selection</string>
+	<string>source</string>
 	<key>uuid</key>
 	<string>F81E3B84-8092-44EC-A991-5509841B53A6</string>
 </dict>

@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>aggregate(${1:dat1})#needs to be finished
+	<string>aggregate(${1:dat1}) #needs to be finished
 </string>
 	<key>name</key>
 	<string>Aggregrate</string>

@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:x}[upper.tri($1, ${2:diag = FALSE})] #upper half of a matrix # "&lt;- NA" will fill with NA</string>
+	<string>${1:x}[${2|upper,lower|}.tri($1, diag = ${3|T,F|})]</string>
 	<key>name</key>
-	<string>Upper.tri</string>
+	<string>Upper/Lower.tri</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>
-	<string>lower</string>
+	<string>tri</string>
 	<key>uuid</key>
 	<string>0F41F370-387A-4A17-BBE4-04887D2C1F44</string>
 </dict>

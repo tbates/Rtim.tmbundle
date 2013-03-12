@@ -8,13 +8,6 @@
 	<string>Tim Bates</string>
 	<key>deleted</key>
 	<array>
-		<string>5619AC44-E8CF-41D2-A68C-9DD630ECF6D6</string>
-		<string>7BB266AB-53D8-4191-B98D-ABDC208DB94F</string>
-		<string>24F15FB6-BCCB-4B99-8D34-07756A76B924</string>
-		<string>10B6CD7A-DBC9-420D-869F-1FC24BA1F3D3</string>
-		<string>E33C502C-014B-42CC-87A0-6D91C2929C78</string>
-		<string>A6AED8C0-A557-49C6-B803-92D397A547E3</string>
-		<string>FDBC0CF5-5C40-462D-A549-6C9ACD1F5B7B</string>
 	</array>
 	<key>description</key>
 	<string></string>
@@ -108,9 +101,10 @@
 					<string>ACD54832-36EB-4072-AD48-58288AC0283F</string>
 					<string>C9F5B223-1A41-4DB3-83F7-9488BBC08FE2</string>
 					<string>F1B871ED-D9D0-406E-B202-9B1C494D48CC</string>
+					<string>B86FD5D0-2982-4DD5-B34F-B753133618D9</string>
 				</array>
 				<key>name</key>
-				<string>data summary</string>
+				<string>Summary and tables</string>
 			</dict>
 			<key>9B1FCD41-42BB-4405-BAFC-2F7763A0FC14</key>
 			<dict>
@@ -132,7 +126,6 @@
 					<string>70C517CF-4F93-420C-BE31-CB5174DF34BD</string>
 					<string>FA8B5D7F-0F5D-4FBD-AA06-C916ADEA0BDF</string>
 					<string>560B9392-C2ED-4865-B40D-D8E9E2012522</string>
-					<string>F553F2DC-96B4-41CE-8250-114A08E4652F</string>
 					<string>1C3A6F8C-105C-4D7C-8089-E8FDE338E1E6</string>
 					<string>7C4D3224-A0E3-4C55-8061-8D7081BDFA9A</string>
 					<string>A720BD5C-3F97-4F4B-8BD7-4DD151EE7E85</string>
@@ -153,7 +146,6 @@
 					<string>255E0BBC-817A-4E7A-B22A-F6E5BFB710FD</string>
 					<string>FE3DAEA5-A3A7-4906-B6B4-1C2F892F652D</string>
 					<string>272007DF-D69D-4148-A67B-FCC33292225C</string>
-					<string>E7C496E0-2CAC-4371-A766-77E09CC1517C</string>
 					<string>0F41F370-387A-4A17-BBE4-04887D2C1F44</string>
 					<string>232827E4-1241-40CC-8F10-6D87C777954E</string>
 					<string>52C2937A-50A5-4A5C-BCA0-2DA181BA89A5</string>
@@ -162,6 +154,9 @@
 					<string>5FA9FD68-EB9E-4FFC-BCD6-9BA8A1294EA2</string>
 					<string>BDF27CE4-251A-4F66-B884-3AB19D7C6751</string>
 					<string>1C361765-0167-41E3-8DA3-B0ECBFA69A7D</string>
+					<string>FDBC0CF5-5C40-462D-A549-6C9ACD1F5B7B</string>
+					<string>8118F2EF-5503-48C9-8C02-021F220EE690</string>
+					
 				</array>
 				<key>name</key>
 				<string>data operations</string>
@@ -203,6 +198,7 @@
 					<string>F774B97F-A6BD-4BA5-BB5B-B0452783E385</string>
 					<string>B61137AB-DB5A-4D25-A869-66FFC6C973BD</string>
 					<string>084DEFD1-D52B-4070-A568-C81FB0010B3B</string>
+					<string>DAF92F96-4932-4080-8F77-42347ED1733D</string>
 				</array>
 				<key>name</key>
 				<string>find &amp; replace</string>
@@ -219,9 +215,14 @@
 					<string>A6CF1996-D1A2-4A75-869E-1185E58C4F81</string>
 					<string>81592223-3192-4884-A497-E15F4FF25CDF</string>
 					<string>E41F647E-3A6E-4F34-AFF2-266FC186D124</string>
+					<string>196D1E59-3353-4D02-B0F6-C0D2230E3367</string>
+					<string>014D60E1-6B1C-4A45-8262-DAE1393F9D67</string>
+					<string>E1ABEC5E-DF5F-4C09-BA9F-E17504F456C0</string>
+					<string>FC5E4AD6-4196-4934-8401-9997208269EE</string>
+					<string>2959C666-AFD4-4B59-874A-A04CFF090ACC</string>
 				</array>
 				<key>name</key>
-				<string>text handling</string>
+				<string>String and File utilities</string>
 			</dict>
 			<key>FB6B841C-06AA-4242-B2E7-EC071851C048</key>
 			<dict>

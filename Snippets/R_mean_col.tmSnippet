@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>colMeans(${1:x}, na.rm = ${2:FALSE}, dims = ${3:1}) #</string>
+	<string>colMeans(${1:x}, ${2:na.rm = T,} dims = ${3:1}) #</string>
 	<key>name</key>
-	<string>ColMeans</string>
+	<string>colMeans</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>
