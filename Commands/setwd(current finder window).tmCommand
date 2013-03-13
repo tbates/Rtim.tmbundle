@@ -13,7 +13,7 @@ try
 on error
         set a to (system attribute "HOME") &amp; "/Desktop"
 end
-tell application "R" to cmd "setwd(\" ' &amp; a &amp; ' \")"
+tell application "R" to cmd "setwd(\"" &amp; a &amp; "\")"
 end run' &amp;&gt; /dev/null &amp;
 </string>
 	<key>input</key>
@@ -31,7 +31,7 @@ end run' &amp;&gt; /dev/null &amp;
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>
-	<string>finder</string>
+	<string>setwd</string>
 	<key>uuid</key>
 	<string>78711ABC-5A41-45F1-9919-D5DB4B612E70</string>
 	<key>version</key>
