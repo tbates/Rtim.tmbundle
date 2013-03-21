@@ -30,3 +30,13 @@ Tim Bates'  R command bundle for TextMate 2
 # RS
 2+ 2
 ```
+
+```SR
+# SR
+2+ 2
+```
+
+```S
+# S
+2+ 2
+```
