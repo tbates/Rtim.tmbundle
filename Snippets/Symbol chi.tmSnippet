@@ -5,9 +5,7 @@
 	<key>content</key>
 	<string>χ²(${1:1}) = </string>
 	<key>name</key>
-	<string>chi (Χ)</string>
-	<key>scope</key>
-	<string>source.r, text</string>
+	<string>chi ( upper case Χ)</string>
 	<key>tabTrigger</key>
 	<string>\chi</string>
 	<key>uuid</key>

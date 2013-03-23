@@ -6,8 +6,6 @@
 	<string>™</string>
 	<key>name</key>
 	<string>TM (™)</string>
-	<key>scope</key>
-	<string>source.r, text</string>
 	<key>tabTrigger</key>
 	<string>\tm</string>
 	<key>uuid</key>

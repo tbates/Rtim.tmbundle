@@ -6,8 +6,6 @@
 	<string>λ</string>
 	<key>name</key>
 	<string>lambda (λ)</string>
-	<key>scope</key>
-	<string>source.r, text</string>
 	<key>tabTrigger</key>
 	<string>\lambda</string>
 	<key>uuid</key>

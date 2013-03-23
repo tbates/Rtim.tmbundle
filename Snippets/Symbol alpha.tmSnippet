@@ -6,8 +6,6 @@
 	<string>α</string>
 	<key>name</key>
 	<string>α (alpha)</string>
-	<key>scope</key>
-	<string>source.r, text</string>
 	<key>tabTrigger</key>
 	<string>\alpha</string>
 	<key>uuid</key>

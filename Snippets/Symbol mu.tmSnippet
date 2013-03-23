@@ -6,8 +6,6 @@
 	<string>μ = </string>
 	<key>name</key>
 	<string>mu mean (μ)</string>
-	<key>scope</key>
-	<string>source.r, text</string>
 	<key>tabTrigger</key>
 	<string>\mu</string>
 	<key>uuid</key>

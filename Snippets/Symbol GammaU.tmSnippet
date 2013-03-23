@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>Γ</string>
 	<key>name</key>
-	<string>Gamma (Γ)</string>
+	<string>Gamma (upper case Γ)</string>
 	<key>tabTrigger</key>
 	<string>\Gamma</string>
 	<key>uuid</key>

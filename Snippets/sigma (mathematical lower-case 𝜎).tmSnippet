@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>ε</string>
+	<string>𝜎</string>
 	<key>name</key>
-	<string>epsilon (ε)</string>
+	<string>sigma (mathematical lower-case 𝜎)</string>
 	<key>tabTrigger</key>
-	<string>\epsilon</string>
+	<string>\sigma</string>
 	<key>uuid</key>
-	<string>ED2FC3F2-50BF-4B4C-B8D8-2E258F3D7718</string>
+	<string>E9236ECB-964A-4FD3-9F3C-0FE0E753B2C4</string>
 </dict>
 </plist>

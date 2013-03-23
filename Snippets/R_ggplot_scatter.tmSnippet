@@ -6,7 +6,7 @@
 	<string>qplot(${1:x}, ${2:y}, data = ${3:data}, geom = c("point" ${4:, "smooth"}) ${5:, colour= ${6:var_for_colour}} ${7:, shape= ${8:var_for_shape}})
 </string>
 	<key>name</key>
-	<string>R.ggplot.scatter</string>
+	<string>ggplot.scatter</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

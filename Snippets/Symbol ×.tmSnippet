@@ -6,8 +6,6 @@
 	<string>× </string>
 	<key>name</key>
 	<string>times (×)</string>
-	<key>scope</key>
-	<string>source.r, text</string>
 	<key>tabTrigger</key>
 	<string>\times</string>
 	<key>uuid</key>

@@ -6,8 +6,6 @@
 	<string>ζ</string>
 	<key>name</key>
 	<string>zeta (ζ)</string>
-	<key>scope</key>
-	<string>source.r, text</string>
 	<key>tabTrigger</key>
 	<string>\zeta</string>
 	<key>uuid</key>

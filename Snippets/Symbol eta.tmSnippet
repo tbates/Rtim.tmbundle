@@ -6,8 +6,6 @@
 	<string>η</string>
 	<key>name</key>
 	<string>eta (η)</string>
-	<key>scope</key>
-	<string>source.r, text</string>
 	<key>tabTrigger</key>
 	<string>\eta</string>
 	<key>uuid</key>

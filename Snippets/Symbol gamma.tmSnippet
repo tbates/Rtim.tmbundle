@@ -5,9 +5,7 @@
 	<key>content</key>
 	<string>γ</string>
 	<key>name</key>
-	<string>gamma (γ)</string>
-	<key>scope</key>
-	<string>source.r, text</string>
+	<string>gamma (lower case γ)</string>
 	<key>tabTrigger</key>
 	<string>\gamma</string>
 	<key>uuid</key>

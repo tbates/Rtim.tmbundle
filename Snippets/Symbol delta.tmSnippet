@@ -6,8 +6,6 @@
 	<string>δ</string>
 	<key>name</key>
 	<string>delta (δ)</string>
-	<key>scope</key>
-	<string>source.r, text</string>
 	<key>tabTrigger</key>
 	<string>\delta</string>
 	<key>uuid</key>

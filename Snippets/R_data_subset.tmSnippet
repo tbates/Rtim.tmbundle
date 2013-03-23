@@ -3,9 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>subset(${1:var}, ${2:Temp &gt; 80}, ${3:select=c(Ozone, Temp)}, drop = FALSE)
-
-with(airquality, subset(Ozone, Temp:Wind))
+	<string>$2${1:sub} = subset(${2:data}, ${3:sex} == "${4:m}" ${5:&amp; ${6:age} ${7:&gt;} ${9:25}}, ${10:select=${11:weight:income}})
 </string>
 	<key>name</key>
 	<string>Subset</string>
@@ -14,6 +12,6 @@ with(airquality, subset(Ozone, Temp:Wind))
 	<key>tabTrigger</key>
 	<string>subset</string>
 	<key>uuid</key>
-	<string>232827E4-1241-40CC-8F10-6D87C777954E</string>
+	<string>BDF27CE4-251A-4F66-B884-3AB19D7C6751</string>
 </dict>
 </plist>

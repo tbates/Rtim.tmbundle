@@ -6,8 +6,6 @@
 	<string>ρ</string>
 	<key>name</key>
 	<string>rho (ρ)</string>
-	<key>scope</key>
-	<string>source.r, text</string>
 	<key>tabTrigger</key>
 	<string>\rho</string>
 	<key>uuid</key>

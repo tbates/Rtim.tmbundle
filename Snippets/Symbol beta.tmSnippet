@@ -6,8 +6,6 @@
 	<string>𝛽</string>
 	<key>name</key>
 	<string>beta (𝛽)</string>
-	<key>scope</key>
-	<string>source.r, text</string>
 	<key>tabTrigger</key>
 	<string>\beta</string>
 	<key>uuid</key>

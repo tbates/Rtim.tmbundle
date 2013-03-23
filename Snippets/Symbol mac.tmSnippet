@@ -8,8 +8,6 @@
 	<string>^~@*</string>
 	<key>name</key>
 	<string>mac (⇧⌤⌥⌘) </string>
-	<key>scope</key>
-	<string>text</string>
 	<key>tabTrigger</key>
 	<string>mac</string>
 	<key>uuid</key>

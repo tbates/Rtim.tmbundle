@@ -5,9 +5,7 @@
 	<key>content</key>
 	<string>Δ</string>
 	<key>name</key>
-	<string>Delta (Δ)</string>
-	<key>scope</key>
-	<string>source.r, text</string>
+	<string>Delta (uperr case Δ)</string>
 	<key>tabTrigger</key>
 	<string>\Delta</string>
 	<key>uuid</key>
