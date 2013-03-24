@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>Λ</string>
+	<string>Θ</string>
 	<key>name</key>
-	<string>Lambda (Λ)</string>
+	<string>theta (Θ)</string>
 	<key>tabTrigger</key>
-	<string>\lambda</string>
+	<string>\theta</string>
 	<key>uuid</key>
-	<string>3AD23259-29A9-4FB4-BE04-C6E3F715CA73</string>
+	<string>87805F06-BD96-4D1C-8F33-0F922313865F</string>
 </dict>
 </plist>
