@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/php
+&lt;?php
+// creator: tim.bates@ed.ac.uk 
+// license = GPL
+// Purpose: Takes selected mx matrix like 
+if (1) { //set to 0 for debugging
+	$input = fread(STDIN, 1024);
+} else {
+	$input = "1.234567";
+}
+echo(round($input,3));
+?&gt;
+
+</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>~@3</string>
+	<key>name</key>
+	<string>round</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>replaceInput</string>
+	<key>scope</key>
+	<string>source.r </string>
+	<key>uuid</key>
+	<string>B0AD9693-5726-431F-860F-73687B7A4B76</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>
