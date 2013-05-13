@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env bash
+rawText="`cat`" # input is selection or document
+# rawText="$(echo "${rawText}" | sed "s/,*$//")"
+osascript -e 'on run(theCode)
+tell application "R" to activate
+tell application "R" to cmd "str(" &amp; item 1 of theCode &amp; ")"
+tell application "R" to cmd "table(" &amp; item 1 of theCode &amp; ")"
+tell application "R" to cmd "hist(" &amp; item 1 of theCode &amp; ")"
+
+(*
+display dialog "pick" with icon 1 buttons {"summary", "describe", "str"} default button "str"
+set button_pressed to button returned of result
+
+tell application "R" to cmd button_pressed &amp; "(" &amp; item 1 of theCode &amp; ")"
+*)
+end run' -- "$rawText" &amp;&gt; /dev/null &amp;
+</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>^~@i</string>
+	<key>name</key>
+	<string>str</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>uuid</key>
+	<string>574D9B0D-B85E-47A8-9196-9D12A43B97A3</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>
