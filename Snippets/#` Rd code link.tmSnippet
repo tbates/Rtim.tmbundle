@@ -9,7 +9,7 @@
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>
-	<string>roxy</string>
+	<string>rox</string>
 	<key>uuid</key>
 	<string>80773308-CFF8-4BD0-9D43-76F60C220AD2</string>
 </dict>

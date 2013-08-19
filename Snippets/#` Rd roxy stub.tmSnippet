@@ -24,7 +24,7 @@ ${5:#' @keywords manip
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>
-	<string>roxy</string>
+	<string>rox</string>
 	<key>uuid</key>
 	<string>3D2A4787-5F4A-4C00-A646-EBFD1C2AA9CC</string>
 </dict>
