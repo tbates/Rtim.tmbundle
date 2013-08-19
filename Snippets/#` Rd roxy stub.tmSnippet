@@ -7,16 +7,14 @@
 #'
 #' ${2:$1 DESCRIPTION}
 #'
-#' @param ${3:PARAM} ${4:WHAT IT DOES WITH \code{\link{FUNCTION_NAME}}}
+#' @param ${3:model} ${4:an \code{\link{mxModel}}} to WITH
 #' @return - \code{\link{mxModel}}
 ${5:#' @keywords manip
 }${6:#' @export
 }#' @seealso - \code{\link{umxLabel}}, \code{\link{umxRun}}, \code{\link{umxStart}}
 #' @references - http://openmx.psyc.virginia.edu/
 #' @examples
-#'  model = $1(model)
-
-function here</string>
+#'  model = $1(model)</string>
 	<key>name</key>
 	<string>#` roxygen stub</string>
 	<key>scope</key>
