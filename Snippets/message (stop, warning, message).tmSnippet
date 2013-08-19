@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1|message,warning,stop|}(${2:"You idiot!"})</string>
+	<key>name</key>
+	<string>message (stop, warning, message)</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>msg</string>
+	<key>uuid</key>
+	<string>0A6644C1-0C8D-4475-A705-7D0ABF3A5B08</string>
+</dict>
+</plist>
