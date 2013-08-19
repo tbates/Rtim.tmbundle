@@ -12,6 +12,13 @@
 	<dict>
 		<key>items</key>
 		<array>
+			<string>CCAB0FE5-5F66-4FF3-8A21-84731E389DC4</string>
+			<string>12B6A691-7FD9-438A-9E9F-D83B746A683A</string>
+			<string>10B6CD7A-DBC9-420D-869F-1FC24BA1F3D3</string>
+			<string>E9B671A6-1662-4570-8774-7AB9B2D47607</string>
+
+			<string>7E428440-5FC8-4367-B2DE-007389CE207E</string>
+			
 			<string>BB2A3619-622D-416A-B387-8BE4154B44B8</string>
 			<string>B03BB508-410C-4786-85E3-EF088984246A</string>
 			<string>C7C392EB-8275-4236-AF68-B11E1A8774A4</string>
@@ -20,15 +27,49 @@
 			<string>9B1FCD41-42BB-4405-BAFC-2F7763A0FC14</string>
 			<string>CC89A8D8-CBBD-4A78-8FF2-69AD5DF91B2E</string>
 			<string>E31AD1DD-373D-4301-9AFD-1B95D018D5B2</string>
-			<string>12B6A691-7FD9-438A-9E9F-D83B746A683A</string>
-			<string>CCAB0FE5-5F66-4FF3-8A21-84731E389DC4</string>
-			<string>E9B671A6-1662-4570-8774-7AB9B2D47607</string>
-			<string>7E428440-5FC8-4367-B2DE-007389CE207E</string>
 			<string>E66FA900-D256-4599-AB2C-AD4D04F40E02</string>
 			<string>7FBA7991-CD5D-4BEC-A6F5-6F0BFD531556</string>
+
+			<string>B6F10E92-C55B-49D0-ABF2-E177F309A813</string>
 		</array>
 		<key>submenus</key>
 		<dict>
+
+			<key>B6F10E92-C55B-49D0-ABF2-E177F309A813</key>
+			<dict>
+				<key>name</key>
+				<string>Misc</string>
+				<key>items</key>
+				<array>
+					<string>8DFE4A06-4565-47AA-9DE4-30EB43A57892</string>
+					<string>196D1E59-3353-4D02-B0F6-C0D2230E3367</string>
+					<string>014D60E1-6B1C-4A45-8262-DAE1393F9D67</string>
+					<string>E1ABEC5E-DF5F-4C09-BA9F-E17504F456C0</string>
+					<string>FC5E4AD6-4196-4934-8401-9997208269EE</string>
+					<string>2959C666-AFD4-4B59-874A-A04CFF090ACC</string>
+					<string>------------------------------------</string>
+					<string>20DE005A-102E-449B-BCD5-211DC2A3926B</string>
+					<string>78711ABC-5A41-45F1-9919-D5DB4B612E70</string>
+					<string>0A6644C1-0C8D-4475-A705-7D0ABF3A5B08</string>
+					<string>B0AD9693-5726-431F-860F-73687B7A4B76</string>
+					
+					<string>------------------------------------</string>
+					<string>574D9B0D-B85E-47A8-9196-9D12A43B97A3</string>
+					<string>------------------------------------</string>
+					<string>F81E3B84-8092-44EC-A991-5509841B53A6</string>
+					<string>------------------------------------</string>
+					<string>03672B3C-88B6-4CEB-AB07-A126F5B9C390</string>
+					<string>11AD9E7B-F6CD-4909-A704-6587C92E75D4</string>
+					<string>------------------------------------</string>
+					    <string>49C2D2E1-BC9E-4F44-B016-F77EEEFFA64F</string>
+						<string>85F1FE57-3AF8-40B4-8FF8-5F0AC79BF8BF</string>
+						
+					
+					
+					
+				</array>
+			</dict>
+
 			<key>7FBA7991-CD5D-4BEC-A6F5-6F0BFD531556</key>
 			<dict>
 				<key>items</key>
@@ -37,6 +78,9 @@
 					<string>A33DE6C9-65C7-4420-BE55-FD684DAF3CDE</string>
 					<string>C06223B9-78B7-4750-88E4-171BF8BCF971</string>
 					<string>44BBC936-6269-472E-BB0D-8539FED99575</string>
+					<string>------------------------------------</string>
+					<string>3D2A4787-5F4A-4C00-A646-EBFD1C2AA9CC</string>
+					<string>80773308-CFF8-4BD0-9D43-76F60C220AD2</string>
 				</array>
 				<key>name</key>
 				<string>Development</string>
@@ -77,6 +121,10 @@
 					<string>1BCE026C-C524-47AD-A47B-1A8498F18543</string>
 					<string>CBE7A6B1-67F5-49D5-9845-165FC932DD3C</string>
 					<string>B3976F06-EF8A-46DD-9DDE-8765B5433341</string>
+					
+					<string>DF9E1D06-D439-4BA7-99E2-B06AF9A52E65</string>
+					<string>2344325F-C0B9-44D0-9746-D29A44A3A1A7</string>
+					
 				</array>
 			</dict>
 			<key>1C361765-0167-41E3-8DA3-B0ECBFA69A7D</key>
@@ -217,11 +265,6 @@
 					<string>A6CF1996-D1A2-4A75-869E-1185E58C4F81</string>
 					<string>81592223-3192-4884-A497-E15F4FF25CDF</string>
 					<string>E41F647E-3A6E-4F34-AFF2-266FC186D124</string>
-					<string>196D1E59-3353-4D02-B0F6-C0D2230E3367</string>
-					<string>014D60E1-6B1C-4A45-8262-DAE1393F9D67</string>
-					<string>E1ABEC5E-DF5F-4C09-BA9F-E17504F456C0</string>
-					<string>FC5E4AD6-4196-4934-8401-9997208269EE</string>
-					<string>2959C666-AFD4-4B59-874A-A04CFF090ACC</string>
 				</array>
 				<key>name</key>
 				<string>String and File utilities</string>

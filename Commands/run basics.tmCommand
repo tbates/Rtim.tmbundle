@@ -29,7 +29,7 @@ end run' -- "$rawText" &amp;&gt; /dev/null &amp;
 	<key>keyEquivalent</key>
 	<string>^~@i</string>
 	<key>name</key>
-	<string>str</string>
+	<string>run str, table, and hist on selection</string>
 	<key>outputCaret</key>
 	<string>afterOutput</string>
 	<key>outputFormat</key>

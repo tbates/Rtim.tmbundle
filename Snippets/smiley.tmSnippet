@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>☺</string>
 	<key>name</key>
-	<string>smiley</string>
+	<string>smiley face</string>
 	<key>tabTrigger</key>
 	<string>:-)</string>
 	<key>uuid</key>

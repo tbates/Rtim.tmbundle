@@ -21,7 +21,7 @@ end run' &amp;&gt; /dev/null &amp;
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>name</key>
-	<string>setwd(frontmost finder window)</string>
+	<string>setwd to Finder window</string>
 	<key>outputCaret</key>
 	<string>afterOutput</string>
 	<key>outputFormat</key>
