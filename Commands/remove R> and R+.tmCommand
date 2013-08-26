@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/php
+&lt;?php
+$input = $_ENV["TM_SELECTED_TEXT"]; //can't handle large documents
+$input = preg_replace("/^(?!R)/" , "# ", $input); # non R line --&gt; comment
+$input = preg_replace("/, ?\nR\+ +/", ", ", $input); # R+ continue gets rejoined to previous line
+$input = preg_replace("/R&gt; +/"   , "", $input); # R&gt; prompt gets deleted
+echo "$input";
+?&gt;
+</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>^~@r</string>
+	<key>name</key>
+	<string>remove R&gt; and R+</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>replaceInput</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>uuid</key>
+	<string>C4F60B7F-9134-4983-B164-4B3FD69F90F3</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>

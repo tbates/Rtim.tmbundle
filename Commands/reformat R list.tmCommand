@@ -5,23 +5,32 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#!/usr/bin/env bash
-open 'http://api.textmate.org/crashes/myip'
+	<string>#!/usr/bin/php
+&lt;?php
+$input = $_ENV["TM_SELECTED_TEXT"]; //can't handle large documents
+$input = str_replace("
+     ", " ", $input);
+$input = preg_replace("/^ +\d+. (Re: )?(.*)\([^\)]*\)$/", "$2", $input);
+
+echo "$input";
+?&gt;
 </string>
 	<key>input</key>
 	<string>none</string>
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>name</key>
-	<string>Report Textmate crash</string>
+	<string>reformat R list</string>
 	<key>outputCaret</key>
 	<string>afterOutput</string>
 	<key>outputFormat</key>
 	<string>text</string>
 	<key>outputLocation</key>
-	<string>discard</string>
+	<string>replaceSelection</string>
+	<key>scope</key>
+	<string>source.R</string>
 	<key>uuid</key>
-	<string>85F1FE57-3AF8-40B4-8FF8-5F0AC79BF8BF</string>
+	<string>7F9CC165-8F56-4986-A9FF-71744082E56B</string>
 	<key>version</key>
 	<integer>2</integer>
 </dict>
