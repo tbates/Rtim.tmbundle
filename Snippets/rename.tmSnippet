@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>renameFile("${1|Finder,NA,~/Downloads/fa/|}", findStr="${2:^fa-}", replaceStr="${3:$2}", listPattern = ${4:NA}, test=${5|T,F|})</string>
+	<string>umxRenameFile("${1|Finder,NA,~/Downloads/fa/|}", findStr = "${2:^fa-}", replaceStr = "${3:$2}", listPattern = ${4:NA}, test = ${5|T,F|})</string>
 	<key>name</key>
 	<string>Rename files</string>
 	<key>scope</key>

@@ -3,14 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1|message,warning,stop|}("${2:You idiot!}")</string>
+	<string>→</string>
 	<key>name</key>
-	<string>message (stop, warning, message)</string>
-	<key>scope</key>
-	<string>source.r</string>
+	<string>right arrow (→)</string>
 	<key>tabTrigger</key>
-	<string>msg</string>
+	<string>--&gt;</string>
 	<key>uuid</key>
-	<string>0A6644C1-0C8D-4475-A705-7D0ABF3A5B08</string>
+	<string>4E6A2CBA-DE38-4C7B-A10D-6F222AEA477B</string>
 </dict>
 </plist>
