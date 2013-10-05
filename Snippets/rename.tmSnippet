@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>umxRenameFile("${1|Finder,NA,~/Downloads/fa/|}", findStr = "${2:^fa-}", replaceStr = "${3:$2}", listPattern = ${4:NA}, test = ${5|T,F|})</string>
+	<string>umx_rename_file("${1|Finder,NA,~/Downloads/fa/|}", findStr = "${2:^fa-}", replaceStr = "${3:$2}", listPattern = ${4:NA}, test = ${5|T,F|})</string>
 	<key>name</key>
-	<string>umxRename files</string>
+	<string>umx_rename_file</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>
