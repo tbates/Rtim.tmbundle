@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>grepSPSS_labels(df=${1:twindata}, grepString="${2:Sex}"${3:, output="${4|both,labels,names|}", ignore.case=T, useNames=F})</string>
+	<string>umx_grep_labels(df=${1:twindata}, grepString="${2:Sex}"${3:, output="${4|both,labels,names|}", ignore.case=T, useNames=F})</string>
 	<key>name</key>
-	<string>Grep SPSS labels</string>
+	<string>Grep labels</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>
