@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>paste0(${1:myPath},${2:"${3:OpenMx_1.3.2-2557.tgz}"})</string>
+	<key>name</key>
+	<string>paste0</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>p</string>
+	<key>uuid</key>
+	<string>2B5E922D-B334-4864-9CCF-56D47CE03129</string>
+</dict>
+</plist>
