@@ -61,12 +61,8 @@
 					<string>03672B3C-88B6-4CEB-AB07-A126F5B9C390</string>
 					<string>11AD9E7B-F6CD-4909-A704-6587C92E75D4</string>
 					<string>------------------------------------</string>
-					    <string>49C2D2E1-BC9E-4F44-B016-F77EEEFFA64F</string>
-						<string>85F1FE57-3AF8-40B4-8FF8-5F0AC79BF8BF</string>
-						
-					
-					
-					
+					<string>49C2D2E1-BC9E-4F44-B016-F77EEEFFA64F</string>
+					<string>85F1FE57-3AF8-40B4-8FF8-5F0AC79BF8BF</string>
 				</array>
 			</dict>
 
@@ -93,6 +89,7 @@
 				<key>items</key>
 				<array>
 					<string>C395F51A-15FB-4862-9646-8A830F250ED9</string>
+					<string>4E6A2CBA-DE38-4C7B-A10D-6F222AEA477B</string>
 					<string>0D459E1A-45B3-45E0-993C-A14323B6122E</string>
 					<string>1B87B4B8-9524-411A-8660-33B70B798F79</string>
 					<string>C6AF8DD0-9409-4C00-A1F7-922903B174E7</string>
@@ -111,7 +108,7 @@
 					<string>C6452736-3FA3-4989-B396-BD9FA69B46DA</string>
 					<string>A8843EFA-CFDE-405C-B3DA-E1958515A7B8</string>
 					<string>100D8E4C-C6C5-4DBA-A133-F002E4034B9A</string>
-    				<string>A986CF3F-FB4A-42A1-8932-EA147F2DF93E</string>
+    					<string>A986CF3F-FB4A-42A1-8932-EA147F2DF93E</string>
 					<string>E9236ECB-964A-4FD3-9F3C-0FE0E753B2C4</string>
 
 					<string>C417977B-2AB2-4271-9F50-CBB0DEC6C0BF</string>
@@ -121,7 +118,7 @@
 					<string>1BCE026C-C524-47AD-A47B-1A8498F18543</string>
 					<string>CBE7A6B1-67F5-49D5-9845-165FC932DD3C</string>
 					<string>B3976F06-EF8A-46DD-9DDE-8765B5433341</string>
-					
+					<string>E328677B-F49F-445F-8D95-F13F9E780AE6</string>
 					<string>DF9E1D06-D439-4BA7-99E2-B06AF9A52E65</string>
 					<string>2344325F-C0B9-44D0-9746-D29A44A3A1A7</string>
 					
@@ -206,9 +203,10 @@
 					<string>1C361765-0167-41E3-8DA3-B0ECBFA69A7D</string>
 					<string>FDBC0CF5-5C40-462D-A549-6C9ACD1F5B7B</string>
 					<string>0F48AE18-50E3-4DD0-8547-8278273CFA3E</string>
+					<string>2B5E922D-B334-4864-9CCF-56D47CE03129</string>
 				</array>
 				<key>name</key>
-				<string>data operations</string>
+				<string>Core R functions</string>
 			</dict>
 			<key>C7C392EB-8275-4236-AF68-B11E1A8774A4</key>
 			<dict>
@@ -257,6 +255,7 @@
 			<dict>
 				<key>items</key>
 				<array>
+					<string>C4F60B7F-9134-4983-B164-4B3FD69F90F3</string>
 					<string>D437C0DE-0DE9-4C5D-B33E-8BE49DD40434</string>
 					<string>A48241E5-9AD0-471E-8101-400EA89B235C</string>
 					<string>BF96EC5A-EC41-4C1B-8A1C-CFC981C53AC7</string>
@@ -265,6 +264,7 @@
 					<string>A6CF1996-D1A2-4A75-869E-1185E58C4F81</string>
 					<string>81592223-3192-4884-A497-E15F4FF25CDF</string>
 					<string>E41F647E-3A6E-4F34-AFF2-266FC186D124</string>
+					<string>7F9CC165-8F56-4986-A9FF-71744082E56B</string>
 				</array>
 				<key>name</key>
 				<string>String and File utilities</string>

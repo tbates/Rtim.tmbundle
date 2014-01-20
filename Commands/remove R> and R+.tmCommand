@@ -21,7 +21,7 @@ echo "$input";
 	<key>keyEquivalent</key>
 	<string>^~@r</string>
 	<key>name</key>
-	<string>remove R&gt; and R+</string>
+	<string>reformat promt text (&gt; &amp; R+)</string>
 	<key>outputCaret</key>
 	<string>afterOutput</string>
 	<key>outputFormat</key>
