@@ -59,7 +59,7 @@
 	<key>isDisabled</key>
 	<false/>
 	<key>keyEquivalent</key>
-	<string>~@=</string>
+	<string>^q</string>
 	<key>name</key>
 	<string>Add space between parameters</string>
 	<key>scope</key>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>#' require(OpenMx)
+#' data(demoOneFactor)
+#' m2 &lt;- mxModel("One Factor",
+#' 	mxMatrix("Full", 5, 1, values = 0.2, free = T, name = "A"), 
+#' 	mxMatrix("Symm", 1, 1, values = 1, free = F, name = "L"), 
+#' 	mxMatrix("Diag", 5, 5, values = 1, free = T, name = "U"), 
+#' 	mxAlgebra(A %*% L %*% t(A) + U, name = "R"), 
+#' 	mxMLObjective("R", dimnames = names(demoOneFactor)), 
+#' 	mxData(cov(demoOneFactor), type = "cov", numObs = 500)
+#' )
+#' m2 = mxRun(m2)
+#' summary(m2)</string>
+	<key>name</key>
+	<string>#` Rd demo matrix Model</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>rox</string>
+	<key>uuid</key>
+	<string>AD402821-414F-4C32-9E84-EEDB0DB6EAFA</string>
+</dict>
+</plist>
