@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>#' # The total sample has been subdivided into a young cohort, aged 18-30 years, and an older cohort aged 31 and above.
+#' # Cohort 1 Zygosity is coded as follows 1 == MZ females 2 == MZ males 3 == DZ females 4 == DZ males 5 == DZ opposite sex pairs
+# ?twinData to learn about this data set
+#' require(OpenMx)
+#' data(twinData) 
+#' names(twinData)
+#' # "fam"   "age"   "zyg"   "part"  "wt1"   "wt2"   "ht1"   "ht2"   "htwt1" "htwt2" "bmi1"  "bmi2"
+#' twinData$ZYG = factor(twinData$zyg, levels = 1:5, labels = c("MZFF", "MZMM", "DZFF", "DZMM", "DZOS"))
+#' table(twinData$ZYG, useNA = "always")
+#' selDVs = c("bmi1","bmi2")
+#' mzData &lt;- as.matrix(subset(twinData, zyg == 1, selDVs))
+#' dzData &lt;- as.matrix(subset(twinData, zyg == 3, selDVs))
+#' m1 = umxACE(selDVs = selDVs, dzData = dzData, mzData = mzData)
+#' m1 = umxRun(m1)
+#' umxSummaryACE(m1)
+#' # drop c and test loss of fit
+#' m2 = umxReRun(m1, dropList = "c_r1c1", name = "dropC")
+#' umxCompare(m1, m2)
+#' umxSummaryACE(m2, comparison = m1)
+#' # example with covariance data only
+#' m1 = umxACE(selDVs = selDVs, dzData = cov(dzData, use = "pairwise"), mzData = cov(mzData, use = "pairwise"), numObsDZ = nrow(dzData), numObsMZ = nrow(mzData))
+#' m1 = umxRun(m1)
+#' umxSummaryACE(m1)
+#' m2 = umxReRun(m1, dropList = "c_r1c1", name = "dropC")
+#' umxSummaryACE(m2, comparison = m1)
+</string>
+	<key>name</key>
+	<string>#` Rd demo twin Model</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>rox</string>
+	<key>uuid</key>
+	<string>D372FE8C-E271-4CFE-BF33-467CDFFED555</string>
+</dict>
+</plist>
