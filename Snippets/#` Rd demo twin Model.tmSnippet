@@ -13,8 +13,8 @@
 #' twinData$ZYG = factor(twinData$zyg, levels = 1:5, labels = c("MZFF", "MZMM", "DZFF", "DZMM", "DZOS"))
 #' table(twinData$ZYG, useNA = "always")
 #' selDVs = c("bmi1","bmi2")
-#' mzData &lt;- as.matrix(subset(twinData, zyg == 1, selDVs))
-#' dzData &lt;- as.matrix(subset(twinData, zyg == 3, selDVs))
+#' mzData &lt;- as.matrix(subset(twinData, ZYG == "MZFF", selDVs))
+#' dzData &lt;- as.matrix(subset(twinData, ZYG == "DZFF", selDVs))
 #' m1 = umxACE(selDVs = selDVs, dzData = dzData, mzData = mzData)
 #' m1 = umxRun(m1)
 #' umxSummaryACE(m1)
@@ -27,8 +27,7 @@
 #' m1 = umxRun(m1)
 #' umxSummaryACE(m1)
 #' m2 = umxReRun(m1, dropList = "c_r1c1", name = "dropC")
-#' umxSummaryACE(m2, comparison = m1)
-</string>
+#' umxSummaryACE(m2, comparison = m1)</string>
 	<key>name</key>
 	<string>#` Rd demo twin Model</string>
 	<key>scope</key>
