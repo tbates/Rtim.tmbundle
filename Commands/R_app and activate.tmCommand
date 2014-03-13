@@ -7,7 +7,10 @@
 	<key>command</key>
 	<string>#!/usr/bin/env bash
 rawText="`cat`" # input is selection or document
+# delete trailing comma... close with a bracket for OpenMx
 # rawText="$(echo "${rawText}" | sed "s/,*$//")"
+# delete leading roxygen
+rawText="$(echo "${rawText}" | sed "s/^#'//")"
 osascript -e 'on run(theCode)
 tell application "R" to activate
 tell application "R" to cmd (item 1 of theCode)

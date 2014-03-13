@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>command</key>
+	<string>#!/usr/bin/php
+&lt;?php
+// author tim.bates@ed.ac.uk
+// created: 22:02:2014
+// italicises or  un-italicises the selection or the currentword
+if (0) {
+	$input = "test";	
+	# $input = "\\emph{test}";	
+}else{
+	$input = $_ENV["TM_SELECTED_TEXT"];	
+}
+$marker    = "\\emph{"; 
+// $_ENV["TM_ITALIC_MARKER"];
+$esapedMarker = addcslashes($marker, "*()[].$^\\");
+$unFormatted = ereg_replace("$esapedMarker(.*)\}", "\\1", $input);
+
+if ($input == $unFormatted) {
+	//plain --&gt; formatted
+	echo($marker . $input . "}");
+}else{
+	// formatted --&gt; plain
+	echo($unFormatted);
+}
+?&gt;</string>
+	<key>keyEquivalent</key>
+	<string>@i</string>
+	<key>name</key>
+	<string>emphasic (italic)</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>uuid</key>
+	<string>1F2330F1-1394-4D2C-B813-F65791BEB744</string>
+</dict>
+</plist>

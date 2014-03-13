@@ -7,6 +7,8 @@
 	<key>command</key>
 	<string>#!/usr/bin/env bash
 rawText="`cat`" # input is selection or document
+# delete leading roxygen
+rawText="$(echo "${rawText}" | sed "s/^#'//")"
 osascript -e 'on run(theCode)
 tell application "R" to cmd (item 1 of theCode)
 end run' -- "$rawText" &amp;&gt; /dev/null &amp;
