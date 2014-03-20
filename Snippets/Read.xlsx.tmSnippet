@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:df} &lt;- gdata::read.xls(xls = ${2:finder}${3: ,sheet=,pattern=,na.strings=,method=,perl=})</string>
+	<key>name</key>
+	<string>Read.xlsx</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>read</string>
+	<key>uuid</key>
+	<string>6602BDA8-4694-4DF4-8997-0A88E7E34D98</string>
+</dict>
+</plist>
