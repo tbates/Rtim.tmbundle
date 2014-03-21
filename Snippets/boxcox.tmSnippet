@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>lambda = car::powerTransform(${1:df}$${2:var}, family = "${3|yjPower|}")$lambda
+$1$$2norm = car::yjPower($1$$2, lambda = lambda)</string>
+	<key>name</key>
+	<string>boxcox</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>box</string>
+	<key>uuid</key>
+	<string>8140925C-EF9C-460E-955F-F1C4FB863ABB</string>
+</dict>
+</plist>

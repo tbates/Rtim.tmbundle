@@ -9,8 +9,8 @@ library(Hmisc)     # for summary tables
 library(car)       # for Anova
 library(QuantPsyc) # lm.beta function
 library(OpenMx)    # for sem
-source("~/bin/omxhelper/genEpi.lib.R")
-source("~/bin/umx/umx.lib.R")
+devtools::document("~/bin/umx.twin"); devtools::install("~/bin/umx.twin"); 
+devtools::document("~/bin/umx"); devtools::install("~/bin/umx"); 
 </string>
 	<key>name</key>
 	<string>Libraries</string>
