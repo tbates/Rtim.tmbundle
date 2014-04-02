@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>\url{${1:http://www.somewhere.com}}</string>
+	<string>\url{${1:http://github.com/tbates/umx}}</string>
 	<key>name</key>
 	<string>#` Rd url</string>
 	<key>scope</key>

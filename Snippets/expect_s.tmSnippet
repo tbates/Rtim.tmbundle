@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>testthat::expect_${1|--numeric--,identical,equal,equivalent,--Boolean--,less_than,more_than,true,false,--string--,match,named,--match printed output--,output,--inheritance--,is,--message--,message,warning,error,null,--performance--,takes_less_than,https://github.com/hadley/testthat/blob/master/R/expect-that.r|}(${2:object}, ${3:result/regexp})</string>
+	<key>name</key>
+	<string>expect_that()</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>test</string>
+	<key>uuid</key>
+	<string>5868175C-F75B-4CEC-9F75-B70A742F8F5E</string>
+</dict>
+</plist>
