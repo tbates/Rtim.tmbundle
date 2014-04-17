@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># http://ggvis.rstudio.com/interactivity.html
+ggvis(mtcars, props(x = ~wt, y = ~mpg)) +
+layer_smooth(span = input_slider(0.5, 1, 1, label = "span")) +
+layer_point(props(size := input_slider(100, 1000, label = "size")))
+</string>
+	<key>name</key>
+	<string>ggvis</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>gg</string>
+	<key>uuid</key>
+	<string>D7850EC4-C86C-41EF-B16D-8618CCC87C2D</string>
+</dict>
+</plist>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>#' @name DATA_NAME
+#' @alias DATA_NAME
+#' @docType {data}
+#' @title{
+#' @description
+#' @keyword datasets
+#' A data frame with 6 observations on the following 2 variables:
+#'   \item{\code{VAR_NAME_1}} {a numeric vector}
+#'   \item{\code{VAR_NAME_2}} {a numeric vector}
+#' 
+#' @details
+#' @source
+#' @references
+#' @examples
+#' data(DATA_NAME)
+#' str(DATA_NAME) ; plot(DATA_NAME) ...
+</string>
+	<key>name</key>
+	<string>#' Rd for dataset</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>rox</string>
+	<key>uuid</key>
+	<string>DDD80D0D-0A07-4DF0-ADA1-3C9248B02D8E</string>
+</dict>
+</plist>

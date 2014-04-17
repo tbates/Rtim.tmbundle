@@ -7,7 +7,8 @@
 #' # Cohort 1 Zygosity is coded as follows 1 == MZ females 2 == MZ males 3 == DZ females 4 == DZ males 5 == DZ opposite sex pairs
 # ?twinData to learn about this data set
 #' require(OpenMx)
-#' data(twinData) 
+#' data(twinData)\alias{DATA_NAME}
+ 
 #' names(twinData)
 #' # "fam"   "age"   "zyg"   "part"  "wt1"   "wt2"   "ht1"   "ht2"   "htwt1" "htwt2" "bmi1"  "bmi2"
 #' twinData$ZYG = factor(twinData$zyg, levels = 1:5, labels = c("MZFF", "MZMM", "DZFF", "DZMM", "DZOS"))
