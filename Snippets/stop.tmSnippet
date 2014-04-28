@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>stop(paste("The model ${1:type}", omxQuotes($1), "is not in the the list of acceptable $1s:", 
+                omxQuotes(names(imxModelTypes))), call. = FALSE)</string>
+	<key>name</key>
+	<string>stop</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>msg</string>
+	<key>uuid</key>
+	<string>6BC6A0AF-A2B4-428B-9395-531E2AFFE2AF</string>
+</dict>
+</plist>
