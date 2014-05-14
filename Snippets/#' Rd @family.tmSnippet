@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>@family umx ${1|core functions,build functions,reporting functions, misc reporting functions,data helpers,misc functions,misc stats functions|}</string>
+	<key>name</key>
+	<string>#' Rd @family</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>@family</string>
+	<key>uuid</key>
+	<string>527ADC7E-E10E-4406-9B6E-42A6EEF503D4</string>
+</dict>
+</plist>
