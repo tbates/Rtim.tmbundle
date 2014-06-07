@@ -3,15 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>\\${1|url,email|}{${1:mailto: http://github.com/tbates/umx}}
-</string>
+	<string>\link[${1:package}]{${2:function}}</string>
 	<key>name</key>
-	<string>#` Rd url</string>
+	<string>#` Rd package::function</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>
 	<string>rox</string>
 	<key>uuid</key>
-	<string>16CF974A-D62B-440F-B17B-D5B7E5FABD38</string>
+	<string>A4E93EC6-A805-4610-9921-6C2FE61DE5C2</string>
 </dict>
 </plist>

@@ -3,15 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>\\${1|url,email|}{${1:mailto: http://github.com/tbates/umx}}
-</string>
+	<string>\\${1|eqn,deqn|}{${2:$x=\frac\{1+y\}\{1+2z^2\}$}</string>
 	<key>name</key>
-	<string>#` Rd url</string>
+	<string>#` Rd eqn</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>
 	<string>rox</string>
 	<key>uuid</key>
-	<string>16CF974A-D62B-440F-B17B-D5B7E5FABD38</string>
+	<string>067C3E7D-9F56-4BB6-8489-C2CA553DC806</string>
 </dict>
 </plist>
