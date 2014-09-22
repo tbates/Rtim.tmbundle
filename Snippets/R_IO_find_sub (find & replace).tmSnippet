@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${|gsub,sub|}(${1:find}, ${2:replace}, ${3:x}, ignore.case = F, extended = T, perl = F)</string>
+	<string>${1|gsub,sub|}(${2:find}, ${3:replace}, ${4:x}, ignore.case = F, extended = T, perl = F)</string>
 	<key>name</key>
 	<string>Find &amp; replace</string>
 	<key>scope</key>
