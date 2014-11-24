@@ -14,6 +14,7 @@
 #'   \item{\code{VAR_NAME_2}} {a numeric vector}
 #' 
 #' @details
+#' @family
 #' @source
 #' @references
 #' @examples

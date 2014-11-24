@@ -3,14 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>$1 = umx_rename(${1:df}, replace = c(${2:oldName} ="${3:$2"))</string>
+	<string>★</string>
 	<key>name</key>
-	<string>umx_rename</string>
-	<key>scope</key>
-	<string>source.r</string>
+	<string>star ★</string>
 	<key>tabTrigger</key>
-	<string>umx_</string>
+	<string>\star</string>
 	<key>uuid</key>
-	<string>2B853054-EF09-4DE3-B434-489065A264BD</string>
+	<string>96423498-1E23-4890-B62F-065D51A47CC6</string>
 </dict>
 </plist>
