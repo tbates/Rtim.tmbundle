@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>@family umx ${1|.twin model builder,.twin model report,core functions,build functions,reporting functions, misc reporting functions,data helpers,misc functions,misc stats functions|}</string>
+	<string>@family umx${1|.twin model builder,.twin model report, core functions, build functions, reporting functions, modification functions, misc reporting functions, data helpers, misc functions, misc stats functions|}</string>
 	<key>name</key>
 	<string>#' Rd @family</string>
 	<key>scope</key>
