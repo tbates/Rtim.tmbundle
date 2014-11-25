@@ -3,7 +3,8 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>#' dontrun{</string>
+	<string>#' \dontrun{
+#' }</string>
 	<key>name</key>
 	<string>#` Rd dontrun{</string>
 	<key>scope</key>
