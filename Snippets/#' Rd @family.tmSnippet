@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>@family umx_${1|Model Building Functions, Reporting Functions, Model Updating and Comparison, Advanced Helpers, Miscellaneous Functions, Miscellaneous Utility Functions, Miscellaneous Stats Helpers, Twin Modeling Functions, Twin Reporting Functions, umx deprecated|}</string>
+	<string>@family ${1|Super-easy helpers,Model Building Functions,Reporting Functions,Model Updating and Comparison,Twin Modeling Functions,Twin Reporting Functions,Miscellaneous Functions,Miscellaneous Utility Functions,Miscellaneous Stats Helpers,Advanced Helpers,umx deprecated|}</string>
 	<key>name</key>
 	<string>#' Rd @family</string>
 	<key>scope</key>
