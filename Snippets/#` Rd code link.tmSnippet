@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>\code{\link{${1:FUNCTION_NAME}}}</string>
 	<key>name</key>
-	<string>#` Rd code link</string>
+	<string>#` Rd \code{\{link}}</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>
