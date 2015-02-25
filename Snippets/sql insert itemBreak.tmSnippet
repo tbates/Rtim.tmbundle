@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>INSERT INTO Items VALUES ('', '${1:test}', '1','Itemtext.&lt;itemBreak&gt;strongly','${2|+,-|}','scale','${3|intro,5fm,text,YesNo,number,TrueFalse,tabbedPlus,likert,4Freq,ladder10,SELECT * FROM Items WHERE format = "",ab,tabbed,tabbedVertPlus,limits,lineBisection,objectBisection,octave,PDQcheck,pitch,CFQ,DASS,SBC_face,soundRating,SUEIT,4armBandit,behrens,conformity1,conformity2,wittman|}','$1'
+</string>
+	<key>name</key>
+	<string>sql insert itemBreak</string>
+	<key>scope</key>
+	<string>source.sql</string>
+	<key>tabTrigger</key>
+	<string>item</string>
+	<key>uuid</key>
+	<string>2AEEEB3F-E57A-46CF-8126-0A8C7C5CAD4A</string>
+</dict>
+</plist>
