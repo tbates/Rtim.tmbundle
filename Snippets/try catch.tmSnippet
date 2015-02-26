@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>result = tryCatch({
+    codeThatCanFail()
+}, warning = function(warning-condition) {
+    warning-handler-code
+}, error = function(error-condition) {
+    error-handler-code
+}, finally={
+    cleanup-code
+})</string>
+	<key>name</key>
+	<string>try catch</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>try</string>
+	<key>uuid</key>
+	<string>BBA85104-93C3-4F8D-914E-9A81E896DB40</string>
+</dict>
+</plist>
