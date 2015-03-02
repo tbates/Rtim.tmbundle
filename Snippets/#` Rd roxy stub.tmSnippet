@@ -5,17 +5,17 @@
 	<key>content</key>
 	<string>#' ${1:TITLE}
 #'
-#' ${2:DESCRIPTION}
+#' ${2:$1 DESCRIPTION}
 #'
 #' @param ${3:model} ${4:an \code{\link{mxModel}}} to WITH
 #' @return - \code{\link{mxModel}}
 #' @export
-#' @family ${5|umx core functions,umx modify model,umx reporting functions,umx model updating and comparison,advanced umx helpers|}
-#' @seealso - \code{\link{umxLabel}}, \code{\link{umxRun}}, \code{\link{umxStart}}
-#' @references - \url{https://github.com/tbates/umx}, \url{tbates.github.io}, \url{http://openmx.psyc.virginia.edu}
+#' @family
+#' @seealso - \code{\link{umxLabel}}
+#' @references - \url{https://github.com/tbates/umx}, \url{https://tbates.github.io}
 #' @examples
-#' \dontrun{
 #' model = $1($3)
+#' \dontrun{
 #' }
 
 </string>
