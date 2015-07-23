@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>r = .8
+pwr.t.test(n = ${1:pergroup}, d = 2/sqrt(1-r), sig.level = 0.05, power = NULL, type = "${3|two.sample,one.sample,paired|}", alternative = "${4|two.sided,less,greater|}")
+</string>
+	<key>name</key>
+	<string>pwr.t.test</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>power</string>
+	<key>uuid</key>
+	<string>6638C58C-D22E-44B6-9F85-2F8E9D677CA3</string>
+</dict>
+</plist>

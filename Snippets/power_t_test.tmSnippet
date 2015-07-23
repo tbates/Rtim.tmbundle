@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>power.t.test(n = ${1:pergroup}, delta = ${2:.3}, sd = 1, power = NULL, type = "${3|two.sample,one.sample,paired|}", alternative = "${4|two.sided,one.sided|}")
+</string>
+	<key>name</key>
+	<string>power.t.test</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>power</string>
+	<key>uuid</key>
+	<string>E3A6754F-398E-4F88-BA24-532CDAA229F8</string>
+</dict>
+</plist>
