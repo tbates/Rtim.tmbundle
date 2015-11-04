@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># install.packages("microbenchmark")
+# install.packages("rbenchmark")
+library("rbenchmark")
+library("microbenchmark")
+
+times &lt;- microbenchmark(times = 30, {
+});
+
+print(times, unit = "s", signif = 3)
+plot(times)
+</string>
+	<key>name</key>
+	<string>benchmark</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>bench</string>
+	<key>uuid</key>
+	<string>9B144DD8-9884-4127-B3F3-81E71565E38E</string>
+</dict>
+</plist>
