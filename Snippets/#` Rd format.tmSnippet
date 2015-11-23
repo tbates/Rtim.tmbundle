@@ -3,8 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>\\${1|emph,strong,sQuote,dQuote,eqn,deqn|}{${2:text}}
-}</string>
+	<string>\\${1|emph,strong,sQuote,dQuote,eqn,deqn|}{${2:text}}</string>
 	<key>name</key>
 	<string>#` Rd style (emph, strong, </string>
 	<key>scope</key>

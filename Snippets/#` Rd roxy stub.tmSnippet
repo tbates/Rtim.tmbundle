@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>#' ${1:TITLE}
 #'
-#' ${2:$1 DESCRIPTION}
+#' ${2:$1 is a function which }
 #'
 #' @param ${3:model} ${4:an \code{\link{mxModel}}} to WITH
 #' @return - \code{\link{mxModel}}
@@ -16,6 +16,7 @@
 #' @examples
 #' model = $1($3)
 #' \dontrun{
+#' 
 #' }
 
 </string>
