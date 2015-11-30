@@ -5,7 +5,10 @@
 	<key>content</key>
 	<string>#' ${1:TITLE}
 #'
+#' @description
 #' ${2:$1 is a function which }
+#'
+#' @details
 #'
 #' @param ${3:model} ${4:an \code{\link{mxModel}}} to WITH
 #' @return - \code{\link{mxModel}}

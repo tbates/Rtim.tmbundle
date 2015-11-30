@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
 	<key>command</key>
 	<string>#!/usr/bin/php
 &lt;?php
@@ -27,13 +29,25 @@ if ($input == $unFormatted) {
 	echo($unFormatted);
 }
 ?&gt;</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
 	<key>keyEquivalent</key>
 	<string>@i</string>
 	<key>name</key>
-	<string>emphasic (italic)</string>
+	<string>emphasis (italic)</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>replaceInput</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>uuid</key>
 	<string>1F2330F1-1394-4D2C-B813-F65791BEB744</string>
+	<key>version</key>
+	<integer>2</integer>
 </dict>
 </plist>
