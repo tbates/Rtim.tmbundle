@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>difftime(format("${1:${2:2015}-${3:01}-${4:01}}"), format("${5:$1}"))</string>
+	<key>name</key>
+	<string>difftime</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>diff</string>
+	<key>uuid</key>
+	<string>E7A6C25A-5D0F-4158-BEB1-9A060367CBBC</string>
+</dict>
+</plist>
