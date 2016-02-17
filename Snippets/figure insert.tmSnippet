@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>\begin{figure}
+	\centering
+  	\includegraphics[scale=0.60]{figs/${1:ACE_weight_dot}.pdf}
+	\caption{${2:caption}}
+	\label{figure:${3:$1}}
+	% Figure~\ref{figure:$3}
+\end{figure}
+</string>
+	<key>name</key>
+	<string>figure insert</string>
+	<key>scope</key>
+	<string>text.tex.latex</string>
+	<key>tabTrigger</key>
+	<string>fig</string>
+	<key>uuid</key>
+	<string>E082A0AE-5412-414D-8A87-2E0BEB165AEA</string>
+</dict>
+</plist>
