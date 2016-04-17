@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:data} = rename($1, c(${2:old}="${3:new}"))</string>
+	<string>${1:data} = rename($1, c(${2:old}='${3:$2}'))</string>
 	<key>name</key>
 	<string>Rename</string>
 	<key>scope</key>
