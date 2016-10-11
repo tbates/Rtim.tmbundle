@@ -69,21 +69,22 @@
 					<string>44BBC936-6269-472E-BB0D-8539FED99575</string>
 					<string>------------------------------------</string>
 					<string>2342E30B-CDB8-4D65-ABF7-7402EFDE4EC0</string>
+					<string>5868175C-F75B-4CEC-9F75-B70A742F8F5E</string>
 					<string>3D2A4787-5F4A-4C00-A646-EBFD1C2AA9CC</string>
 					<string>80773308-CFF8-4BD0-9D43-76F60C220AD2</string>
 					<string>16CF974A-D62B-440F-B17B-D5B7E5FABD38</string>
-					
+					<string>------------------------------------</string>					
 					<string>527ADC7E-E10E-4406-9B6E-42A6EEF503D4</string>
 					<string>84F1E7FE-381D-445D-8137-FBBC2D5F167C</string>
 					<string>DDD80D0D-0A07-4DF0-ADA1-3C9248B02D8E</string>
-					
+					<string>------------------------------------</string>
 					<string>AD402821-414F-4C32-9E84-EEDB0DB6EAFA</string>
 					<string>D372FE8C-E271-4CFE-BF33-467CDFFED555</string>
 					<string>067C3E7D-9F56-4BB6-8489-C2CA553DC806</string>
 					<string>0098205F-46E6-44EF-A575-18B694509AA3</string>
 					<string>DC8F54DF-9477-4D99-9852-966C2288DB28</string>
 					<string>A4E93EC6-A805-4610-9921-6C2FE61DE5C2</string>
-					
+					<string>9B144DD8-9884-4127-B3F3-81E71565E38E</string>
 				</array>
 				<key>name</key>
 				<string>Development</string>
@@ -114,6 +115,9 @@
 					<string>24E539ED-13C6-49B4-B9D3-686B9FFE25FC</string>
 					<string>36BF324D-890C-432D-B6CF-ECAB8F700ED2</string>
 					<string>6EBB48A1-9D8F-4316-8F57-396F5AD019DB</string>
+					<string>8140925C-EF9C-460E-955F-F1C4FB863ABB</string>
+					<string>E3A6754F-398E-4F88-BA24-532CDAA229F8</string>
+					<string>6638C58C-D22E-44B6-9F85-2F8E9D677CA3</string>
 				</array>
 				<key>name</key>
 				<string>stats</string>
@@ -191,6 +195,7 @@
 				<key>items</key>
 				<array>
 					<string>2746D53C-D004-48DD-830E-AD10DFD96B3D</string>
+					<string>6602BDA8-4694-4DF4-8997-0A88E7E34D98</string>
 					<string>743B2D74-763D-4622-842A-DA0D3F3F52F1</string>
 					<string>C9A71188-AE27-4F4F-83F4-C2D932750FFE</string>
 					<string>E8DD1881-0283-4881-A02F-86E869BB27A5</string>
@@ -251,6 +256,7 @@
 					<string>D895ECDF-837B-4064-8B2A-4362AD8363AD</string>
 					<string>ED2FC3F2-50BF-4B4C-B8D8-2E258F3D7718</string>
 					<string>C8F243FA-EC36-43D3-9A5C-DE8486376D13</string>
+					<string>EC6C265A-7E64-4CAD-A2AA-685AEECEFFCE</string>
 					<string>73005B22-0D3E-4C5E-AF36-CDC5A1DE0ABE</string>
 					<string>5A790E06-04AD-43ED-8474-3C4FE105F76F</string>
 					<string>3AD23259-29A9-4FB4-BE04-C6E3F715CA73</string>
@@ -275,7 +281,12 @@
 					<string>947BD930-6C9F-42D7-9560-2E41F004DFF3</string>
 					<string>B00B7136-5BB8-4824-84A3-4220C678407A</string>
 					<string>122BFB5E-6F54-4D21-8EF3-4555DB0144FF</string>
-					
+					<string>3CE440C2-B19E-4CFF-B20D-1D24B83F34B7</string>
+					<string>B61AE39D-6F3D-490B-905A-DB0ECD6F5D40</string>
+					<string>825475FD-49F8-457B-849C-8010E07BACA2</string>
+					<string>B6F0440F-47A2-403F-823F-337289B7E899</string>
+					<string>491CAEB6-61A3-4176-B8E0-144B756302BB</string>
+					<string>0604F395-4136-4963-A2D8-FCBFDDB08D47</string>
 				</array>
 				<key>name</key>
 				<string>Symbols</string>
@@ -289,6 +300,8 @@
 					<string>B81E9DF5-A715-43CE-A751-AFB60CDDAE01</string>
 					<string>C71558F3-A594-455A-BA8B-9FF4F148DAB7</string>
 					<string>8C1FFC39-E11D-4E40-ADE0-3382B9167163</string>
+					<string>BBA85104-93C3-4F8D-914E-9A81E896DB40</string>
+					<string>6BC6A0AF-A2B4-428B-9395-531E2AFFE2AF</string>
 				</array>
 				<key>name</key>
 				<string>control</string>
