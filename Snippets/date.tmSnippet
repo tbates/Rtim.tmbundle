@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>difftime(format("${1:${2:2015}-${3:01}-${4:01}}"), format("${5:$1}"))</string>
+	<string>as.Date(c(${1:"${2:2007}-${3:06}-${4:22}"}, ${4:"$1"}))</string>
 	<key>name</key>
-	<string>difftime</string>
+	<string>date</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>
 	<string>date</string>
 	<key>uuid</key>
-	<string>E7A6C25A-5D0F-4158-BEB1-9A060367CBBC</string>
+	<string>3088A88C-6099-4250-937C-9E73A6FF4622</string>
 </dict>
 </plist>
