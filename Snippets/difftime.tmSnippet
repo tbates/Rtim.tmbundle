@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>difftime(format("${1:${2:2015}-${3:01}-${4:01}}"), format("${5:$1}"))</string>
+	<string>difftime(format("${1:${2:2015}-${3:01}-${4:01}}"), ${5|Sys.Date(),format("$1")|}, units = "auto")</string>
 	<key>name</key>
 	<string>difftime</string>
 	<key>scope</key>
