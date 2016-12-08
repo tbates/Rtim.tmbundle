@@ -151,6 +151,16 @@
 				<key>name</key>
 				<string>Misc</string>
 			</dict>
+			<key>6B420082-C197-4FA3-8113-6D4D69878BBC</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>E082A0AE-5412-414D-8A87-2E0BEB165AEA</string><!-- figure -->
+				</array>
+				<key>name</key>
+				<string>Latex</string>
+			</dict>
+			
 			<key>BB2A3619-622D-416A-B387-8BE4154B44B8</key>
 			<dict>
 				<key>items</key>
@@ -177,6 +187,7 @@
 				<key>name</key>
 				<string>Core R functions</string>
 			</dict>
+			
 			<key>C7C392EB-8275-4236-AF68-B11E1A8774A4</key>
 			<dict>
 				<key>items</key>
@@ -245,18 +256,17 @@
 				<array>
 					<string>C395F51A-15FB-4862-9646-8A830F250ED9</string>
 					<string>4E6A2CBA-DE38-4C7B-A10D-6F222AEA477B</string>
-					<string>0D459E1A-45B3-45E0-993C-A14323B6122E</string>
-					<string>1B87B4B8-9524-411A-8660-33B70B798F79</string>
 					<string>C6AF8DD0-9409-4C00-A1F7-922903B174E7</string>
+					<string>EC6C265A-7E64-4CAD-A2AA-685AEECEFFCE</string>
+					<string>1B87B4B8-9524-411A-8660-33B70B798F79</string> <!-- alpha -->
 					<string>9537EE2A-92E3-450A-B42C-13C98EB152C5</string>
-					<string>EA1A7C9F-83D7-4C46-9C7F-583EE15346C8</string>
 					<string>2F8A1820-D22B-4B1D-B4A7-B8E2156B81D6</string>
-					<string>25C3B98A-D0F1-4588-B3D3-73E4FAC4ADF8</string>
-					<string>F946A446-20FE-4683-A9B4-262D57BE2CDD</string>
+					<string>EA1A7C9F-83D7-4C46-9C7F-583EE15346C8</string>
 					<string>D895ECDF-837B-4064-8B2A-4362AD8363AD</string>
 					<string>ED2FC3F2-50BF-4B4C-B8D8-2E258F3D7718</string>
 					<string>C8F243FA-EC36-43D3-9A5C-DE8486376D13</string>
-					<string>EC6C265A-7E64-4CAD-A2AA-685AEECEFFCE</string>
+					<string>25C3B98A-D0F1-4588-B3D3-73E4FAC4ADF8</string>
+					<string>F946A446-20FE-4683-A9B4-262D57BE2CDD</string>
 					<string>73005B22-0D3E-4C5E-AF36-CDC5A1DE0ABE</string>
 					<string>5A790E06-04AD-43ED-8474-3C4FE105F76F</string>
 					<string>3AD23259-29A9-4FB4-BE04-C6E3F715CA73</string>
@@ -269,24 +279,31 @@
 					<string>C417977B-2AB2-4271-9F50-CBB0DEC6C0BF</string>
 					<string>87805F06-BD96-4D1C-8F33-0F922313865F</string>
 					<string>D521D1A8-B643-441C-8534-8C8E3C4C4770</string>
-					<string>1BCE026C-C524-47AD-A47B-1A8498F18543</string>
-					<string>CBE7A6B1-67F5-49D5-9845-165FC932DD3C</string>
-					<string>B3976F06-EF8A-46DD-9DDE-8765B5433341</string>
-					<string>E328677B-F49F-445F-8D95-F13F9E780AE6</string>
-					<string>DF9E1D06-D439-4BA7-99E2-B06AF9A52E65</string>
-					<string>2344325F-C0B9-44D0-9746-D29A44A3A1A7</string>
-					<string>96423498-1E23-4890-B62F-065D51A47CC6</string>
+					<string>1BCE026C-C524-47AD-A47B-1A8498F18543</string><!-- zeta -->
 
+					<string>96423498-1E23-4890-B62F-065D51A47CC6</string><!-- star -->
+					<string>CBE7A6B1-67F5-49D5-9845-165FC932DD3C</string><!-- tick -->
+					<string>E9300372-3798-4D01-957B-E4A8532B36F1</string><!-- tick -->
+
+					<string>B3976F06-EF8A-46DD-9DDE-8765B5433341</string><!-- TM -->
+					<string>2344325F-C0B9-44D0-9746-D29A44A3A1A7</string> <!-- smiley -->
+					<string>DF9E1D06-D439-4BA7-99E2-B06AF9A52E65</string><!-- sad face -->
+					<string>825475FD-49F8-457B-849C-8010E07BACA2</string>
+
+
+					<!-- sub sup -->
 					<string>64297D1F-6192-49E6-9E5B-375CBD1D1B71</string>
 					<string>947BD930-6C9F-42D7-9560-2E41F004DFF3</string>
 					<string>B00B7136-5BB8-4824-84A3-4220C678407A</string>
-					<string>122BFB5E-6F54-4D21-8EF3-4555DB0144FF</string>
-					<string>3CE440C2-B19E-4CFF-B20D-1D24B83F34B7</string>
-					<string>B61AE39D-6F3D-490B-905A-DB0ECD6F5D40</string>
-					<string>825475FD-49F8-457B-849C-8010E07BACA2</string>
-					<string>B6F0440F-47A2-403F-823F-337289B7E899</string>
-					<string>491CAEB6-61A3-4176-B8E0-144B756302BB</string>
 					<string>0604F395-4136-4963-A2D8-FCBFDDB08D47</string>
+					<string>0D459E1A-45B3-45E0-993C-A14323B6122E</string>
+
+					<!-- math -->
+					<string>122BFB5E-6F54-4D21-8EF3-4555DB0144FF</string> <!-- div -->
+					<string>3CE440C2-B19E-4CFF-B20D-1D24B83F34B7</string> <!-- x -->
+					<string>B61AE39D-6F3D-490B-905A-DB0ECD6F5D40</string> <!-- times -->
+					<string>B6F0440F-47A2-403F-823F-337289B7E899</string> <!-- ≤ -->
+					<string>491CAEB6-61A3-4176-B8E0-144B756302BB</string><!-- ≥ -->
 				</array>
 				<key>name</key>
 				<string>Symbols</string>

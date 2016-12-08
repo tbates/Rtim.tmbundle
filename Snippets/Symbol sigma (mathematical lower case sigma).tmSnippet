@@ -5,9 +5,9 @@
 	<key>content</key>
 	<string>𝚺</string>
 	<key>name</key>
-	<string>sigma (mathematical upper case 𝚺)</string>
+	<string>Sigma (mathematical upper case 𝚺)</string>
 	<key>tabTrigger</key>
-	<string>\sigma</string>
+	<string>\Sigma</string>
 	<key>uuid</key>
 	<string>A986CF3F-FB4A-42A1-8932-EA147F2DF93E</string>
 </dict>

@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>Lambda (Λ)</string>
 	<key>tabTrigger</key>
-	<string>\lambda</string>
+	<string>\Lambda</string>
 	<key>uuid</key>
 	<string>3AD23259-29A9-4FB4-BE04-C6E3F715CA73</string>
 </dict>

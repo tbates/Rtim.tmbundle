@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>Δ</string>
 	<key>name</key>
-	<string>Delta (uperr case Δ)</string>
+	<string>Delta (upper case Δ)</string>
 	<key>tabTrigger</key>
 	<string>\Delta</string>
 	<key>uuid</key>
