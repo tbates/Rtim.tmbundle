@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>UPDATE ${1:Items} SET ${2:item_text} = REPLACE($2,
+	'${3:find}',
+	'${4:$3}')
+WHERE ${5:scale} = '';
+</string>
+	<key>name</key>
+	<string>sql replace</string>
+	<key>scope</key>
+	<string>text.sql</string>
+	<key>tabTrigger</key>
+	<string>sql</string>
+	<key>uuid</key>
+	<string>193DE262-BD66-4CFA-922C-8583CE689D69</string>
+</dict>
+</plist>
