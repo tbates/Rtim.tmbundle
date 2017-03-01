@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>write.csv2(${1:data},"${2:dataFileName.xls}")</string>
+	<string>write.csv2(${1:data},"${2:dataFileName.csv}")</string>
 	<key>name</key>
 	<string>Write.csv2</string>
 	<key>scope</key>
