@@ -3,15 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string># Parallel analysis to select factors to extract from $1
-paran::paran(subset(${1:data}${2:, ${3:variable&gt;0}, select=${4:first column name:last column}}), graph = T)
+	<string># ============================================================
+# = Parallel analysis to select factors to extract from data =
+# ============================================================
+paran::paran(${1:data}, graph = T)
 
-# Do the the factor analysis on $1
-factOut = factanal($1[,c($4)], 1, scores = "Bartlett", data = $1, na.action = na.exclude)
-$1\$rk= factOut\$scores
+# ===========================
+# = Factor analyse the data =
+# ===========================
+factOut = factanal($1, factors = ${2:1}, scores = "Bartlett", data = $1, na.action = na.exclude)
+$1\$f1= factOut\$scores[,"Factor1"]
 
-${2:fa1} &lt;- factanal($1, 3, rotation = "varimax", scores = "regression");
-print($2, cutoff = .3, sort = T)
+# ====================
+# = Control printing =
+# ====================
+print(factOut, cutoff = .3, sort = TRUE)
+
 </string>
 	<key>name</key>
 	<string>factanal</string>
