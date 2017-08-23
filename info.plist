@@ -7,7 +7,7 @@
 	<key>contactName</key>
 	<string>Tim Bates</string>
 	<key>description</key>
-	<string>Tim Bates' helpers for &lt;a href="http://www.r-project.org/"&gt;R&lt;/a&gt; the free software environment for statistical computing and graphics.</string>
+	<string>Tim Bates&apos; helpers for &lt;a href=&quot;http://www.r-project.org/&quot;&gt;R&lt;/a&gt; the free software environment for statistical computing and graphics.</string>
 	<key>mainMenu</key>
 	<dict>
 		<key>items</key>
@@ -67,24 +67,25 @@
 					<string>A33DE6C9-65C7-4420-BE55-FD684DAF3CDE</string>
 					<string>C06223B9-78B7-4750-88E4-171BF8BCF971</string>
 					<string>44BBC936-6269-472E-BB0D-8539FED99575</string>
-					<string>------------------------------------</string>
-					<string>2342E30B-CDB8-4D65-ABF7-7402EFDE4EC0</string>
+					<string>9B144DD8-9884-4127-B3F3-81E71565E38E</string>
 					<string>5868175C-F75B-4CEC-9F75-B70A742F8F5E</string>
+					<string>------------------------------------</string>
 					<string>3D2A4787-5F4A-4C00-A646-EBFD1C2AA9CC</string>
-					<string>80773308-CFF8-4BD0-9D43-76F60C220AD2</string>
-					<string>16CF974A-D62B-440F-B17B-D5B7E5FABD38</string>
-					<string>------------------------------------</string>					
-					<string>527ADC7E-E10E-4406-9B6E-42A6EEF503D4</string>
-					<string>84F1E7FE-381D-445D-8137-FBBC2D5F167C</string>
 					<string>DDD80D0D-0A07-4DF0-ADA1-3C9248B02D8E</string>
 					<string>------------------------------------</string>
-					<string>AD402821-414F-4C32-9E84-EEDB0DB6EAFA</string>
-					<string>D372FE8C-E271-4CFE-BF33-467CDFFED555</string>
+					<string>80773308-CFF8-4BD0-9D43-76F60C220AD2</string>
+					<string>16CF974A-D62B-440F-B17B-D5B7E5FABD38</string>
+					<string>84F1E7FE-381D-445D-8137-FBBC2D5F167C</string>
 					<string>067C3E7D-9F56-4BB6-8489-C2CA553DC806</string>
 					<string>0098205F-46E6-44EF-A575-18B694509AA3</string>
 					<string>DC8F54DF-9477-4D99-9852-966C2288DB28</string>
 					<string>A4E93EC6-A805-4610-9921-6C2FE61DE5C2</string>
-					<string>9B144DD8-9884-4127-B3F3-81E71565E38E</string>
+					<string>------------------------------------</string>
+					<string>40A4F52A-A708-4B6E-831C-8B36DC8EF74A</string>
+					<string>D372FE8C-E271-4CFE-BF33-467CDFFED555</string>
+					<string>2342E30B-CDB8-4D65-ABF7-7402EFDE4EC0</string>
+					<string>AD402821-414F-4C32-9E84-EEDB0DB6EAFA</string>
+					<string>527ADC7E-E10E-4406-9B6E-42A6EEF503D4</string>
 				</array>
 				<key>name</key>
 				<string>Development</string>
@@ -155,12 +156,11 @@
 			<dict>
 				<key>items</key>
 				<array>
-					<string>E082A0AE-5412-414D-8A87-2E0BEB165AEA</string><!-- figure -->
+					<string>E082A0AE-5412-414D-8A87-2E0BEB165AEA</string>
 				</array>
 				<key>name</key>
 				<string>Latex</string>
 			</dict>
-			
 			<key>BB2A3619-622D-416A-B387-8BE4154B44B8</key>
 			<dict>
 				<key>items</key>
@@ -171,7 +171,6 @@
 					<string>06824056-A426-4583-82CE-A9738B39F11F</string>
 					<string>BDF27CE4-251A-4F66-B884-3AB19D7C6751</string>
 					<string>FE3DAEA5-A3A7-4906-B6B4-1C2F892F652D</string>
-					<string>272007DF-D69D-4148-A67B-FCC33292225C</string>
 					<string>0F41F370-387A-4A17-BBE4-04887D2C1F44</string>
 					<string>232827E4-1241-40CC-8F10-6D87C777954E</string>
 					<string>52C2937A-50A5-4A5C-BCA0-2DA181BA89A5</string>
@@ -181,13 +180,13 @@
 					<string>5FA9FD68-EB9E-4FFC-BCD6-9BA8A1294EA2</string>
 					<string>1C361765-0167-41E3-8DA3-B0ECBFA69A7D</string>
 					<string>FDBC0CF5-5C40-462D-A549-6C9ACD1F5B7B</string>
+					<string>DEE7D001-E2FD-4537-88B8-630A17E33D1B</string>
 					<string>0F48AE18-50E3-4DD0-8547-8278273CFA3E</string>
 					<string>2B5E922D-B334-4864-9CCF-56D47CE03129</string>
 				</array>
 				<key>name</key>
 				<string>Core R functions</string>
 			</dict>
-			
 			<key>C7C392EB-8275-4236-AF68-B11E1A8774A4</key>
 			<dict>
 				<key>items</key>
@@ -195,6 +194,7 @@
 					<string>60AC8948-53B2-4C93-B6CC-706A4D181EEB</string>
 					<string>90FB47CB-5F70-4BB8-9123-D055C3E761AE</string>
 					<string>------------------------------------</string>
+					<string>D7850EC4-C86C-41EF-B16D-8618CCC87C2D</string>
 					<string>3FE0E3F1-2E9D-4186-B5C4-E6D1D4744B25</string>
 					<string>1CA5B804-3878-45CE-BF23-B03DD8E2152A</string>
 				</array>
@@ -214,6 +214,7 @@
 					<string>CDAFDF6C-E1D3-41DD-AA0A-9CDDD2EB2BE5</string>
 					<string>14864C0B-B319-4287-B06B-EEF1E42A1461</string>
 					<string>8AF03F4D-7AA6-479A-9CF8-9B30415AD3F3</string>
+					<string>DE13D299-0108-4DD8-93E7-94CFE20EA12F</string>
 				</array>
 				<key>name</key>
 				<string>I/O</string>
@@ -244,6 +245,8 @@
 					<string>32E46115-49C3-4023-B3B3-BDDC12608820</string>
 					<string>A6CF1996-D1A2-4A75-869E-1185E58C4F81</string>
 					<string>81592223-3192-4884-A497-E15F4FF25CDF</string>
+					<string>3088A88C-6099-4250-937C-9E73A6FF4622</string>
+					<string>E7A6C25A-5D0F-4158-BEB1-9A060367CBBC</string>
 					<string>E41F647E-3A6E-4F34-AFF2-266FC186D124</string>
 					<string>7F9CC165-8F56-4986-A9FF-71744082E56B</string>
 				</array>
@@ -258,7 +261,7 @@
 					<string>4E6A2CBA-DE38-4C7B-A10D-6F222AEA477B</string>
 					<string>C6AF8DD0-9409-4C00-A1F7-922903B174E7</string>
 					<string>EC6C265A-7E64-4CAD-A2AA-685AEECEFFCE</string>
-					<string>1B87B4B8-9524-411A-8660-33B70B798F79</string> <!-- alpha -->
+					<string>1B87B4B8-9524-411A-8660-33B70B798F79</string>
 					<string>9537EE2A-92E3-450A-B42C-13C98EB152C5</string>
 					<string>2F8A1820-D22B-4B1D-B4A7-B8E2156B81D6</string>
 					<string>EA1A7C9F-83D7-4C46-9C7F-583EE15346C8</string>
@@ -275,35 +278,31 @@
 					<string>A8843EFA-CFDE-405C-B3DA-E1958515A7B8</string>
 					<string>100D8E4C-C6C5-4DBA-A133-F002E4034B9A</string>
 					<string>A986CF3F-FB4A-42A1-8932-EA147F2DF93E</string>
+					<string>6585F713-DC97-4ADF-A7AA-B6D26D41559B</string>
 					<string>E9236ECB-964A-4FD3-9F3C-0FE0E753B2C4</string>
 					<string>C417977B-2AB2-4271-9F50-CBB0DEC6C0BF</string>
 					<string>87805F06-BD96-4D1C-8F33-0F922313865F</string>
 					<string>D521D1A8-B643-441C-8534-8C8E3C4C4770</string>
-					<string>1BCE026C-C524-47AD-A47B-1A8498F18543</string><!-- zeta -->
-
-					<string>96423498-1E23-4890-B62F-065D51A47CC6</string><!-- star -->
-					<string>CBE7A6B1-67F5-49D5-9845-165FC932DD3C</string><!-- tick -->
-					<string>E9300372-3798-4D01-957B-E4A8532B36F1</string><!-- tick -->
-
-					<string>B3976F06-EF8A-46DD-9DDE-8765B5433341</string><!-- TM -->
-					<string>2344325F-C0B9-44D0-9746-D29A44A3A1A7</string> <!-- smiley -->
-					<string>DF9E1D06-D439-4BA7-99E2-B06AF9A52E65</string><!-- sad face -->
+					<string>1EDB729E-3DF8-4326-ADB6-094C29195D86</string>
+					<string>1BCE026C-C524-47AD-A47B-1A8498F18543</string>
+					<string>96423498-1E23-4890-B62F-065D51A47CC6</string>
+					<string>CBE7A6B1-67F5-49D5-9845-165FC932DD3C</string>
+					<string>E9300372-3798-4D01-957B-E4A8532B36F1</string>
+					<string>4C81B1D4-9E39-4038-BA34-277C08E16ED0</string>
+					<string>B3976F06-EF8A-46DD-9DDE-8765B5433341</string>
+					<string>2344325F-C0B9-44D0-9746-D29A44A3A1A7</string>
+					<string>DF9E1D06-D439-4BA7-99E2-B06AF9A52E65</string>
 					<string>825475FD-49F8-457B-849C-8010E07BACA2</string>
-
-
-					<!-- sub sup -->
 					<string>64297D1F-6192-49E6-9E5B-375CBD1D1B71</string>
 					<string>947BD930-6C9F-42D7-9560-2E41F004DFF3</string>
 					<string>B00B7136-5BB8-4824-84A3-4220C678407A</string>
 					<string>0604F395-4136-4963-A2D8-FCBFDDB08D47</string>
 					<string>0D459E1A-45B3-45E0-993C-A14323B6122E</string>
-
-					<!-- math -->
-					<string>122BFB5E-6F54-4D21-8EF3-4555DB0144FF</string> <!-- div -->
-					<string>3CE440C2-B19E-4CFF-B20D-1D24B83F34B7</string> <!-- x -->
-					<string>B61AE39D-6F3D-490B-905A-DB0ECD6F5D40</string> <!-- times -->
-					<string>B6F0440F-47A2-403F-823F-337289B7E899</string> <!-- ≤ -->
-					<string>491CAEB6-61A3-4176-B8E0-144B756302BB</string><!-- ≥ -->
+					<string>122BFB5E-6F54-4D21-8EF3-4555DB0144FF</string>
+					<string>3CE440C2-B19E-4CFF-B20D-1D24B83F34B7</string>
+					<string>B61AE39D-6F3D-490B-905A-DB0ECD6F5D40</string>
+					<string>B6F0440F-47A2-403F-823F-337289B7E899</string>
+					<string>491CAEB6-61A3-4176-B8E0-144B756302BB</string>
 				</array>
 				<key>name</key>
 				<string>Symbols</string>

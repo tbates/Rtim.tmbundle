@@ -3,15 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>aggregate(${1:dat1}) #needs to be finished
-</string>
+	<string>π</string>
 	<key>name</key>
-	<string>Aggregrate</string>
-	<key>scope</key>
-	<string>source.r</string>
+	<string>pi π</string>
 	<key>tabTrigger</key>
-	<string>aggregate</string>
+	<string>\pi</string>
 	<key>uuid</key>
-	<string>272007DF-D69D-4148-A67B-FCC33292225C</string>
+	<string>1EDB729E-3DF8-4326-ADB6-094C29195D86</string>
 </dict>
 </plist>

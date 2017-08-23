@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>matrix(${1:c(1:9)}, nrow = ${2:3}, ${3:byrow = ${4|T,F|}}${5:,  dimnames = list(r = paste("r", 1:$2, sep = ""), c = paste("c", 1:$2, sep = ""))})
+	<string>matrix(${1:c(1:9)}, nrow = ${2:3}, ${3:byrow = ${4|T,F|}}${5:,  dimnames = list(r = paste0("r", 1:$2), c = paste0("c", 1:$2))})
 </string>
 	<key>name</key>
 	<string>Matrix</string>

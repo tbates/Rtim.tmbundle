@@ -8,9 +8,8 @@ library(foreign)   # to import SPSS files
 library(Hmisc)     # for summary tables
 library(car)       # for Anova
 library(QuantPsyc) # lm.beta function
-library(OpenMx)    # for sem
-devtools::document("~/bin/umx.twin"); devtools::install("~/bin/umx.twin"); 
-devtools::document("~/bin/umx"); devtools::install("~/bin/umx"); 
+library(umx)       # for sem
+# devtools::install_github("tbates/umx");
 </string>
 	<key>name</key>
 	<string>Libraries</string>
