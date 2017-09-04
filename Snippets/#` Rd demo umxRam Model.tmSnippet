@@ -15,9 +15,9 @@
 #' umxSummary(m1, show = "std")
 </string>
 	<key>name</key>
-	<string>#` Rd demo umxRam Model</string>
+	<string>#` Rd demo umxRam</string>
 	<key>scope</key>
-	<string>source.R</string>
+	<string>source.r</string>
 	<key>tabTrigger</key>
 	<string>rox</string>
 	<key>uuid</key>
