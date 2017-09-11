@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>The student demonstrated knowledge and understanding of the subject matter which was ${1|good,shallow,excellent|}.
+
+They showed ${2|adequate,to little,creative|} thinking, and ${3|adequate,lacked,showed strong|} independent analytic thought.
+
+The thesis question is ${4|adequately,poorly,well justified|}, and a ${5|clear,muddled,compelling|} case is made supported with $5 evidence.
+
+The writing is at a ${6|good,poor,high,outstanding|} level, with ${7|acceptable,many,few|} spelling and formatting errors.
+
+It is ${8|adequate,poorly,well|} structured, with ${9|the right amount,too much,too little|} of background relative to original content.
+
+Referencing ${10|was,was not} acceptable and $10 complete.
+
+The thesis shows a ${11|adequate,minimal,excellent|} level of work for an M.Sc. dissertation.
+
+Discussion
+I thought the discussion ${12|was inline with,largely re-stated,went well beyond,was excellent in framing|} the results,
+
+The implications of the findings were/not understood, with results discussed with reference to other studies in the field</string>
+	<key>name</key>
+	<string>marking</string>
+	<key>tabTrigger</key>
+	<string>marking</string>
+	<key>uuid</key>
+	<string>C3D3ED88-AA8A-4BD8-86F4-8E0DCA7AC454</string>
+</dict>
+</plist>

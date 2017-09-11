@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1|32,38,fail,42,45,48,third,52,55,58,lowersecond,62,65,68,upper seoncd,72,78,fisrt,85,excellent first,92,100 Extraordinary first|}</string>
+	<key>name</key>
+	<string>grade (numeric)</string>
+	<key>tabTrigger</key>
+	<string>grade</string>
+	<key>uuid</key>
+	<string>76F054F4-8368-4F06-9EE2-632F74AB29FF</string>
+</dict>
+</plist>
