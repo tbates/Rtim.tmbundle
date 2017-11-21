@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>geom_smooth(method = "${1|auto,lm,glm,gam,loess,rlm|}", se = TRUE)</string>
+	<key>name</key>
+	<string>geom_smooth</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>geom</string>
+	<key>uuid</key>
+	<string>3DE730A1-41BB-46F0-AF70-AB685708A2D4</string>
+</dict>
+</plist>
