@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>geom_smooth(method = "${1|auto,lm,glm,gam,loess,rlm|}", se = TRUE)</string>
+	<string>${4:p} = $4 + labs(title= "${1:title text}", x="${2:x label}", y="${3:y label}") ${5:# fill= "Records by State", }</string>
 	<key>name</key>
-	<string>geom_smooth</string>
+	<string>+ labels</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>
 	<string>gg</string>
 	<key>uuid</key>
-	<string>3DE730A1-41BB-46F0-AF70-AB685708A2D4</string>
+	<string>349BB5FE-A65A-466F-A388-3777477FC730</string>
 </dict>
 </plist>

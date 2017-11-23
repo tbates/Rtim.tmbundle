@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>geom_smooth(method = "${1|auto,lm,glm,gam,loess,rlm|}", se = TRUE)</string>
+	<string>+ theme_${1|bw|}()</string>
 	<key>name</key>
-	<string>geom_smooth</string>
+	<string>+ theme</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>
 	<string>gg</string>
 	<key>uuid</key>
-	<string>3DE730A1-41BB-46F0-AF70-AB685708A2D4</string>
+	<string>D268F10D-FF5E-4C15-85BB-2A25EF05F5B3</string>
 </dict>
 </plist>

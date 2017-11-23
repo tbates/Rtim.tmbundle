@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>p = ggplot(data = ${1:df}, aes(x = ${2:x}, y = ${3:y})) + ${4|geom_point()|}
+p = p + xlab("${5:An informative x-axis label}")
+p = p + ylab("${5:An informative y-axis label}")
+# p = p + ggtitle(label = label, subtitle = subtitle)
+p + theme(text = element_text(family = "Times", ${6:face = "bold"}))
+p
+
+</string>
+	<key>name</key>
+	<string>ggplot</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>gg</string>
+	<key>uuid</key>
+	<string>29FF749A-FD44-4B0B-B1D4-BA49D8E4FCEE</string>
+</dict>
+</plist>
