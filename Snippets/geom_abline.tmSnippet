@@ -3,15 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>p ${1|+,= p+|} geom_smooth(method = "${1|auto,lm,glm,gam,loess,rlm|}", se = TRUE)
+	<string>p ${1|+,= p+|} geom_abline(slope = ${2:1}, intercept = ${3:0})
 </string>
 	<key>name</key>
-	<string>geom_smooth</string>
+	<string>geom_abline</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>
 	<string>gg</string>
 	<key>uuid</key>
-	<string>3DE730A1-41BB-46F0-AF70-AB685708A2D4</string>
+	<string>DEAF12F3-FA76-4336-9F09-6A6F52D302CD</string>
 </dict>
 </plist>
