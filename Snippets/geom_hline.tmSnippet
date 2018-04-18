@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>p ${1|+,= p+|} geom_hline(yintercept = ${2:1})
+</string>
+	<key>name</key>
+	<string>geom_hline</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>gg</string>
+	<key>uuid</key>
+	<string>AC83535A-7559-48F7-8EE0-D0FB168E59A6</string>
+</dict>
+</plist>
