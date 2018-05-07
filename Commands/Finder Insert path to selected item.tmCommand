@@ -6,14 +6,15 @@
 	<string>nop</string>
 	<key>command</key>
 	<string>#!/usr/bin/env bash
-osascript -e 'tell application "Finder"
+result=$(/usr/bin/osascript -e 'tell application "Finder"
  set theFiles to selection
  set theList to ""
  repeat with f in theFiles
     set theList to theList &amp; "\"" &amp; POSIX path of (f as alias) &amp; "\","
  end repeat
  return theList
-end tell'</string>
+end tell')
+echo "${result//\/Users\/tim/~}"</string>
 	<key>input</key>
 	<string>selection</string>
 	<key>inputFormat</key>
