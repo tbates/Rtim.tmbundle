@@ -148,9 +148,21 @@
 					<string>------------------------------------</string>
 					<string>49C2D2E1-BC9E-4F44-B016-F77EEEFFA64F</string>
 					<string>85F1FE57-3AF8-40B4-8FF8-5F0AC79BF8BF</string>
+					<string>76F054F4-8368-4F06-9EE2-632F74AB29FF</string>
+					<string>C3D3ED88-AA8A-4BD8-86F4-8E0DCA7AC454</string>
 				</array>
 				<key>name</key>
 				<string>Misc</string>
+			</dict>
+			<key>720D262D-F772-437C-B721-FFDD9E3E41EF</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>193DE262-BD66-4CFA-922C-8583CE689D69</string>
+					<string>2AEEEB3F-E57A-46CF-8126-0A8C7C5CAD4A</string>
+				</array>
+				<key>name</key>
+				<string>SQL</string>
 			</dict>
 			<key>6B420082-C197-4FA3-8113-6D4D69878BBC</key>
 			<dict>
@@ -194,9 +206,17 @@
 					<string>60AC8948-53B2-4C93-B6CC-706A4D181EEB</string>
 					<string>90FB47CB-5F70-4BB8-9123-D055C3E761AE</string>
 					<string>------------------------------------</string>
+					<string>29FF749A-FD44-4B0B-B1D4-BA49D8E4FCEE</string>
 					<string>D7850EC4-C86C-41EF-B16D-8618CCC87C2D</string>
 					<string>3FE0E3F1-2E9D-4186-B5C4-E6D1D4744B25</string>
 					<string>1CA5B804-3878-45CE-BF23-B03DD8E2152A</string>
+					<string>------------------------------------</string>
+					<string>DEAF12F3-FA76-4336-9F09-6A6F52D302CD</string>
+					<string>349BB5FE-A65A-466F-A388-3777477FC730</string>
+					<string>D268F10D-FF5E-4C15-85BB-2A25EF05F5B3</string>
+					<string>AC83535A-7559-48F7-8EE0-D0FB168E59A6</string>
+					<string>3DE730A1-41BB-46F0-AF70-AB685708A2D4</string>
+					<string>0FA029BD-0BC0-4DCE-9FBB-62B83C3E2DAC</string>
 				</array>
 				<key>name</key>
 				<string>graphs</string>
@@ -303,6 +323,7 @@
 					<string>B61AE39D-6F3D-490B-905A-DB0ECD6F5D40</string>
 					<string>B6F0440F-47A2-403F-823F-337289B7E899</string>
 					<string>491CAEB6-61A3-4176-B8E0-144B756302BB</string>
+					<string>F45ABC50-E474-49DA-B5E8-937C4922EF0C</string>
 				</array>
 				<key>name</key>
 				<string>Symbols</string>
