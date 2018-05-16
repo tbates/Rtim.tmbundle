@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>mxData(${1:x}, type="${2|cov,raw|}", numObs=nrow($1))</string>
+	<key>name</key>
+	<string>mxData</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>mxData</string>
+	<key>uuid</key>
+	<string>2634ED0A-757C-43AB-BEC4-6DDD9E72ED3E</string>
+</dict>
+</plist>
