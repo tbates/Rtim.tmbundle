@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>rnorm(n=${1:1000}, mean=${2:0}, sd=${3:1})</string>
+	<key>name</key>
+	<string>rnorm</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>rnorm</string>
+	<key>uuid</key>
+	<string>227E3EA6-2DA1-453E-B9C9-D144A482A9E1</string>
+</dict>
+</plist>
