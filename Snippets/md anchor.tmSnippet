@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>runif(${1:100})</string>
+	<string>&lt;a name="${1:anchor}"&gt;&lt;/a&gt;$0</string>
 	<key>name</key>
-	<string>Uniform dist</string>
+	<string>anchor</string>
 	<key>scope</key>
-	<string>source.r</string>
+	<string>text.html.markdown</string>
 	<key>tabTrigger</key>
-	<string>dist</string>
+	<string>a</string>
 	<key>uuid</key>
-	<string>C207E011-059B-4B92-A51E-CF085CDA685C</string>
+	<string>8E0C5B67-373E-4DF2-AFA4-2332246F79D3</string>
 </dict>
 </plist>

@@ -3,14 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>runif(${1:100})</string>
+	<string>`uuidgen`</string>
 	<key>name</key>
-	<string>Uniform dist</string>
-	<key>scope</key>
-	<string>source.r</string>
+	<string>uuidgen</string>
 	<key>tabTrigger</key>
-	<string>dist</string>
+	<string>uuidgen</string>
 	<key>uuid</key>
-	<string>C207E011-059B-4B92-A51E-CF085CDA685C</string>
+	<string>D05F2AE2-4801-4EF1-BC5A-3085AF4CFB7C</string>
 </dict>
 </plist>

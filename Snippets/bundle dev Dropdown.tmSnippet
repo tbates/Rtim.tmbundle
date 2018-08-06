@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>runif(${1:100})</string>
+	<string>\${${1:1}|${2:$TM_SELECTED_TEXT},${3:choice2}|}</string>
 	<key>name</key>
-	<string>Uniform dist</string>
+	<string>Insert menu-variable</string>
 	<key>scope</key>
-	<string>source.r</string>
+	<string>text.tm-snippet</string>
 	<key>tabTrigger</key>
-	<string>dist</string>
+	<string>menu</string>
 	<key>uuid</key>
-	<string>C207E011-059B-4B92-A51E-CF085CDA685C</string>
+	<string>CA95C9B1-79CF-41AE-B537-5860FF817D73</string>
 </dict>
 </plist>

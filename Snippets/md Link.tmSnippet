@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>runif(${1:100})</string>
+	<string>[${1:link}](${2:url})</string>
 	<key>name</key>
-	<string>Uniform dist</string>
+	<string>Link</string>
 	<key>scope</key>
-	<string>source.r</string>
+	<string>text.html.markdown, text.html.markdown.multimarkdown</string>
 	<key>tabTrigger</key>
-	<string>dist</string>
+	<string>link</string>
 	<key>uuid</key>
-	<string>C207E011-059B-4B92-A51E-CF085CDA685C</string>
+	<string>ECF95C69-08CD-450F-80A8-344ABAA0355D</string>
 </dict>
 </plist>

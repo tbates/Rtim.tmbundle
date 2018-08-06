@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/php
+&lt;?php
+// author tim.bates@ed.ac.uk
+// version 1.0
+// created: 22:10:2012
+// wraps the selection in * 
+
+$input     = $_ENV["TM_SELECTED_TEXT"];
+// $input = "B12
+// B6
+// Niacin
+// Phosphatidylserine
+// no gluten, no caseine (dairy)
+// ";
+$lines = explode('
+', $input);
+
+$out = "";
+foreach ($lines as $key =&gt; $value) {
+	 $out .= "\${1:*} $value\n";
+}
+echo $out;
+?&gt;
+</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>^*</string>
+	<key>name</key>
+	<string>Make lines into list items</string>
+	<key>outputCaret</key>
+	<string>heuristic</string>
+	<key>outputFormat</key>
+	<string>snippet</string>
+	<key>outputLocation</key>
+	<string>replaceInput</string>
+	<key>scope</key>
+	<string>text.html.markdown</string>
+	<key>uuid</key>
+	<string>78B3AAFF-DA09-437B-A9CA-FAC94C2673B9</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>

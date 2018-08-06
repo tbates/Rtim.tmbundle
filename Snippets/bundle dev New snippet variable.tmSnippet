@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>paste0(${1:myPath},${2:"${3:OpenMx_1.3.2-2557.tgz}"})</string>
+	<string>\${${1:1}:${2:$TM_SELECTED_TEXT}}</string>
 	<key>name</key>
-	<string>paste0</string>
+	<string>Insert variable ${1:}</string>
 	<key>scope</key>
-	<string>source.r</string>
+	<string>text.tm-snippet</string>
 	<key>tabTrigger</key>
-	<string>p</string>
+	<string>var</string>
 	<key>uuid</key>
-	<string>2B5E922D-B334-4864-9CCF-56D47CE03129</string>
+	<string>97263C7A-5025-4952-BFE7-BF6B153AF2D8</string>
 </dict>
 </plist>

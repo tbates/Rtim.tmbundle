@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>](!${2|--DEFINE--,wiki,def,--GENERAL--,g,--SITE--,github.com,--SOFTWARE--,mas,masd,itu,itud,s,--MUSIC--,isong,iart,ialb,lsong,lart|}${3: "${4:optional search text}"})</string>
+	<key>name</key>
+	<string>Insert smart link</string>
+	<key>scope</key>
+	<string>text.html.markdown</string>
+	<key>tabTrigger</key>
+	<string>]</string>
+	<key>uuid</key>
+	<string>EAB95F98-E67E-459D-9D71-D11AD243699B</string>
+</dict>
+</plist>

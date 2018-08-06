@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;!-- http://www.mathjax.org/docs/1.1/start.html --&gt;
+&lt;script type="text/javascript" src="https://d3eoax9i5htok0.cloudfront.net/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"&gt; &lt;/script&gt;
+</string>
+	<key>name</key>
+	<string>Include mathjax</string>
+	<key>scope</key>
+	<string>text.html.markdown</string>
+	<key>tabTrigger</key>
+	<string>mathjax</string>
+	<key>uuid</key>
+	<string>CEB068AC-B01B-48CD-B48B-78CA470E0752</string>
+</dict>
+</plist>

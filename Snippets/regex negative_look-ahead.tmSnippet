@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>runif(${1:100})</string>
+	<string>(?!${1:negative look-ahead for})</string>
 	<key>name</key>
-	<string>Uniform dist</string>
+	<string>Negative look-ahead</string>
 	<key>scope</key>
-	<string>source.r</string>
+	<string>source.regexp.oniguruma, text.tm-snippet, string.regexp</string>
 	<key>tabTrigger</key>
-	<string>dist</string>
+	<string>look</string>
 	<key>uuid</key>
-	<string>C207E011-059B-4B92-A51E-CF085CDA685C</string>
+	<string>86C04D9D-5363-4885-A34F-523A8BB31949</string>
 </dict>
 </plist>

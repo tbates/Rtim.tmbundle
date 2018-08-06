@@ -36,7 +36,7 @@ if ($input == $unFormatted) {
 	<key>keyEquivalent</key>
 	<string>@i</string>
 	<key>name</key>
-	<string>#' Rd \\emph{italic}</string>
+	<string>emphasis (italic)</string>
 	<key>outputCaret</key>
 	<string>afterOutput</string>
 	<key>outputFormat</key>

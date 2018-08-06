@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>runif(${1:100})</string>
+	<string>(?'${1:group name}'${2:reg-exp)</string>
 	<key>name</key>
-	<string>Uniform dist</string>
+	<string>Named-group</string>
 	<key>scope</key>
-	<string>source.r</string>
+	<string>source.regexp.oniguruma, text.tm-snippet, string.regexp</string>
 	<key>tabTrigger</key>
-	<string>dist</string>
+	<string>named</string>
 	<key>uuid</key>
-	<string>C207E011-059B-4B92-A51E-CF085CDA685C</string>
+	<string>6A4AED05-BF49-46CE-807A-F0673ADB394E</string>
 </dict>
 </plist>

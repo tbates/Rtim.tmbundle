@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>rnorm(${1:100})</string>
+	<string>rnorm(n=${1:1000}, mean=${2:0}, sd=${3:1})</string>
 	<key>name</key>
-	<string>Normal distribution</string>
+	<string>rnorm (Normal dist)</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>
-	<string>rand</string>
+	<string>dist</string>
 	<key>uuid</key>
 	<string>7306D659-0940-4467-93D2-CBCCAAF23407</string>
 </dict>

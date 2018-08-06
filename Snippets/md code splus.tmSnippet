@@ -3,14 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>runif(${1:100})</string>
+	<string>\`\`\`${1|splus,ruby|}
+    ${5:$TM_SELECTED_TEXT}
+\`\`\`</string>
 	<key>name</key>
-	<string>Uniform dist</string>
+	<string>code splus</string>
 	<key>scope</key>
-	<string>source.r</string>
+	<string>text.html.markdown</string>
 	<key>tabTrigger</key>
-	<string>dist</string>
+	<string>code</string>
 	<key>uuid</key>
-	<string>C207E011-059B-4B92-A51E-CF085CDA685C</string>
+	<string>BF645D58-62F1-46FD-8FB1-45003424DDD6</string>
 </dict>
 </plist>

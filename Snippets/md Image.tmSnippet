@@ -3,14 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>runif(${1:100})</string>
+	<string>![${1:alt text}](${2:/path/img.jpg} ${3:"${4:Title}"})
+</string>
 	<key>name</key>
-	<string>Uniform dist</string>
+	<string>Image</string>
 	<key>scope</key>
-	<string>source.r</string>
+	<string>text.html.markdown, text.html.markdown.multimarkdown</string>
 	<key>tabTrigger</key>
-	<string>dist</string>
+	<string>img</string>
 	<key>uuid</key>
-	<string>C207E011-059B-4B92-A51E-CF085CDA685C</string>
+	<string>DED2B784-6795-499A-843D-33D4AA628080</string>
 </dict>
 </plist>

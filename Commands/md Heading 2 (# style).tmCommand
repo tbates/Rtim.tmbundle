@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env php
+&lt;?php
+// Turn a line or selection into a heading
+// Created: 21.03.12 Author: timothy.c.bates@gmail.com
+// nb: Overrides existing cmd-n
+// Also Works on lines that already have a heading applied
+
+$level    = '#';
+$newLevel = str_repeat($level, 2); // Change this to alter the level being affected
+$o        = array();
+
+if (0) { 
+	// set to 1 for debugging
+	echo "&lt;pre&gt;";
+	$existing = "$level$level$level     Why is is this so badly formed? ";
+	$existing = "$level$level$level     Why is is this so badly formed? 
+		$level$level$level     Why is is this so badly formed?
+
+		$level$level$level     Why is is this so badly formed?";
+	// $existing = ""; // test case of empty line
+	echo "started with:\n&lt;font color=red&gt;\"$existing\"&lt;/font&gt;\n--&gt;\n";
+} else {
+	$existing = fread(STDIN, 1024);
+}
+
+$aLines = explode("\n", $existing);
+$l = count($aLines);
+foreach ($aLines as $key =&gt; $line) {
+	$line = trim ($line);
+	if (empty($line)) {
+		if ($l&gt;1) {
+			$o[] = "";
+		}else{
+			$o[] = "$newLevel \${1:Heading}";
+		}
+	} else {
+		$new = trim ( $line, "#* $level" ); //trim ends of existing markers
+		$o[] = "$newLevel $new";
+	}
+}
+echo implode("\n", $o);
+?&gt;</string>
+	<key>fallbackInput</key>
+	<string>line</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>@2</string>
+	<key>name</key>
+	<string>Heading 2 (# style)</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>snippet</string>
+	<key>outputLocation</key>
+	<string>replaceInput</string>
+	<key>scope</key>
+	<string>text.html.markdown -meta.disable-markdown</string>
+	<key>tabTrigger</key>
+	<string>#</string>
+	<key>uuid</key>
+	<string>D2883438-1037-4792-93CB-CCBABECB45D8</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>

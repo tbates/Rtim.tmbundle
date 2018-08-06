@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/perl -p
+# http://www.leancrew.com/all-this/2012/11/markdown-table-scripts-for-bbedit/
+# For each line...
+$n = s/\t/\|/g;       # tabs to pipes, saving the count
+s/^/\|/;              # pipe at beginning
+s/$/\|/;              # pipe at end
+
+# Add the formatting line above the second line.
+printf "|" . "--|"x($n+1) . "\n" if $. == 2</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>^~@t</string>
+	<key>name</key>
+	<string>Tabbed text -&gt; Table</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>replaceInput</string>
+	<key>scope</key>
+	<string>text.html.markdown, text.html.markdown.multimarkdown, text.html</string>
+	<key>uuid</key>
+	<string>2DA37A29-78E6-4A5D-AB91-B1283C084D59</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>

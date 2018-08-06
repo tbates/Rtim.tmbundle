@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>|             |          Grouping           ||
+| First Header  | Second Header | Third Header |
+|------------|:-----------:|-----------:|
+| Content       |          *Long Cell*        ||
+| Content       |   **Cell**    |         Cell |
+
+| New section   |     More      |         Data |
+| And more      |            And more         ||
+[ Table Caption ]</string>
+	<key>name</key>
+	<string>Insert Table</string>
+	<key>scope</key>
+	<string>text.html.markdown</string>
+	<key>tabTrigger</key>
+	<string>table</string>
+	<key>uuid</key>
+	<string>81EE56B3-6E80-457F-A3BB-5274ECDD9E37</string>
+</dict>
+</plist>
