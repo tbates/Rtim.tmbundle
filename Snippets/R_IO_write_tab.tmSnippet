@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>write.table(${1:data},file="${2:dataFileName.xls}",sep='${3:\t}', append = FALSE, quote = TRUE, eol = "\n", na = "NA", dec = ".", row.names = TRUE, col.names = TRUE, qmethod = c("escape", "double")))</string>
+	<string>write.table(${1:data},file="${2:dataFileName.xls}",sep= '${3:\t}', append = FALSE, quote = TRUE, eol = "\n", na = "NA", dec = ".", row.names = TRUE, col.names = TRUE, qmethod = c("escape", "double")))</string>
 	<key>name</key>
 	<string>write.table</string>
 	<key>scope</key>

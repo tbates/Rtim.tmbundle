@@ -4,7 +4,7 @@
 <dict>
 	<key>content</key>
 	<string>save("${1:dataFrame}", file="$1.rda")
-system(paste("open ",shQuote(getwd(), type = "csh")))
+system(paste("open ", shQuote(getwd(), type = "csh")))
 </string>
 	<key>name</key>
 	<string>Save df</string>
