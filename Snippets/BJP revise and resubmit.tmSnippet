@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>Revise and Resubmit Letter
+
+Thank you for submitting your manuscript to the %JOURNALFULLTITLE%. I have now received comments from reviewers with expertise in this area and also read your paper carefully myself. The reviewers’ comments are appended below. As you can see, the reviewers think your paper is potentially publishable, but that significant changes would be required before it could be accepted for publication in %JOURNALACRO%.
+
+Accordingly, I am inviting you to revise your paper and resubmit it for further consideration. If you intend to resubmit your paper, please let me know of your intentions as soon as possible and follow the guidelines in the ‘Resubmission Checklist’ below. This will ensure that your revised paper is processed as quickly as possible.
+
+I would like to take this opportunity to thank you for considering %JOURNALACRO% as an outlet for your work and I look forward to receiving your revised manuscript in due course.
+
+Yours sincerely
+
+Timothy C. Bates
+Associate Editor</string>
+	<key>name</key>
+	<string>BJP revise and resubmit</string>
+	<key>scope</key>
+	<string>source.txt</string>
+	<key>tabTrigger</key>
+	<string>BJP</string>
+	<key>uuid</key>
+	<string>8AAC8D36-34A8-4D7E-AD92-33AAAAB3ABA1</string>
+</dict>
+</plist>

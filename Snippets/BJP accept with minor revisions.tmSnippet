@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>Minor Amendments Letter
+
+Thank you for submitting your manuscript to the %JOURNALFULLTITLE%. I have now received comments from reviewers with expertise in this area and also read your paper carefully myself. The reviewers’ comments are appended below. As you can see, the reviewers recommend that the paper be accepted subject to suitable amendments being made.
+
+Accordingly, I am inviting you to revise your paper and resubmit it for further consideration. Please let me know of your intentions as soon as possible and ensure that you follow the guidelines in the ‘Resubmission Checklist’ below. This will ensure that your revised paper is processed as quickly as possible. If you have not done so already, you may now like to check that your article is optimized for search engines so that it is easy for readers to find your paper when it is published online. There is advice on how to do this on our Author Services website: http://authorservices.wiley.com/bauthor/seo.asp
+
+I would like to take this opportunity to thank you for considering %JOURNALACRO% as an outlet for your work and I look forward to receiving your revised manuscript in due course.
+
+Yours sincerely
+
+Timothy Bates
+Associate Editor
+</string>
+	<key>name</key>
+	<string>BJP accept with minor revisions</string>
+	<key>tabTrigger</key>
+	<string>BJP</string>
+	<key>uuid</key>
+	<string>C9369A21-4227-49F1-997B-BA10A51603AB</string>
+</dict>
+</plist>

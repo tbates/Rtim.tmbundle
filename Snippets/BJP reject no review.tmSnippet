@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>Reject Without Review Letter
+
+Thank you for submitting your manuscript to the %JOURNALFULLTITLE%. I have now read the paper carefully and, unfortunately, I have come to the conclusion that it is not suitable for publication in the Journal. I have therefore decided to reject it without sending it for review rather than subject you to a long review process which would ultimately end in rejection.
+
+I am sorry to bring such disappointing news. The Journal receives a large number of submissions each year and only a small percentage are accepted for publication. Before submitting to the journal in future, I recommend that you view the Author Guidelines and the free sample issue available at www.wileyonlinelibrary.com to get an idea of the kinds of papers that are likely to be accepted for publication.
+
+I wish you luck with your future research and hope you will continue to consider %JOURNALACRO% as a possible outlet for your work.
+
+Yours sincerely
+
+Timothy Bates
+Associate Editor
+</string>
+	<key>name</key>
+	<string>BJP reject no review</string>
+	<key>tabTrigger</key>
+	<string>BJP</string>
+	<key>uuid</key>
+	<string>D0C12AA0-0022-464F-80F1-0FF1D6B2CBFE</string>
+</dict>
+</plist>
