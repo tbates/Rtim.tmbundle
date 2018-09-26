@@ -3,9 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>Reject Letter
-
-Thank you for submitting your manuscript to the %JOURNALFULLTITLE%. I have now received comments from reviewers with expertise in the area and also read your paper carefully myself. The reviewers’ comments are appended below.
+	<string>Thank you for submitting your manuscript to the %JOURNALFULLTITLE%. I have now received comments from reviewers with expertise in the area and also read your paper carefully myself. The reviewers’ comments are appended below.
 
 Both reviewers identify some strengths in the paper. However, they also raise some major concerns about its suitability for publication in %JOURNALACRO%. I share these concerns, and feel that these seriously undermine the value of the paper. Accordingly, I am afraid that I am unable to accept it for publication.
 I know that this decision will be disappointing given the work that you have put into your paper. However, I hope that the reviewers’ comments will be useful if you choose to submit the manuscript elsewhere.
@@ -20,7 +18,7 @@ Associate Editor
 	<key>name</key>
 	<string>BJP reject</string>
 	<key>tabTrigger</key>
-	<string>BJP</string>
+	<string>bjp</string>
 	<key>uuid</key>
 	<string>F3BAD70C-214D-44A3-A563-2B922D3E5DB8</string>
 </dict>

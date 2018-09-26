@@ -3,9 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>Accept Letter
-
-Thank you for making the requested changes to your manuscript. I am now pleased to accept it for publication in %JOURNALACRO%.
+	<string>Thank you for making the requested changes to your manuscript. I am now pleased to accept it for publication in %JOURNALACRO%.
 
 Congratulations on putting together such a fine paper. I look forward to seeing it in the Journal in due course.
 
@@ -17,7 +15,7 @@ Associate Editor
 	<key>name</key>
 	<string>BJP accept!</string>
 	<key>tabTrigger</key>
-	<string>BJP</string>
+	<string>bjp</string>
 	<key>uuid</key>
 	<string>0F60B908-65E1-4865-9E84-EA4293F4FCD3</string>
 </dict>

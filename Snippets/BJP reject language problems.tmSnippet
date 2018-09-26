@@ -3,14 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>Language problems paragraph for reject letters
-
-The editorial team has examined your manuscript, and I am sorry to say we have decided that it does not meet our criteria for sending it out to reviewers. In this case this is because the language of the current version would not allow the reviewers to evaluate the paper's content in a thorough manner. We recommend that you have your paper professionally edited for English language by a service such as Wiley’s at http://wileyeditingservices.com. Please note that while this service will greatly improve the readability of your paper, it does not guarantee acceptance of your paper by the journal.
+	<string>The editorial team has examined your manuscript, and I am sorry to say we have decided that it does not meet our criteria for sending it out to reviewers. In this case this is because the language of the current version would not allow the reviewers to evaluate the paper's content in a thorough manner. We recommend that you have your paper professionally edited for English language by a service such as Wiley’s at http://wileyeditingservices.com. Please note that while this service will greatly improve the readability of your paper, it does not guarantee acceptance of your paper by the journal.
 </string>
 	<key>name</key>
 	<string>BJP reject language problems</string>
 	<key>tabTrigger</key>
-	<string>BJP</string>
+	<string>bjp</string>
 	<key>uuid</key>
 	<string>DABED979-17D8-42E9-9678-7F6ED3E27ACF</string>
 </dict>
