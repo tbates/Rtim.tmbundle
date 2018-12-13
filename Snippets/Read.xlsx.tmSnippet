@@ -3,7 +3,8 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:df} &lt;- gdata::read.xls(xls = ${2:finder},stringsAsFactors= F${3: ,sheet=,pattern=,na.strings=,method=,perl=})</string>
+	<string>fp = finder
+${1:df} = gdata::read.xls(${2:fp},stringsAsFactors= FALSE${3: ,sheet=,pattern=,na.strings=,method=,perl=})</string>
 	<key>name</key>
 	<string>Read.xlsx</string>
 	<key>scope</key>
