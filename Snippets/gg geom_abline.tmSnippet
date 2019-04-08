@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>p ${1|+,= p+|} geom_abline(slope = ${2:1}, intercept = ${3:0}, color = "grey")
+</string>
+	<key>name</key>
+	<string>geom_abline</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>gg</string>
+	<key>uuid</key>
+	<string>DEAF12F3-FA76-4336-9F09-6A6F52D302CD</string>
+</dict>
+</plist>

@@ -3,15 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>p ${1|+,= p+|} geom_abline(slope = ${2:1}, intercept = ${3:0})
-</string>
+	<string>p ${1|+,= p+|} geom_boxplot(slope = ${2:1}, intercept = ${3:0}, color = "grey")</string>
 	<key>name</key>
-	<string>geom_abline</string>
+	<string>geom_boxplot</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>
 	<string>gg</string>
 	<key>uuid</key>
-	<string>DEAF12F3-FA76-4336-9F09-6A6F52D302CD</string>
+	<string>B16CC354-7D96-404A-8DA8-850704D84387</string>
 </dict>
 </plist>

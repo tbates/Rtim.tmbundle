@@ -256,9 +256,24 @@
 					<string>AC83535A-7559-48F7-8EE0-D0FB168E59A6</string>
 					<string>3DE730A1-41BB-46F0-AF70-AB685708A2D4</string>
 					<string>0FA029BD-0BC0-4DCE-9FBB-62B83C3E2DAC</string>
+					<string>B16CC354-7D96-404A-8DA8-850704D84387</string>
+					<string>F4FA9D95-2A4C-41D0-9808-1ACDFD3C913B</string>
 				</array>
 				<key>name</key>
 				<string>graphs</string>
+			</dict>
+			<key>A1A016D8-2BFB-47B8-A3BE-3E7ACE8CA5AA</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>DB8AA3C8-80AA-4B1A-B042-D014C97B6DC5</string>
+					<string>FC3DD5E2-E3CE-4AF3-ADA1-25E17AE6288B</string>
+					<string>86C04D9D-5363-4885-A34F-523A8BB31949</string>
+					<string>6A4AED05-BF49-46CE-807A-F0673ADB394E</string>
+					<string>0A4C97B4-41A3-4719-B3EA-3ED07BDF3461</string>
+				</array>
+				<key>name</key>
+				<string>RegEx</string>
 			</dict>
 			<key>CC89A8D8-CBBD-4A78-8FF2-69AD5DF91B2E</key>
 			<dict>
@@ -363,6 +378,12 @@
 					<string>B6F0440F-47A2-403F-823F-337289B7E899</string>
 					<string>491CAEB6-61A3-4176-B8E0-144B756302BB</string>
 					<string>F45ABC50-E474-49DA-B5E8-937C4922EF0C</string>
+					<string>C9369A21-4227-49F1-997B-BA10A51603AB</string>
+					<string>0F60B908-65E1-4865-9E84-EA4293F4FCD3</string>
+					<string>F3BAD70C-214D-44A3-A563-2B922D3E5DB8</string>
+					<string>DABED979-17D8-42E9-9678-7F6ED3E27ACF</string>
+					<string>D0C12AA0-0022-464F-80F1-0FF1D6B2CBFE</string>
+					<string>8AAC8D36-34A8-4D7E-AD92-33AAAAB3ABA1</string>
 				</array>
 				<key>name</key>
 				<string>Symbols</string>
