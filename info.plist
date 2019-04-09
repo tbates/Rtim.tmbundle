@@ -29,6 +29,7 @@
 			<string>E66FA900-D256-4599-AB2C-AD4D04F40E02</string>
 			<string>7FBA7991-CD5D-4BEC-A6F5-6F0BFD531556</string>
 			<string>B6F10E92-C55B-49D0-ABF2-E177F309A813</string>
+			<string>A1A016D8-2BFB-47B8-A3BE-3E7ACE8CA5AA</string>
 		</array>
 		<key>submenus</key>
 		
@@ -162,7 +163,6 @@
 				<key>items</key>
 				<array>
 					<string>8DFE4A06-4565-47AA-9DE4-30EB43A57892</string>
-					<string>196D1E59-3353-4D02-B0F6-C0D2230E3367</string>
 					<string>014D60E1-6B1C-4A45-8262-DAE1393F9D67</string>
 					<string>E1ABEC5E-DF5F-4C09-BA9F-E17504F456C0</string>
 					<string>FC5E4AD6-4196-4934-8401-9997208269EE</string>
@@ -323,6 +323,7 @@
 					<string>E7A6C25A-5D0F-4158-BEB1-9A060367CBBC</string>
 					<string>E41F647E-3A6E-4F34-AFF2-266FC186D124</string>
 					<string>7F9CC165-8F56-4986-A9FF-71744082E56B</string>
+					<string>196D1E59-3353-4D02-B0F6-C0D2230E3367</string>
 				</array>
 				<key>name</key>
 				<string>String and File utilities</string>
