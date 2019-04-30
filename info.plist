@@ -32,7 +32,6 @@
 			<string>A1A016D8-2BFB-47B8-A3BE-3E7ACE8CA5AA</string>
 		</array>
 		<key>submenus</key>
-		
 		<dict>
 			<key>5D5ACE95-50C5-4FB9-BEC5-20D2E7BFF3E2</key>
 			<dict>
@@ -64,7 +63,6 @@
 				<key>name</key>
 				<string>Markdown</string>
 			</dict>
-		
 			<key>1C361765-0167-41E3-8DA3-B0ECBFA69A7D</key>
 			<dict>
 				<key>items</key>
@@ -108,6 +106,7 @@
 					<string>DDD80D0D-0A07-4DF0-ADA1-3C9248B02D8E</string>
 					<string>------------------------------------</string>
 					<string>80773308-CFF8-4BD0-9D43-76F60C220AD2</string>
+					<string>03A6AB53-6E38-4F28-9631-B93D0792D3BA</string>
 					<string>1F2330F1-1394-4D2C-B813-F65791BEB744</string>
 					<string>16CF974A-D62B-440F-B17B-D5B7E5FABD38</string>
 					<string>84F1E7FE-381D-445D-8137-FBBC2D5F167C</string>
