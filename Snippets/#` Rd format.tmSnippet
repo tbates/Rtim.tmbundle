@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>#` Rd style (emph, strong, </string>
 	<key>scope</key>
-	<string>source.r</string>
+	<string>source.r, text.tex.latex.rd</string>
 	<key>tabTrigger</key>
 	<string>rox</string>
 	<key>uuid</key>

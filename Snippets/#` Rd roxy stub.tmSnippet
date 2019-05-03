@@ -27,7 +27,7 @@
 	<key>name</key>
 	<string>#` roxygen stub</string>
 	<key>scope</key>
-	<string>source.r</string>
+	<string>source.r, text.tex.latex.rd</string>
 	<key>tabTrigger</key>
 	<string>rox</string>
 	<key>uuid</key>
