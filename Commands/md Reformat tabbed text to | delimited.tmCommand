@@ -29,7 +29,7 @@ printf "|" . "--|"x($n+1) . "\n" if $. == 2</string>
 	<key>outputLocation</key>
 	<string>replaceInput</string>
 	<key>scope</key>
-	<string>text.html.markdown, text.html.markdown.multimarkdown, text.html, text.plain</string>
+	<string>text.html.markdown, text.html.markdown.multimarkdown, text.html, text.plain, source.r</string>
 	<key>uuid</key>
 	<string>2DA37A29-78E6-4A5D-AB91-B1283C084D59</string>
 	<key>version</key>

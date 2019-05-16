@@ -124,7 +124,7 @@ print normtable(unformatted)
 	<key>outputLocation</key>
 	<string>replaceInput</string>
 	<key>scope</key>
-	<string>text.html.markdown, text.html.markdown.multimarkdown, text.html, text.plain</string>
+	<string>text.html.markdown, text.html.markdown.multimarkdown, text.html, text.plain, source.r</string>
 	<key>uuid</key>
 	<string>F26F1838-E653-4F41-8793-F44400669C21</string>
 	<key>version</key>
