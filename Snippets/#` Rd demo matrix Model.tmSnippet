@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>#' require(OpenMx)
+	<string>#' require(umx)
 #' data(demoOneFactor)
-#' m2 &lt;- mxModel("One Factor",
-#' 	mxMatrix("Full", 5, 1, values = 0.2, free = T, name = "A"), 
-#' 	mxMatrix("Symm", 1, 1, values = 1, free = F, name = "L"), 
-#' 	mxMatrix("Diag", 5, 5, values = 1, free = T, name = "U"), 
-#' 	mxAlgebra(A %*% L %*% t(A) + U, name = "R"), 
+#' m2 &lt;- mxModel("matrixbased_1Fac",
+#' 	umxMatrix("A", "Full", 5, 1, values = 0.2, free = T), 
+#' 	umxMatrix("L", "Symm", 1, 1, values = 1, free = F), 
+#' 	umxMatrix("U", "Diag", 5, 5, values = 1, free = T), 
+#' 	mxAlgebra(name = "R", A %*% L %*% t(A) + U), 
 #' 	mxMLObjective("R", dimnames = names(demoOneFactor)), 
 #' 	mxData(cov(demoOneFactor), type = "cov", numObs = 500)
 #' )

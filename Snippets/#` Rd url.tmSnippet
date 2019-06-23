@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>\\${1|url,email|}{${1:mailto: http://github.com/tbates/umx}}
+	<string>${1|url,email|}{${1:mailto: http://github.com/tbates/umx}}
 </string>
 	<key>name</key>
 	<string>#` Rd url</string>

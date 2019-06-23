@@ -3,14 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>#' require(OpenMx)
+	<string>#' require(umx)
 #' data(demoOneFactor)
-#' latents  = c("G")
 #' manifests = names(demoOneFactor)
-#' m1 &lt;- umxRAM("One Factor", data = mxData(demoOneFactor, type = "raw"),
-#' 	umxPath(from = latents, to = manifests),
+#' m1 &lt;- umxRAM("One Factor", data = demoOneFactor,
+#' 	umxPath(from = "G", to = manifests),
 #' 	umxPath(v.m. = manifests),
-#' 	umxPath(v1m0 = latents)
+#' 	umxPath(v1m0 = "G")
 #' )
 #' umxSummary(m1, show = "std")
 </string>

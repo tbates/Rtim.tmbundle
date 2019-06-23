@@ -19,15 +19,14 @@
 #' m1 = umxACE(selDVs = selDVs, dzData = dzData, mzData = mzData)
 #' m1 = umxRun(m1)
 #' umxSummaryACE(m1)
-#' # drop c and test loss of fit
-#' m2 = umxReRun(m1, dropList = "c_r1c1", name = "dropC")
+#' # Drop c and test loss of fit
+#' m2 = umxModify(m1, drop = "c_r1c1", name = "dropC")
 #' umxCompare(m1, m2)
 #' umxSummaryACE(m2, comparison = m1)
 #' # example with covariance data only
 #' m1 = umxACE(selDVs = selDVs, dzData = cov(dzData, use = "pairwise"), mzData = cov(mzData, use = "pairwise"), numObsDZ = nrow(dzData), numObsMZ = nrow(mzData))
-#' m1 = umxRun(m1)
 #' umxSummaryACE(m1)
-#' m2 = umxReRun(m1, dropList = "c_r1c1", name = "dropC")
+#' m2 = umxModify(m1, drop = "c_r1c1", name = "dropC")
 #' umxSummaryACE(m2, comparison = m1)</string>
 	<key>name</key>
 	<string>#` Rd demo twin Model</string>
