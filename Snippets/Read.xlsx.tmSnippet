@@ -4,7 +4,7 @@
 <dict>
 	<key>content</key>
 	<string>fp = finder
-${1:df} = gdata::read.xls(${2:fp},stringsAsFactors= FALSE${3: ,sheet=,pattern=,na.strings=,method=,perl=})</string>
+df = gdata::read.xls(fp, stringsAsFactors= FALSE${3: ,sheet=,pattern=,na.strings=,method=,perl=})</string>
 	<key>name</key>
 	<string>Read.xlsx</string>
 	<key>scope</key>

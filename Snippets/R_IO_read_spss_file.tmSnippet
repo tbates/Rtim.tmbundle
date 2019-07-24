@@ -3,7 +3,8 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:dataObject} &lt;- foreign::read.spss(${2:file}, use.value.labels= ${3|TRUE,FALSE|}, to.data.frame= ${4|TRUE,FALSE|}, max.value.labels= Inf, trim.factor.names= FALSE)</string>
+	<string>fp = ${1:finder}
+df = foreign::read.spss(fp, use.value.labels= ${2|TRUE,FALSE|}, to.data.frame= ${3|TRUE,FALSE|}, max.value.labels= Inf, trim.factor.names= FALSE)</string>
 	<key>name</key>
 	<string>Read.spss</string>
 	<key>scope</key>

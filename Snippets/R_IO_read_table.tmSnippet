@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:df} &lt;- read.table(${2|pipe("pbpaste"),finder|}, header = ${3|TRUE,FALSE|}, sep = "${4:\t}", as.is = c(TRUE))</string>
+	<string>df = read.table(${2|pipe("pbpaste"),finder|}, header = ${3|TRUE,FALSE|}, sep = "${4:\t}", as.is = c(TRUE))</string>
 	<key>name</key>
 	<string>Read.table</string>
 	<key>scope</key>

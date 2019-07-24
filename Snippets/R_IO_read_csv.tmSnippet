@@ -3,7 +3,8 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:dataObject} &lt;- read.csv("${2:file.csv}", header= TRUE, sep=',', quote="\"", dec=".", fill= TRUE, comment.char="", stringsAsFactors= FALSE)</string>
+	<string>fp = ${1:finder}
+df = read.csv(fp, header= TRUE, sep=',', quote="\"", dec=".", fill= TRUE, comment.char="", stringsAsFactors= FALSE)</string>
 	<key>name</key>
 	<string>Read.csv</string>
 	<key>scope</key>
