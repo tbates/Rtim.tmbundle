@@ -3,8 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>save("${1:m1", file="$1.rda")
-system(paste("open ", shQuote(getwd(), type = "csh")))
+	<string>save(${1:m1, file="$1.rda"); system(paste("open ", shQuote(getwd(), type = "csh")))
 </string>
 	<key>name</key>
 	<string>Save df</string>
