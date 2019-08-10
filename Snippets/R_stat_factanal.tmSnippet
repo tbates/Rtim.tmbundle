@@ -6,18 +6,14 @@
 	<string># ============================================================
 # = Parallel analysis to select factors to extract from data =
 # ============================================================
-paran::paran(${1:data}, graph = T)
+paran::paran(${1:data}, graph = TRUE)
 
 # ===========================
 # = Factor analyse the data =
 # ===========================
-factOut = factanal($1, factors = ${2:1}, scores = "Bartlett", data = $1, na.action = na.exclude)
-$1\$f1= factOut\$scores[,"Factor1"]
-
-# ====================
-# = Control printing =
-# ====================
-print(factOut, cutoff = .3, sort = TRUE)
+out = factanal($1, factors = ${2:1}, scores = "Bartlett", na.action = na.exclude)
+print(out, cutoff = .3, sort = TRUE)
+$1\$f1= out\$scores[,"Factor1"]
 
 </string>
 	<key>name</key>
