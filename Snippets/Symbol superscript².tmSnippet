@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>²</string>
 	<key>name</key>
-	<string>superscript²</string>
+	<string>sup²</string>
 	<key>tabTrigger</key>
 	<string>\2</string>
 	<key>uuid</key>

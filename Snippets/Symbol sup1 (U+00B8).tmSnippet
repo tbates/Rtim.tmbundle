@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>¹</string>
 	<key>name</key>
-	<string>sup1 (U+00B9)</string>
+	<string>sup 1 (U+00B9)</string>
 	<key>tabTrigger</key>
 	<string>\sup1</string>
 	<key>uuid</key>

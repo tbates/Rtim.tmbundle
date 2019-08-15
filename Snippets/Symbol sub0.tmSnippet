@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>₀</string>
 	<key>name</key>
-	<string>subscript zero \u2080</string>
+	<string>sub 0 \u2080</string>
 	<key>tabTrigger</key>
 	<string>sub0</string>
 	<key>uuid</key>
