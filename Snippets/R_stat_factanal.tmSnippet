@@ -6,14 +6,16 @@
 	<string># ============================================================
 # = Parallel analysis to select factors to extract from data =
 # ============================================================
-paran::paran(${1:data}, graph = TRUE)
+OK = complete.cases(${1:df}[, ${3:paste0("Q", 1:20)]})
+tmp = $1[OK, $3]
+paran::paran(${1:tmp}, graph = TRUE)
 
 # ===========================
 # = Factor analyse the data =
 # ===========================
-out = factanal($1, factors = ${2:1}, scores = "Bartlett", na.action = na.exclude)
+out = factanal($1[, $3], factors = 1, scores = "Bartlett", na.action = na.exclude)
 print(out, cutoff = .3, sort = TRUE)
-$1\$f1= out\$scores[,"Factor1"]
+$1\$F1= out\$scores[,"Factor1"]
 
 </string>
 	<key>name</key>
