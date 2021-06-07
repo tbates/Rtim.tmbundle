@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>@family ${1|Advanced Model Building Functions,Super-easy helpers,Teaching and Testing functions,Reporting Functions,Plotting functions,Modify or Compare Models,Data Functions,String Functions,File Functions,Check or test,Get and set,Twin Modeling Functions,Twin Reporting Functions,Twin Data functions,Miscellaneous Stats Helpers,Miscellaneous Functions,Miscellaneous Utility Functions,Core Modelling Functions,xmu internal not for end user,umx deprecated|}</string>
+	<string>@family ${1|Core Model Building Functions,Model Summary and Comparison,Super-easy helpers,Teaching and Testing functions,Reporting Functions,Plotting functions,Data Functions,String Functions,File Functions,Check or test,Get and set,Twin Modeling Functions,Twin Reporting Functions,Twin Data functions,Advanced Model Building Functions,Miscellaneous Stats Helpers,Miscellaneous Functions,Miscellaneous Utility Functions,xmu internal not for end user,umx deprecated|}</string>
 	<key>name</key>
 	<string>#' Rd @family</string>
 	<key>scope</key>
