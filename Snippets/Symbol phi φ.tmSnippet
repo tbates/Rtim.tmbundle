@@ -3,14 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>qplot(${1:x}, data = ${2:data}, geom = c("histogram"${3:,"density"}) )</string>
+	<string>φ</string>
 	<key>name</key>
-	<string>ggplot.histogram</string>
-	<key>scope</key>
-	<string>source.r</string>
+	<string>phi φ</string>
 	<key>tabTrigger</key>
-	<string>qplot</string>
+	<string>\phi</string>
 	<key>uuid</key>
-	<string>3FE0E3F1-2E9D-4186-B5C4-E6D1D4744B25</string>
+	<string>7251ED3B-3F5A-40A7-9FCC-1587FC194628</string>
 </dict>
 </plist>

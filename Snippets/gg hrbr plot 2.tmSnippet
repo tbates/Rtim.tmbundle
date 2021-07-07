@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>p = ggplot(data = ${1:mtcars}, aes(x=mpg, y=wt)) + geom_point()
+p = p + labs(x= "Fuel efficiency (mpg)", y= "Weight (tons)",
+  title    = "Title: Fuel economy declines as weight increases",
+  subtitle = "Subtitle: (1973-74)",
+  caption  = "Caption: Data from the 1974 Motor Trend US magazine",
+  tag = "Tag: A"
+)
+p + theme_${2|ipsum,ft_rc,ipsum_es,ipsum_gs,ipsum_ps,ipsum_pub,ipsum_rc,ipsum_tw,modern_rc,tinyhand|}()</string>
+	<key>name</key>
+	<string>gg hrbr plot</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>gg</string>
+	<key>uuid</key>
+	<string>176B15CD-D71D-4C89-955D-142EAFE5753A</string>
+</dict>
+</plist>

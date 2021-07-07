@@ -4,10 +4,10 @@
 <dict>
 	<key>content</key>
 	<string>plot(${1:x},${2:y}, xlab="${3:x axis}", ylab="${4:y axis}", main="${5:Title}", type="${6:b}", ${7:ylim=c(0,20), xlim=c(0,20), pch=15, col="blue"})
-#"p" for points, "l" for lines, "b" for both,"s" for stair steps
+# "p" for points, "l" for lines, "b" for both,"s" for stair steps
 </string>
 	<key>name</key>
-	<string>plot.x.y</string>
+	<string>plot(x, y, xlab, ...)</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

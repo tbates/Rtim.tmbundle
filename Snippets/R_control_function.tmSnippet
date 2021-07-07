@@ -8,7 +8,7 @@
 	return(${4:result})
 }</string>
 	<key>name</key>
-	<string>function</string>
+	<string>function R</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

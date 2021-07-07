@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># [hrbrthemes](https://github.com/hrbrmstr/hrbrthemes)
+# library(ggplot2)
+
+# Plot for Figure 1
+m1 = lm(${2:mpg} ~ ${3:wt}, data = ${1:mtcars})
+umxAPA(m1, std = TRUE)
+
+p  = qplot(predict(m1, data = $1), $1\$$2)
+p  = p + geom_smooth(method = 'lm')
+p  = p + labs(x= "Predicted $2", y= "Actual $2")
+r2 = paste0("Adjusted R² = ", round(summary(m1)\$adj.r.squared, 3))
+p  = p + cowplot::draw_label(r2, x = 25, y = 30, fontfamily = "Times", size = 12)
+p  = p + theme_${4|gray,bw,linedraw,light,dark,minimal,classic,void,test|}() # gray,bw,linedraw,light,dark,minimal,classic
+p</string>
+	<key>name</key>
+	<string>gg hrbr qplot + lm</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>gg</string>
+	<key>uuid</key>
+	<string>D7B46BDD-DDB4-4693-B506-622C7F887DA6</string>
+</dict>
+</plist>

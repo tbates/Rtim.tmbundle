@@ -3,15 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>p ${1|+,= p+|} geom_abline(slope = ${2:1}, intercept = ${3:0}, color = "grey")
-</string>
+	<string>p = ggplot(data = ${1:df}, aes(x = ${2:x}, y = ${3:y}))</string>
 	<key>name</key>
-	<string>+ geom_abline</string>
+	<string>ggplot (empty)</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>
 	<string>gg</string>
 	<key>uuid</key>
-	<string>DEAF12F3-FA76-4336-9F09-6A6F52D302CD</string>
+	<string>5BDA932B-DA87-49D6-83AA-65EE864957E2</string>
 </dict>
 </plist>

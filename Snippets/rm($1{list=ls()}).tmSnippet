@@ -3,15 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>p ${1|+,= p+|} geom_abline(slope = ${2:1}, intercept = ${3:0}, color = "grey")
-</string>
+	<string>rm($1{list=ls()})</string>
 	<key>name</key>
-	<string>+ geom_abline</string>
+	<string>rm($1{list=ls()})</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>
-	<string>gg</string>
+	<string>rm</string>
 	<key>uuid</key>
-	<string>DEAF12F3-FA76-4336-9F09-6A6F52D302CD</string>
+	<string>3D1CA889-3B9D-4848-82F6-F66B7902CB04</string>
 </dict>
 </plist>

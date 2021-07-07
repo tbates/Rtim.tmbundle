@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>p ${1|+,= p+|} coord_flip()</string>
 	<key>name</key>
-	<string>gg coord_flip</string>
+	<string>+ coord_flip() x&lt;-&gt;y</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

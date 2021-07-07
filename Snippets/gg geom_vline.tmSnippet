@@ -6,7 +6,7 @@
 	<string>p ${1|+,= p+|} geom_vline(xintercept = ${2:1})
 </string>
 	<key>name</key>
-	<string>geom_vline</string>
+	<string>+ geom_vline(xintercept)</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

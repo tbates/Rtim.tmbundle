@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>[${1|,pkg::|}${2:func}()]</string>
+	<string>[${1|ggplot2,pkgname|}::${2:func}()]</string>
 	<key>name</key>
 	<string>#` Rd [pkg::func()]</string>
 	<key>scope</key>

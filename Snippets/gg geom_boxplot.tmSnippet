@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>p ${1|+,= p+|} geom_boxplot(slope = ${2:1}, intercept = ${3:0}, color = "grey")</string>
 	<key>name</key>
-	<string>geom_boxplot</string>
+	<string>+ geom_boxplot(slope=)</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>
