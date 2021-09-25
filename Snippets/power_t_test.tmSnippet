@@ -10,7 +10,7 @@
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>
-	<string>power</string>
+	<string>pwr</string>
 	<key>uuid</key>
 	<string>E3A6754F-398E-4F88-BA24-532CDAA229F8</string>
 </dict>
