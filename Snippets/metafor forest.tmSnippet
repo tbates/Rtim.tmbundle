@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>forest(${1:m1}, xlab= "${2:Girls more strongly stereotyping}", order="${3|obs,prec,year|}")
+</string>
+	<key>name</key>
+	<string>metafor forest</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>meta</string>
+	<key>uuid</key>
+	<string>61C35E43-A358-4470-BA9C-036A50339004</string>
+</dict>
+</plist>
