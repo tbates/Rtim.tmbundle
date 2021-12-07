@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>p ${1|+,= p+|} geom_smooth(method = "${2|auto,lm,glm,gam,loess,rlm|}", se = TRUE)
+	<string>p ${1|+,= p+|} geom_smooth(method = "${2|auto,lm,glm,gam,loess,rlm|}"${3:, formula = y ~ poly(x, 2)}, se = ${4|TRUE,FALSE|})
 </string>
 	<key>name</key>
 	<string>+ geom_smooth(method=)</string>
