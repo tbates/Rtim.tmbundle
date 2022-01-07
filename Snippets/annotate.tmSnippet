@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>p = p + annotate("text", x= 3, y = 30, label = expression(R^2 == beta + 1 ~ hello), family="Optima")</string>
+	<key>name</key>
+	<string>annotate</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>gg</string>
+	<key>uuid</key>
+	<string>6F6AAA06-D830-484E-8696-B9D55A3F18EB</string>
+</dict>
+</plist>
