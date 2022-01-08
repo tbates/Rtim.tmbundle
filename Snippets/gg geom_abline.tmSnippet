@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>p ${1|+,= p+|} geom_abline(slope = ${2:1}, intercept = ${3:0}, color = "grey")
+	<string>p ${1|+,= p+|} geom_abline(slope = ${2:1}, intercept = ${3:0}, linetype="${4|solid,dashed,dotted,dotdash,longdash,twodash|}", color = "grey")
 </string>
 	<key>name</key>
 	<string>+ geom_abline</string>

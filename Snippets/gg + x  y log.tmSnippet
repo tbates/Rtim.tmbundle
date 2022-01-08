@@ -3,15 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>p ${1|+,= p+|} geom_vline(xintercept = ${2:1})
-</string>
+	<string>+ scale_${1|x,y|}_continuous(trans="${2|log,log10|}")</string>
 	<key>name</key>
-	<string>+ geom_vline(xintercept)</string>
+	<string>gg + x  y log</string>
 	<key>scope</key>
-	<string>source.r</string>
+	<string>ssource.r</string>
 	<key>tabTrigger</key>
 	<string>gg</string>
 	<key>uuid</key>
-	<string>0FA029BD-0BC0-4DCE-9FBB-62B83C3E2DAC</string>
+	<string>6E4CA806-50AB-4E3A-BAD9-BC1FC938A280</string>
 </dict>
 </plist>

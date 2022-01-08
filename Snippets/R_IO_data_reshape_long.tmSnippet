@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>$1.l &lt;- reshape(${1:dataFrame}, idvar = "${2:SID}", varying = list(${3:c("r1","r2")}), v.names = "what we measured, i.e. RT", direction = "long")</string>
+	<string>$1.l = reshape(${1:df}, idvar = "${2|SID,PROLIFIC_PID|}", varying = list(${3:c("var1","vaar2")}), v.names = "${4|what we measured,score,RT|}", direction = "long")</string>
 	<key>name</key>
 	<string>Reshape.long</string>
 	<key>scope</key>

@@ -5,7 +5,7 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#!/usr/bin/env php
+	<string>#!/usr/local/bin/php
 &lt;?php
 // Turn a line or selection into a heading
 // Created: 21.03.12 Author: timothy.c.bates@gmail.com

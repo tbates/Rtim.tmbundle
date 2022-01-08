@@ -7,8 +7,6 @@
 </string>
 	<key>name</key>
 	<string>umx_rename_file</string>
-	<key>scope</key>
-	<string>source.r</string>
 	<key>tabTrigger</key>
 	<string>umx_</string>
 	<key>uuid</key>

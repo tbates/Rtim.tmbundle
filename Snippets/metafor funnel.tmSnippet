@@ -3,15 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>p ${1|+,= p+|} geom_vline(xintercept = ${2:1})
+	<string>funnel(${1:res}, level=c(90, 95, 99), shade=c("white", "gray55", "gray75"), refline=0, legend=TRUE)
 </string>
 	<key>name</key>
-	<string>+ geom_vline(xintercept)</string>
+	<string>metafor funnel</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>
-	<string>gg</string>
+	<string>meta</string>
 	<key>uuid</key>
-	<string>0FA029BD-0BC0-4DCE-9FBB-62B83C3E2DAC</string>
+	<string>5649605F-6EFB-4BA5-951D-B59B1AA47743</string>
 </dict>
 </plist>

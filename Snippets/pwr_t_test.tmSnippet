@@ -3,15 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>r = .8
-pwr.t.test(n = ${1:pergroup}, d = 2/sqrt(1-r), sig.level = 0.05, power = NULL, type = "${3|two.sample,one.sample,paired|}", alternative = "${4|two.sided,less,greater|}")
+	<string>b = ${1:effect size in SD}
+r = ${2:subjecty r across t1 t2}
+pwr.t.test(n = ${3:pergroup}, d = b/sqrt(1-r), sig.level = 0.05, power = NULL, type = "${4|paired,two.sample,one.sample|}", alternative = "${5|two.sided,less,greater|}")
 </string>
 	<key>name</key>
 	<string>pwr.t.test</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>
-	<string>power</string>
+	<string>pwr</string>
 	<key>uuid</key>
 	<string>6638C58C-D22E-44B6-9F85-2F8E9D677CA3</string>
 </dict>

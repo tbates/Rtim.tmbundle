@@ -3,15 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>qplot(${1:x}, ${2:y}, data = ${3:data}, geom = c("point" ${4:, "smooth"}) ${5:, colour= ${6:var_for_colour}} ${7:, shape= ${8:var_for_shape}})
-</string>
+	<string>p = ggplot(data = ${1:df}, aes(x = ${2:x}, y = ${3:y}))</string>
 	<key>name</key>
-	<string>qplot.xy + smooth</string>
+	<string>ggplot (empty)</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>
 	<string>gg</string>
 	<key>uuid</key>
-	<string>1CA5B804-3878-45CE-BF23-B03DD8E2152A</string>
+	<string>5BDA932B-DA87-49D6-83AA-65EE864957E2</string>
 </dict>
 </plist>

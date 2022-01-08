@@ -3,18 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string># http://ggvis.rstudio.com/interactivity.html
-ggvis(mtcars, props(x = ~wt, y = ~mpg)) +
-layer_smooth(span = input_slider(0.5, 1, 1, label = "span")) +
-layer_point(props(size := input_slider(100, 1000, label = "size")))
+	<string>qplot(${1:x}, ${2:y}, data = ${3:data}, geom = c("point" ${4:, "jitter", "smooth"}) ${5:, colour= ${6:var_for_colour}} ${7:, shape= ${8:var_for_shape}})
 </string>
 	<key>name</key>
-	<string>ggvis (interactive)</string>
+	<string>qplot.xy + smooth</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>
 	<string>gg</string>
 	<key>uuid</key>
-	<string>D7850EC4-C86C-41EF-B16D-8618CCC87C2D</string>
+	<string>1CA5B804-3878-45CE-BF23-B03DD8E2152A</string>
 </dict>
 </plist>

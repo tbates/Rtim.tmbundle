@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>${4:p} = $4 + labs(title= "${1:title text}", x="${2:x label}", y="${3:y label}") ${5:# fill= "Records by State", }</string>
 	<key>name</key>
-	<string>+ labs</string>
+	<string>+ labs(title, x, y...)</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

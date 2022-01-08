@@ -3,15 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>p ${1|+,= p+|} geom_vline(xintercept = ${2:1})
-</string>
+	<string>φ</string>
 	<key>name</key>
-	<string>+ geom_vline(xintercept)</string>
-	<key>scope</key>
-	<string>source.r</string>
+	<string>phi φ</string>
 	<key>tabTrigger</key>
-	<string>gg</string>
+	<string>\phi</string>
 	<key>uuid</key>
-	<string>0FA029BD-0BC0-4DCE-9FBB-62B83C3E2DAC</string>
+	<string>7251ED3B-3F5A-40A7-9FCC-1587FC194628</string>
 </dict>
 </plist>

@@ -8,7 +8,7 @@ hist(${1:r}, freq=FALSE)
 r.f &lt;- function(x)dnorm(x, mean($1), sd($1))
 curve(r.f, from=min($1), to=max($1), add=TRUE, col='red')</string>
 	<key>name</key>
-	<string>plot.hist.overlay.normal</string>
+	<string>hist(x) + overlay normal</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># [hrbrthemes](https://github.com/hrbrmstr/hrbrthemes)
+# library(ggplot2)
+
+p = qplot(predict(m1, df), df$Redistribution) + geom_smooth(method = 'lm')
+p = p + labs(x= "Predicted Support", y= "Actual Support for Redistribution")
+p + theme_bw()
+p = p + draw_label("label", x = 25, y = 52, fontfamily = "Times", size = 12)
+
+p = ggplot(mtcars, aes(mpg, wt)) + geom_point()
+p = p + labs(x= "Fuel efficiency (mpg)", y= "Weight (tons)",
+  title    = "What is a title (rather than a caption)?",
+  subtitle = "Subtitle if you want one…",
+  caption  = "Caption for this figure"
+)
+p + theme_${1:ipsum|ft_rc}()
+</string>
+	<key>name</key>
+	<string>gg hrbr plot</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>gg</string>
+	<key>uuid</key>
+	<string>D7B46BDD-DDB4-4693-B506-622C7F887DA6</string>
+</dict>
+</plist>
