@@ -3,22 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>junk = tryCatch({
-	${1:codeThatCanFail()}
-}, warning = function(x) {
-    # ignored
-}, error = function(x) {
-    # ignored
-}, finally={
-    # ignored
-})</string>
+	<string>ma = metafor::rma(yi=beta, sei=SE, data= df, slab= "nice label", method="REML")
+</string>
 	<key>name</key>
-	<string>try catch</string>
+	<string>metafor::rma</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>
-	<string>try</string>
+	<string>meta</string>
 	<key>uuid</key>
-	<string>BBA85104-93C3-4F8D-914E-9A81E896DB40</string>
+	<string>CCCADF11-7A5B-46C4-AFA6-5425E91DBB3E</string>
 </dict>
 </plist>

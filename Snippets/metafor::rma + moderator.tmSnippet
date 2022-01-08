@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>ma = metafor::rma(yi=beta, sei=SE, data= df, mods = formula(paste0("~ ", mods)), slab= paste0(author, "(", year, ") ", wave, sex), method="REML")
+</string>
+	<key>name</key>
+	<string>metafor::rma + moderator</string>
+	<key>scope</key>
+	<string>souce.r</string>
+	<key>tabTrigger</key>
+	<string>meta</string>
+	<key>uuid</key>
+	<string>EFF27D12-ACCE-4021-914E-7924402379E5</string>
+</dict>
+</plist>
