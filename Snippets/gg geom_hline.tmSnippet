@@ -6,7 +6,7 @@
 	<string>p ${1|+,= p+|} geom_hline(yintercept = ${2:1})
 </string>
 	<key>name</key>
-	<string>geom_hline</string>
+	<string>+ geom_hline</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

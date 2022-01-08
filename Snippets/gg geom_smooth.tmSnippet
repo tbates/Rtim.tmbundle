@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>p ${1|+,= p+|} geom_smooth(method = "${1|auto,lm,glm,gam,loess,rlm|}", se = TRUE)
+	<string>p ${1|+,= p+|} geom_smooth(method = "${2|auto,lm,glm,gam,loess,rlm|}", se = TRUE)
 </string>
 	<key>name</key>
-	<string>geom_smooth</string>
+	<string>+ geom_smooth</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

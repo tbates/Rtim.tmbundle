@@ -5,11 +5,11 @@
 	<key>content</key>
 	<string>qplot(${1:x}, data = ${2:data}, geom = c("histogram"${3:,"density"}) )</string>
 	<key>name</key>
-	<string>ggplot.histogram</string>
+	<string>qplot.histogram</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>
-	<string>qplot</string>
+	<string>gg</string>
 	<key>uuid</key>
 	<string>3FE0E3F1-2E9D-4186-B5C4-E6D1D4744B25</string>
 </dict>

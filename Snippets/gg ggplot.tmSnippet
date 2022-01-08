@@ -12,7 +12,7 @@ p
 
 </string>
 	<key>name</key>
-	<string>ggplot</string>
+	<string>ggplot + labs + theme</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>
