@@ -3,15 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>ma = metafor::rma(yi=beta, sei=SE, data= df, slab= paste0(author, "(", year, ") ", wave, sex), method="REML")
-</string>
+	<string>cor.test(~ col1 + col2, na.action = na.exclude, data=${1:df})</string>
 	<key>name</key>
-	<string>metafor::rma</string>
+	<string>cor.test</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>
-	<string>meta</string>
+	<string>cor</string>
 	<key>uuid</key>
-	<string>CCCADF11-7A5B-46C4-AFA6-5425E91DBB3E</string>
+	<string>BB1D75C0-9172-4742-B5CF-C0F6DD3DA75C</string>
 </dict>
 </plist>

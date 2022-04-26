@@ -7,8 +7,7 @@
 # = Parallel analysis &amp; Factanal =
 # ================================
 items = c(paste0("DF", 1:7)
-
-paran::paran(df[complete.cases(${1:df}[, items]), items], graph = TRUE)
+umxParan(df = df, cols=items, graph = TRUE)
 
 out = factanal($1[, items], factors = 2, scores = "Bartlett", na.action = na.exclude)
 print(out, cutoff = .3, sort = TRUE)

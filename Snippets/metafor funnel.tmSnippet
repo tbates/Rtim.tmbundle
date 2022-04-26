@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>funnel(${1:res}, level=c(90, 95, 99), shade=c("white", "gray55", "gray75"), refline=0, legend=TRUE)
+	<string>funnel(${1:res}, level=c(90, 95, 99), shade=c("white", "gray55", "gray75"), refline = 0, legend = FALSE, label = "out")
 </string>
 	<key>name</key>
 	<string>metafor funnel</string>

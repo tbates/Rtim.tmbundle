@@ -6,9 +6,9 @@
 	<string>ma = metafor::rma(yi=beta, sei=SE, data= df, mods = formula(paste0("~ ", mods)), slab= paste0(author, "(", year, ") ", wave, sex), method="REML")
 </string>
 	<key>name</key>
-	<string>metafor::rma + moderator</string>
+	<string>rma + moderator</string>
 	<key>scope</key>
-	<string>souce.r</string>
+	<string>source.r</string>
 	<key>tabTrigger</key>
 	<string>meta</string>
 	<key>uuid</key>

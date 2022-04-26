@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>cor(${1:data}\$${2:column1}, $1\$${3:column2}, use="complete.obs")</string>
+	<string>cor(${1:df}\$${2:col1}, $1\$${3:col2}, use="complete.obs")</string>
 	<key>name</key>
 	<string>Correlation</string>
 	<key>scope</key>
