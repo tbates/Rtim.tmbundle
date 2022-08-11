@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string># http://www.statmethods.net/stats/regression.html
-${1:mod1}&lt;-lm(${2:DV}~${3:IV}, data=${4:data}, na.action = na.exclude)
-coef($1) # as.vector(coef($1))[2] # gets the slope, (value only, as.vecotr used to drop names
+	<string>${1:m1} = lm(${2:DV} ~ ${3:IV}, data=${4:df}${5:, na.action = na.exclude})
+umxAPA($1)
+${6:
 summary($1) # show results
-# diagnostic plots 
-layout(matrix(c(1,2,3,4),2,2)) # optional 4 graphs/page 
-plot(fit)
+coef($1) # as.vector(coef($1))[2] # gets the slope, (value only, as.vector drops names
+plot($1)
 residuals($1)
 coefficients($1)
 fitted.values($1)
 contrasts($1)
-</string>
+# http://www.statmethods.net/stats/regression.html
+}</string>
 	<key>name</key>
 	<string>lm</string>
 	<key>scope</key>
