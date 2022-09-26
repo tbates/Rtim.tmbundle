@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>merge(${1:dat1}, ${2:dat2}, by.x = c("${3:SID}"), by.y = c("$3"), ${4:all.x = T, all.y = T})</string>
+	<string>merge(${1:dat1}, ${2:dat2}, by.x = "${3|SID,PROLIFIC_PID|}", by.y = "$3", ${4:all.x = TRUE, all.y = TRUE})</string>
 	<key>name</key>
 	<string>Merge</string>
 	<key>scope</key>
