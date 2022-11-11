@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>fp = finder
+# df = readxl::read_excel(fp)
+df = read.csv(fp, header= TRUE, sep=',', quote="\"", dec=".", fill= TRUE, comment.char="", stringsAsFactors= FALSE, na.strings = "")
+
+questions = df[1, ]
+df = df[c(-1,-2), ]
+df = umx_as_numeric(df, which = c("CLow", "CHigh", "LTicket"), force = TRUE)
+
+fp = finder
+df = umx_read_prolific_demog(fp, sex = "gender", df = df)
+# df = umx_merge_randomized_columns(colNames, df, levels = c("treatment", "control")); table(tmp$condition)
+
+# merge with another dataset</string>
+	<key>name</key>
+	<string>prolific data</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>prolific</string>
+	<key>uuid</key>
+	<string>9B129448-A553-42DA-A22F-0D3B7D1C57D0</string>
+</dict>
+</plist>

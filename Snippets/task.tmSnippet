@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>3. Run ${1:Barnum} study
+	[${2|✓, |}] Upload $1 as block on qualtrics.
+	[ ] Run ${3:in IQ dataset}.
+	[ ] Test if lm($1 ~ $4{IV})
+</string>
+	<key>name</key>
+	<string>task</string>
+	<key>tabTrigger</key>
+	<string>task</string>
+	<key>uuid</key>
+	<string>FD8BCC7E-2F9E-4EBA-B6D8-BCA02C60EE98</string>
+</dict>
+</plist>
