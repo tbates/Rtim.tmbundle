@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>model = glm(Survived ~. , family=binomial(link='logit'), data = df)
+</string>
+	<key>name</key>
+	<string>logistic</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>logistic</string>
+	<key>uuid</key>
+	<string>D471A324-ED6E-4E0A-A826-58279904C7C6</string>
+</dict>
+</plist>
