@@ -7,11 +7,11 @@
 # = Parallel analysis &amp; Factanal =
 # ================================
 items = c(paste0("DF", 1:7)
-umxParan(df = df, cols=items, graph = TRUE)
+umxParan(df, cols=items, graph = TRUE)
 
-out = factanal($1[, items], factors = 2, scores = "Bartlett", na.action = na.exclude)
-print(out, cutoff = .3, sort = TRUE)
-$1\$F1= out\$scores[,"Factor1"]
+out = factanal(df[, items], factors = 2, scores = "Bartlett", na.action = na.exclude)
+print(out, cutoff = .25, sort = TRUE)
+df\$F1= out\$scores[, "Factor1"]
 
 
 </string>
