@@ -6,7 +6,7 @@
 	<string># ===================
 # = 1. Descriptives =
 # ===================
-df$One = 1
+df\$One = 1
 umx_aggregate(age ~ One, data = df, what = "mean_sd", digits = 2)
 umx_aggregate(age ~ Sex, data = df, what = "mean_sd", digits = 2)
 </string>
