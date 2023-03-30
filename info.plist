@@ -80,6 +80,8 @@
 			<dict>
 				<key>items</key>
 				<array>
+					<string>EF8E994C-F721-4594-B67C-63B97140ED92</string>
+					<string>9B129448-A553-42DA-A22F-0D3B7D1C57D0</string>
 					<string>7BB266AB-53D8-4191-B98D-ABDC208DB94F</string>
 					<string>16117AFC-7FAF-47C3-86A5-94F8C6EBDA0A</string>
 					<string>38B3BC07-2F08-490E-995B-65AAAA4107B2</string>
@@ -147,8 +149,10 @@
 					<string>EFF27D12-ACCE-4021-914E-7924402379E5</string>
 					<string>CCCADF11-7A5B-46C4-AFA6-5425E91DBB3E</string>
 					<string>61C35E43-A358-4470-BA9C-036A50339004</string>
+					<string>BB1D75C0-9172-4742-B5CF-C0F6DD3DA75C</string>
 					<string>5649605F-6EFB-4BA5-951D-B59B1AA47743</string>
 					<string>8B1CB265-1C7A-4B6A-80F3-8263E54AFF15</string>
+					<string>D471A324-ED6E-4E0A-A826-58279904C7C6</string>
 					<string>813F2D57-950F-444C-87FB-1A078D98DD6C</string>
 					<string>25F9D6DD-E8EB-491B-925C-B8D1DFA16478</string>
 					<string>70C517CF-4F93-420C-BE31-CB5174DF34BD</string>
@@ -258,6 +262,7 @@
 					<string>90FB47CB-5F70-4BB8-9123-D055C3E761AE</string>
 					<string>------------------------------------</string>
 					<string>5BDA932B-DA87-49D6-83AA-65EE864957E2</string>
+					<string>1AEAC54C-B465-417E-8CD2-48C512C5AAB2</string>
 					<string>29FF749A-FD44-4B0B-B1D4-BA49D8E4FCEE</string>
 					<string>D7850EC4-C86C-41EF-B16D-8618CCC87C2D</string>
 					<string>3FE0E3F1-2E9D-4186-B5C4-E6D1D4744B25</string>
@@ -408,6 +413,7 @@
 					<string>D0C12AA0-0022-464F-80F1-0FF1D6B2CBFE</string>
 					<string>8AAC8D36-34A8-4D7E-AD92-33AAAAB3ABA1</string>
 					<string>7251ED3B-3F5A-40A7-9FCC-1587FC194628</string>
+					<string>A9A94072-C733-493F-AF58-4AE27C3B6CFA</string>
 				</array>
 				<key>name</key>
 				<string>Symbols</string>

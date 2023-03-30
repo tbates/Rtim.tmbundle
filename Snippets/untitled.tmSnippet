@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># ===================
+# = 1. Descriptives =
+# ===================
+df$One = 1
+umx_aggregate(age ~ One, data = df, what = "mean_sd", digits = 2)
+umx_aggregate(age ~ Sex, data = df, what = "mean_sd", digits = 2)
+</string>
+	<key>name</key>
+	<string>descriptives</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>desc</string>
+	<key>uuid</key>
+	<string>EF8E994C-F721-4594-B67C-63B97140ED92</string>
+</dict>
+</plist>
