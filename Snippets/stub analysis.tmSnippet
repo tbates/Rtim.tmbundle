@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>fp = finder
+df = readxl::read_excel(fp, sheet = NULL, range = NULL, col_names = TRUE, na = "", trim_ws = TRUE, skip = 0)
+namez(df)
+data.frame(df)[1:3,15:20]
+questionText = data.frame(df[2,])
+
+df = df[-c(1:3), ] # delete header and 2 trial rows
+
+df = umx_rename(df, from = c('old1', 'old2'), to = c('new1', 'new2'))
+
+df = umx_score_scale(name="TIPI_N", base = "TIPI_N", pos = 1:2, alpha = TRUE, score ="total", min=1, max = 5, data = df) #
+df = umx_score_scale(name="TIPI_E", base = "TIPI_E", pos = 1:2, alpha = TRUE, score ="total", min=1, max = 5, data = df) #
+df = umx_score_scale(name="TIPI_O", base = "TIPI_O", pos = 1:2, alpha = TRUE, score ="total", min=1, max = 5, data = df) #
+df = umx_score_scale(name="TIPI_A", base = "TIPI_A", pos = 1:2, alpha = TRUE, score ="total", min=1, max = 5, data = df) #
+df = umx_score_scale(name="TIPI_C", base = "TIPI_C", pos = 1:2, alpha = TRUE, score ="total", min=1, max = 5, data = df) #
+</string>
+	<key>name</key>
+	<string>stub analysis</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>stub</string>
+	<key>uuid</key>
+	<string>6C7D8769-B11A-4F27-AD35-61BA409CD136</string>
+</dict>
+</plist>
