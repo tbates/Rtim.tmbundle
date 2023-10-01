@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>Named-group</string>
 	<key>scope</key>
-	<string>source.regexp.oniguruma, text.tm-snippet, string.regexp</string>
+	<string>source.regexp.oniguruma, text.tm-snippet, string.regexp, source.r</string>
 	<key>tabTrigger</key>
 	<string>named</string>
 	<key>uuid</key>
