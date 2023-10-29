@@ -81,6 +81,8 @@
 				<key>items</key>
 				<array>
 					<string>EF8E994C-F721-4594-B67C-63B97140ED92</string>
+					<string>F0B1B5D9-8775-4D6E-9AEE-9F0A855562F4</string>
+					<string>BF96EC5A-EC41-4C1B-8A1C-CFC981C53AC7</string>
 					<string>9B129448-A553-42DA-A22F-0D3B7D1C57D0</string>
 					<string>7BB266AB-53D8-4191-B98D-ABDC208DB94F</string>
 					<string>16117AFC-7FAF-47C3-86A5-94F8C6EBDA0A</string>
@@ -250,6 +252,7 @@
 					<string>DEE7D001-E2FD-4537-88B8-630A17E33D1B</string>
 					<string>0F48AE18-50E3-4DD0-8547-8278273CFA3E</string>
 					<string>2B5E922D-B334-4864-9CCF-56D47CE03129</string>
+					<string>A03136EF-5555-418E-B5F4-D37A8F31CCB5</string>
 				</array>
 				<key>name</key>
 				<string>Core R functions</string>
@@ -336,7 +339,6 @@
 					<string>C4F60B7F-9134-4983-B164-4B3FD69F90F3</string>
 					<string>D437C0DE-0DE9-4C5D-B33E-8BE49DD40434</string>
 					<string>A48241E5-9AD0-471E-8101-400EA89B235C</string>
-					<string>BF96EC5A-EC41-4C1B-8A1C-CFC981C53AC7</string>
 					<string>BBCDCA6C-DB75-425B-9439-A98D350A2341</string>
 					<string>32E46115-49C3-4023-B3B3-BDDC12608820</string>
 					<string>A6CF1996-D1A2-4A75-869E-1185E58C4F81</string>
@@ -414,6 +416,8 @@
 					<string>8AAC8D36-34A8-4D7E-AD92-33AAAAB3ABA1</string>
 					<string>7251ED3B-3F5A-40A7-9FCC-1587FC194628</string>
 					<string>A9A94072-C733-493F-AF58-4AE27C3B6CFA</string>
+					<string>EF290BAF-B66D-4DD0-8B73-0AFB08485697</string>
+					<string>FEDD4056-0AF5-4D02-97BE-D86FC872DD13</string>
 				</array>
 				<key>name</key>
 				<string>Symbols</string>
@@ -423,10 +427,10 @@
 				<key>items</key>
 				<array>
 					<string>DB2C9D70-9C7B-498E-B8BC-2046CC3DB772</string>
+					<string>8C1FFC39-E11D-4E40-ADE0-3382B9167163</string>
 					<string>5B7BAFCE-C6EE-4F55-8F5F-521BCB376B89</string>
 					<string>B81E9DF5-A715-43CE-A751-AFB60CDDAE01</string>
 					<string>C71558F3-A594-455A-BA8B-9FF4F148DAB7</string>
-					<string>8C1FFC39-E11D-4E40-ADE0-3382B9167163</string>
 					<string>BBA85104-93C3-4F8D-914E-9A81E896DB40</string>
 					<string>6BC6A0AF-A2B4-428B-9395-531E2AFFE2AF</string>
 				</array>
