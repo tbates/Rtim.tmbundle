@@ -11,13 +11,26 @@ questionText = data.frame(df[2,])
 
 df = df[-c(1:3), ] # delete header and 2 trial rows
 
-df = umx_rename(df, from = c('old1', 'old2'), to = c('new1', 'new2'))
+# df = umx_rename(df, from = c('old1', 'old2'), to = c('new1', 'new2'))
+# df = umx_as_numeric(df, which = c("CLow", "CHigh", "LTicket"), force = TRUE)
 
 df = umx_score_scale(name="TIPI_N", base = "TIPI_N", pos = 1:2, alpha = TRUE, score ="total", min=1, max = 5, data = df) #
 df = umx_score_scale(name="TIPI_E", base = "TIPI_E", pos = 1:2, alpha = TRUE, score ="total", min=1, max = 5, data = df) #
 df = umx_score_scale(name="TIPI_O", base = "TIPI_O", pos = 1:2, alpha = TRUE, score ="total", min=1, max = 5, data = df) #
 df = umx_score_scale(name="TIPI_A", base = "TIPI_A", pos = 1:2, alpha = TRUE, score ="total", min=1, max = 5, data = df) #
 df = umx_score_scale(name="TIPI_C", base = "TIPI_C", pos = 1:2, alpha = TRUE, score ="total", min=1, max = 5, data = df) #
+
+# ===================
+# = 1. Descriptives =
+# ===================
+df\$One = 1
+umx_aggregate(Age ~ One, data = df, what = "mean_sd", digits = 2)
+umx_aggregate(Age ~ Sex, data = df, what = "mean_sd", digits = 2)
+umx_aggregate(Race ~ One, data = df, what = "mean_sd", digits = 2)
+
+fp = finder
+df = umx_read_prolific_demog(fp, sex = "gender", df = df)
+# df = umx_merge_randomized_columns(colNames, df, levels = c("treatment", "control")); table(tmp$condition)
 </string>
 	<key>name</key>
 	<string>stub analysis</string>
