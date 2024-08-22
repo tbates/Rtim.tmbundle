@@ -4,7 +4,6 @@
 <dict>
 	<key>content</key>
 	<string>fp = finder
-df = gdata::read.xls(fp, stringsAsFactors= FALSE${1: ,sheet=,pattern=,na.strings=,method=,perl=})
 df = readxl::read_excel(fp, sheet = NULL, range = ${2|NULL,"Budget!B2:G14"|}, col_names = TRUE, na = "", trim_ws = TRUE, skip = 0)
 </string>
 	<key>name</key>
