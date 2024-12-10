@@ -3,16 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>library("umx"); umxVersion(min = "4.21.00") # version these analyses were conducted under
-libs("jtools", "ggplot2", "car", "lme4", "emmeans", "afex", "cowplot", "visreg", "pwr", "memisc", "hrbrthemes")
+	<string>$1 = prolific_anonymize(${1:df}${2:, PID = "PID", extraColumns = NA, baseOffset = 1e4})
 </string>
 	<key>name</key>
-	<string>Libraries</string>
+	<string>prolific anonymise</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>
-	<string>libs</string>
+	<string>prolific</string>
 	<key>uuid</key>
-	<string>37FCB969-E384-4BFB-A53B-567FEC741ED4</string>
+	<string>356C1F6F-4F62-4E47-989A-CAB0B11E703A</string>
 </dict>
 </plist>

@@ -3,16 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>3. Run ${1:Barnum} study
-	[${2|✓, |}] Upload $1 as block on qualtrics.
-	[ ] Run ${3:in IQ dataset}.
-	[ ] Test if lm($1 ~ $4{IV})
-</string>
+	<string>pwr.r.test(r = ${1:0.1}, power = ${2:0.8}, sig.level = 0.05,alternative = "greater")</string>
 	<key>name</key>
-	<string>research task</string>
+	<string>pwr.r.test</string>
+	<key>scope</key>
+	<string>source.r</string>
 	<key>tabTrigger</key>
-	<string>task</string>
+	<string>pwr</string>
 	<key>uuid</key>
-	<string>FD8BCC7E-2F9E-4EBA-B6D8-BCA02C60EE98</string>
+	<string>2EBE8ED6-50D2-4C49-A790-D77D00A3E557</string>
 </dict>
 </plist>

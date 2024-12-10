@@ -80,6 +80,8 @@
 			<dict>
 				<key>items</key>
 				<array>
+					<string>6C7D8769-B11A-4F27-AD35-61BA409CD136</string>
+					<string>FD8BCC7E-2F9E-4EBA-B6D8-BCA02C60EE98</string>
 					<string>EF8E994C-F721-4594-B67C-63B97140ED92</string>
 					<string>F0B1B5D9-8775-4D6E-9AEE-9F0A855562F4</string>
 					<string>BF96EC5A-EC41-4C1B-8A1C-CFC981C53AC7</string>
@@ -100,6 +102,8 @@
 				<key>items</key>
 				<array>
 					<string>5D4A7C93-7AE5-4A7C-8CF7-319E414302A6</string>
+					<string>11F027A1-227A-472B-A479-5F6964AE8F8E</string>
+					<string>BAD68DE0-C444-4674-ADBA-666E3D42EA2E</string>
 					<string>A33DE6C9-65C7-4420-BE55-FD684DAF3CDE</string>
 					<string>C06223B9-78B7-4750-88E4-171BF8BCF971</string>
 					<string>44BBC936-6269-472E-BB0D-8539FED99575</string>
@@ -169,6 +173,7 @@
 					<string>8140925C-EF9C-460E-955F-F1C4FB863ABB</string>
 					<string>E3A6754F-398E-4F88-BA24-532CDAA229F8</string>
 					<string>6638C58C-D22E-44B6-9F85-2F8E9D677CA3</string>
+					<string>2EBE8ED6-50D2-4C49-A790-D77D00A3E557</string>
 				</array>
 				<key>name</key>
 				<string>stats</string>
@@ -304,6 +309,7 @@
 			<dict>
 				<key>items</key>
 				<array>
+					<string>356C1F6F-4F62-4E47-989A-CAB0B11E703A</string>
 					<string>2746D53C-D004-48DD-830E-AD10DFD96B3D</string>
 					<string>6602BDA8-4694-4DF4-8997-0A88E7E34D98</string>
 					<string>743B2D74-763D-4622-842A-DA0D3F3F52F1</string>
