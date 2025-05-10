@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>$1 = prolific_anonymize(${1:df}${2:, PID = "PID", extraColumns = NA, baseOffset = 1e4})
+	<string>$1 = prolific_anonymize(${1:df}${2:, PID = "PID", alsoDrop = NA, baseOffset = 1e4})
 </string>
 	<key>name</key>
 	<string>prolific anonymise</string>
