@@ -25,6 +25,11 @@ df = umx_score_scale(name="TIPI_O", base = "TIPI_O", pos = 1, rev = 2, alpha = T
 df = umx_score_scale(name="TIPI_A", base = "TIPI_A", pos = 2, rev = 1, alpha = TRUE, score ="total", min=1, max = 7, mapStrings= tipiTxt, data = df) #
 df = umx_score_scale(name="TIPI_C", base = "TIPI_C", pos = 1, rev = 2, alpha = TRUE, score ="total", min=1, max = 7, mapStrings= tipiTxt, data = df) #
 
+# Export anonymized df for researchbox
+# df = prolific_anonymize(df, PID = "PID", alsoDrop = c("QID1210817776", "Timer_First.Click","Timer_Last.Click","Timer_Page.Submit","Timer_Click.Count", 'timer60_First.Click', 'timer60_Last.Click', 'timer60_Page.Submit', 'timer60_Click.Count'), baseOffset = 1e4)
+# write.csv(df, file = paste0(base, "study2data.csv"))
+# df = read.csv(file = paste0(base, "study2data.csv"), row.names = 1)
+
 # ===================
 # = 1. Demographics =
 # ===================
@@ -37,7 +42,8 @@ umx_aggregate(Race ~ One, data = df, what = "mean_sd", digits = 2)
 # = 1. Descriptives =
 # ===================
 Demographics are shown in Table 1
-umxAPA(df[, c("N", "E", "O","SD4Psycho")])
+umxAPA(df[, c("N", "E", "O","SD4Psycho")], report="html")
+umx_cor(df[,c("TIPI_C", "howmany_30secs", "NASA_Effort1","NASA_Frustration1"")])
 
 
 # ===================
