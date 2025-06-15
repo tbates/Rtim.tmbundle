@@ -7,16 +7,18 @@
 libs("ggplot2", "hrbrthemes")
 
 # Plot for Figure 1
-m1 = lm(${2:mpg} ~ ${3:wt}, data = ${1:mtcars})
+m1 = lm(${2:mpg} ~ ${3:wt}, data = ${1:df})
 umxAPA(m1, std = TRUE)
 
-p  = qplot(predict(m1, data = $1), $1\$$2)
-p  = p + geom_smooth(method = 'lm')
-p  = p + labs(x= "Predicted $2", y= "Actual $2")
-r2 = paste0("Adjusted R² = ", round(summary(m1)\$adj.r.squared, 3))
-p  = p + cowplot::draw_label(r2, x = 25, y = 30, fontfamily = "Times", size = 12)
-p  = p + theme_${4|gray,bw,linedraw,light,dark,minimal,classic,void,test|}() # gray,bw,linedraw,light,dark,minimal,classic
-p</string>
+r2= paste0("Adjusted R² = ", round(summary(m1)\$adj.r.squared, 3))
+p = ggplot(data = $1, aes(x = predict(m1, newdata=$1), y = $2)) + geom_point()
+p = p + geom_smooth(method = 'lm')
+p = p + labs(x= "Predicted $2", y= "Actual $2")
+p = p + cowplot::draw_label(r2, x = 25, y = 30, fontfamily = "Times", size = 14)
+p = p + theme_${4|gray,bw,linedraw,light,dark,minimal,classic,void,test|}() # gray,bw,linedraw,light,dark,minimal,classic
+p = p + theme_${5|ipsum,ft_rc,ipsum_es,ipsum_gs,ipsum_ps,ipsum_pub,ipsum_rc,ipsum_tw,modern_rc,tinyhand|}(axis_title_size = 12)
+p
+</string>
 	<key>name</key>
 	<string>gg hrbr qplot + lm</string>
 	<key>scope</key>

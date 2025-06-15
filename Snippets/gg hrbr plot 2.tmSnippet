@@ -3,7 +3,8 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>p = ggplot(data = ${1:mtcars}, aes(x=mpg, y=wt)) + geom_point()
+	<string>df = mtcars
+p = ggplot(data = ${1:df}, aes(x=mpg, y=wt)) + geom_point()
 p = p + labs(x= "Fuel efficiency (mpg)", y= "Weight (tons)",
   title    = "Title: Fuel economy declines as weight increases",
   subtitle = "Subtitle: (1973-74)",
