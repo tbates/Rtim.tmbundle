@@ -29,7 +29,7 @@ df = df[-c(1:3), ] # delete qTxt (1), header?, and any trial rows
 
 # Fix number made into string on import
 df = umx_as_numeric(df, which = c("Age"), force = TRUE)
-df$Sex = factor(df$Sex, levels=c("Male", "Female"), labels = c("Male", "Female"))
+df\$Sex = factor(df\$Sex, levels=c("Male", "Female"), labels = c("Male", "Female"))
 
 # Rename obscure vars?
 # df = umx_rename(df, from = c('old1', 'old2'), to = c('new1', 'new2'))
@@ -44,6 +44,15 @@ df = umx_score_scale(name="TIPI_E", base = "TIPI_E", pos = 1, rev = 2, alpha = T
 df = umx_score_scale(name="TIPI_O", base = "TIPI_O", pos = 1, rev = 2, alpha = TRUE, score ="total", min=1, max = 7, mapStrings= tipiTxt, data = df) #
 df = umx_score_scale(name="TIPI_A", base = "TIPI_A", pos = 2, rev = 1, alpha = TRUE, score ="total", min=1, max = 7, mapStrings= tipiTxt, data = df) #
 df = umx_score_scale(name="TIPI_C", base = "TIPI_C", pos = 1, rev = 2, alpha = TRUE, score ="total", min=1, max = 7, mapStrings= tipiTxt, data = df) #
+
+# Score single item scales
+df$feelGoodAbout      = umx_strings2numeric(df, "crypto_16", mapStrings = c('Extremely bad', 'Somewhat bad','Neither good nor bad', 'Somewhat good', 'Extremely good'))
+
+# Export for researchbox (no IDS)
+df = prolific_anonymize(df, PID = "PID", alsoDrop = "QID1217564255", baseOffset = 1e4)
+write.csv(df, file = "~/Library/CloudStorage/Dropbox/Appeasement/paper2 SFPP/data/researchbox/study2data.csv")
+df = read.csv(file = "~/Library/CloudStorage/Dropbox/Appeasement/paper2 SFPP/data/researchbox/study2data.csv", row.names = 1)
+namez(df)
 
 # ===================
 # = 1. Demographics =
