@@ -29,7 +29,7 @@ df = df[-c(1:3), ] # delete qTxt (1), header?, and any trial rows
 
 # Fix number made into string on import
 df = umx_as_numeric(df, which = c("Age"), force = TRUE)
-df$Sex = factor(df$Sex, levels=c("Male", "Female"), labels = c("Male", "Female"))
+df\$Sex = factor(df\$Sex, levels=c("Male", "Female"), labels = c("Male", "Female"))
 
 # Rename obscure vars?
 # df = umx_rename(df, from = c('old1', 'old2'), to = c('new1', 'new2'))
