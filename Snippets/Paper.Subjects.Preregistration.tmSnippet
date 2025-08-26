@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>Preregistration
+The project was approved by Psychology Ethics Committee at the University of Edinburgh (${1:#XXXXXX}) and was preregistered in the ${2|Open Science Foundation,aspredicted.org|} registry on ${3:10 January 2023} (${4:url}). The study did not deviate from the registration: the questionnaires and the hypotheses and tests used are the same as the ones given ex ante. Informed consent was obtained from all respondent and our research complies with all relevant ethical regulationss, randomized treatment branches were random and unknown to the respondents. Respondents were compensated on Prolific academic with payment of £1 after participation. No statistical methods were used to predetermine sample sizes, but our sample sizes match those reported in similar publications.</string>
+	<key>name</key>
+	<string>Preregistration</string>
+	<key>tabTrigger</key>
+	<string>prereg</string>
+	<key>uuid</key>
+	<string>8BB45E0D-1249-4391-9552-2FE8EA225AE6</string>
+</dict>
+</plist>

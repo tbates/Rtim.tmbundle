@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>Data collection
+The survey was conducted from March 2021 to March 2022 on 40,680 respondents from 20 countries (with 1,465–2,488 respondents per country). US1 collected responses from 3,000 respondents between January and March 2023, while US2 gathered data from 2,000 respondents between March and April 2023. Eu included 3,000 respondents and was conducted from February to March 2023. We used the survey companies Dynata and Bilendi. To ensure representative samples, we used stratified quotas based on gender, age (5 brackets), income (4), region (4), education level (3) and ethnicity (3) for the USA. We also incorporated survey weights throughout the analysis to account for any remaining imbalances. These weights were constructed using the quota variables as well as the degree of urbanization, and trimmed between 0.25 and 4. Stratified quotas followed by reweighting is the usual method to reduce selection bias from opt-in online panels, when better sampling methods (such as compulsory participation of random dwellings) are unavailable48. By applying weights, the results are fully representative of the respective countries along the above-mentioned dimensions. Results at the European level apply different weights which ensure representativeness of the combined four European countries. Supplementary Section G shows how our samples compare with actual population frequencies. They match the actual frequencies, except for some imbalances in specific quota demographics—such as gender in the UK (43% of women instead of 50%) or urbanity in Spain (15% rural instead of 26%)—that are corrected through our survey weights, and in the US vote (which does not affect our results, as shown by the results reweighted by vote in the ‘Support for the GCS’ section below). Supplementary Section I shows that the treatment branches are balanced. Supplementary Section J runs placebo tests of the effects of each treatment on unrelated outcomes. We do not find effects of earlier treatments on unrelated outcomes arriving later in the survey.</string>
+	<key>name</key>
+	<string>DataCOllection</string>
+	<key>tabTrigger</key>
+	<string>procedure</string>
+	<key>uuid</key>
+	<string>24D2F81D-2EE2-4C43-982E-06E6A586B1A0</string>
+</dict>
+</plist>
