@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array/>
+	<key>injectionSelector</key>
+	<string>L:text.html.markdown</string>
+	<key>name</key>
+	<string>Rmd grammar injection</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>begin</key>
+			<string>(^|\G)\s*([`~]{3,})\s*(?:\{([Rr][^}\n]*)\}|([Rr])(?:\s+[^\n]*)?)\s*$</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.raw.begin.markdown</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>meta.embedded.block.rmd</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>storage.type.language.markdown</string>
+				</dict>
+			</dict>
+			<key>contentName</key>
+			<string>source.r</string>
+			<key>end</key>
+			<string>(^|\G)\s*(\2)\s*$</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.raw.end.markdown</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>markup.raw.block.rmd.r</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.r</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>markdown.rmd.r.injection</string>
+	<key>uuid</key>
+	<string>397E3BE0-4B2C-4C54-8696-283CA1B7C087</string>
+</dict>
+</plist>
