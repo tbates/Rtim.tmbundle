@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>R code in markdown</string>
+	<key>scope</key>
+	<string>text.html.markdown source.r</string>
+	<key>settings</key>
+	<dict>
+		<key>fontName</key>
+		<string>Menlo</string>
+		<key>fontSize</key>
+		<string>1.1em</string>
+	</dict>
+	<key>uuid</key>
+	<string>C1811E97-88E3-44EA-A7E3-7EFF08597BE9</string>
+</dict>
+</plist>
