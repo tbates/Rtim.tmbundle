@@ -3,50 +3,45 @@
 <plist version="1.0">
 <dict>
 	<key>command</key>
-	<string>#!/usr/bin/python
+	<string>#!/usr/bin/env ruby
 
-import sys
-import re
 # via the original author: [Dr Drang](http://www.leancrew.com/all-this/2012/09/tidying-markdown-reference-links)
-'''Read a Markdown file via standard input and tidy its
-reference links. The reference links will be numbered in
-the order they appear in the text and placed at the bottom
-of the file.'''
+# Converted from Python to Ruby
+# Read a Markdown file via standard input and tidy its
+# reference links. The reference links will be numbered in
+# the order they appear in the text and placed at the bottom
+# of the file.
 
 # The regex for finding reference links in the text. Don't find
 # footnotes by mistake.
-link = re.compile(r'\[([^\]]+)\]\[([^^\]]+)\]')
+LINK = /\[([^\]]+)\]\[([^^\]]+)\]/
 
 # The regex for finding the label. Again, don't find footnotes
 # by mistake.
-label = re.compile(r'^\[([^^\]]+)\]:\s+(.+)$', re.MULTILINE)
-
-def refrepl(m):
-  'Rewrite reference links with the reordered link numbers.'
-  return '[%s][%d]' % (m.group(1), order.index(m.group(2)) + 1)
+LABEL = /^\[([^^\]]+)\]:\s+(.+)$/
 
 # Read in the file and find all the links and references.
-text = sys.stdin.read()
-links = link.findall(text)
-labels = dict(label.findall(text))
+text = STDIN.read
+links = text.scan(LINK)
+labels = text.scan(LABEL).to_h
 
 # Determine the order of the links in the text. If a link is used
 # more than once, its order is its first position.
 order = []
-for i in links:
-  if order.count(i[1]) == 0:
-    order.append(i[1])
+links.each do |(_text, key)|
+	order &lt;&lt; key unless order.include?(key)
+end
 
 # Make a list of the references in order of appearance.
-newlabels = [ '[%d]: %s' % (i + 1, labels[j]) for (i, j) in enumerate(order) ]
+newlabels = order.each_with_index.map { |j, i| "[#{i + 1}]: #{labels.fetch(j)}" }
 
 # Remove the old references and put the new ones at the end of the text.
-text = label.sub('', text).rstrip() + '\n'*3 + '\n'.join(newlabels)
+text = text.gsub(LABEL, '').rstrip + ("\n" * 3) + newlabels.join("\n")
 
 # Rewrite the links with the new reference numbers.
-text = link.sub(refrepl, text)
+text = text.gsub(LINK) { "[#{$1}][#{order.index($2) + 1}]" }
 
-print text
+puts text
 </string>
 	<key>input</key>
 	<string>document</string>

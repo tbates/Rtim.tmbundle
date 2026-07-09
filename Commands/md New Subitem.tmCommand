@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+# Override of Markdown.tmbundle "New Subitem" (same UUID).
+# Uses Rtim Support/lib/markdown.rb (Ruby 1.9+ compatible).
+
+$:.unshift ENV['TM_BUNDLE_SUPPORT']
+$:.unshift ENV['TM_SUPPORT_PATH']
+
+require 'lib/markdown'
+require 'lib/escape'
+
+listtxt = $stdin.read
+list = Markdown::List.parse(listtxt)
+
+offsetline = ENV['TM_LINE_NUMBER'].to_i - ENV['TM_INPUT_START_LINE'].to_i
+index = ENV['TM_LINE_INDEX'].to_i
+
+list.break(offsetline, index, "$0", true) { |l| e_sn(l) }
+print list.to_s
+</string>
+	<key>fallbackInput</key>
+	<string>scope</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>$</string>
+	<key>name</key>
+	<string>New Subitem</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>snippet</string>
+	<key>outputLocation</key>
+	<string>replaceInput</string>
+	<key>scope</key>
+	<string>text.html.markdown markup.list</string>
+	<key>uuid</key>
+	<string>000B399B-FB71-49EF-B799-A1200A3865AB</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -5,48 +5,51 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#!/usr/local/bin/php
-&lt;?php
-// Turn a line or selection into a heading
-// Created: 21.03.12 Author: timothy.c.bates@gmail.com
-// nb: Overrides existing cmd-n
-// Also Works on lines that already have a heading applied
+	<string>#!/usr/bin/env ruby
+# Turn a line or selection into a heading
+# Created: 21.03.12 Author: timothy.c.bates@gmail.com
+# Converted from PHP to Ruby
+# nb: Overrides existing cmd-n
+# Also Works on lines that already have a heading applied
 
-$level    = '#';
-$newLevel = str_repeat($level, 2); // Change this to alter the level being affected
-$o        = array();
+level    = '#'
+newLevel = level * 2  # Change this to alter the level being affected
+o        = []
 
-if (0) { 
-	// set to 1 for debugging
-	echo "&lt;pre&gt;";
-	$existing = "$level$level$level     Why is is this so badly formed? ";
-	$existing = "$level$level$level     Why is is this so badly formed? 
-		$level$level$level     Why is is this so badly formed?
+if false
+	# set to true for debugging
+	existing = "#{level}#{level}#{level}     Why is is this so badly formed? "
+	existing = "#{level}#{level}#{level}     Why is is this so badly formed? 
+		#{level}#{level}#{level}     Why is is this so badly formed?
 
-		$level$level$level     Why is is this so badly formed?";
-	// $existing = ""; // test case of empty line
-	echo "started with:\n&lt;font color=red&gt;\"$existing\"&lt;/font&gt;\n--&gt;\n";
-} else {
-	$existing = fread(STDIN, 1024);
-}
+		#{level}#{level}#{level}     Why is is this so badly formed?"
+	# existing = ""  # test case of empty line
+	$stderr.puts "started with:\n\"#{existing}\"\n--&gt;\n"
+else
+	existing = STDIN.read.to_s
+end
 
-$aLines = explode("\n", $existing);
-$l = count($aLines);
-foreach ($aLines as $key =&gt; $line) {
-	$line = trim ($line);
-	if (empty($line)) {
-		if ($l&gt;1) {
-			$o[] = "";
-		}else{
-			$o[] = "$newLevel \${1:Heading}";
-		}
-	} else {
-		$new = trim ( $line, "#* $level" ); //trim ends of existing markers
-		$o[] = "$newLevel $new";
-	}
-}
-echo implode("\n", $o);
-?&gt;</string>
+aLines = existing.split("\n", -1)
+aLines = [""] if aLines.empty?
+l = aLines.length
+
+aLines.each do |line|
+	line = line.strip
+	if line.empty?
+		if l &gt; 1
+			o &lt;&lt; ""
+		else
+			o &lt;&lt; "#{newLevel} ${1:Heading}"
+		end
+	else
+		# trim ends of existing markers (#, *, space)
+		new = line.gsub(/\A[#* ]+|[#* ]+\z/, "")
+		o &lt;&lt; "#{newLevel} #{new}"
+	end
+end
+
+print o.join("\n")
+</string>
 	<key>fallbackInput</key>
 	<string>line</string>
 	<key>input</key>

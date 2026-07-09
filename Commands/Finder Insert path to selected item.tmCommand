@@ -6,15 +6,55 @@
 	<string>nop</string>
 	<key>command</key>
 	<string>#!/usr/bin/env bash
-result=$(/usr/bin/osascript -e 'tell application "Finder"
- set theFiles to selection
- set theList to ""
- repeat with f in theFiles
-    set theList to theList &amp; "\"" &amp; POSIX path of (f as alias) &amp; "\","
- end repeat
- return theList
-end tell')
-echo "${result//\/Users\/tim/~}"</string>
+# Insert POSIX path(s) of the current Finder selection.
+# Uses ~ for $HOME, shell-escapes spaces/specials (no surrounding quotes), no trailing comma.
+
+paths=$(/usr/bin/osascript &lt;&lt;'APPLESCRIPT'
+tell application "Finder"
+	set theFiles to selection
+	set out to ""
+	set isFirst to true
+	repeat with f in theFiles
+		if isFirst then
+			set isFirst to false
+		else
+			set out to out &amp; linefeed
+		end if
+		set out to out &amp; POSIX path of (f as alias)
+	end repeat
+	return out
+end tell
+APPLESCRIPT
+)
+
+if [[ -z "$paths" ]]; then
+	exit 0
+fi
+
+escape_path() {
+	local path="$1"
+	if [[ "$path" == "$HOME" ]]; then
+		printf '~'
+	elif [[ "$path" == "$HOME"/* ]]; then
+		# Keep ~ unescaped so the shell expands it; escape only the remainder
+		printf '~%q' "${path#$HOME}"
+	else
+		printf '%q' "$path"
+	fi
+}
+
+first=1
+while IFS= read -r path || [[ -n "$path" ]]; do
+	[[ -z "$path" ]] &amp;&amp; continue
+	escaped=$(escape_path "$path")
+	if [[ $first -eq 1 ]]; then
+		printf '%s' "$escaped"
+		first=0
+	else
+		printf ' %s' "$escaped"
+	fi
+done &lt;&lt;&lt; "$paths"
+</string>
 	<key>input</key>
 	<string>selection</string>
 	<key>inputFormat</key>

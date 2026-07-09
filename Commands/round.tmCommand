@@ -5,19 +5,14 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#!/usr/bin/php
-&lt;?php
-// creator: tim.bates@ed.ac.uk 
-// license = GPL
-// Purpose: Takes selected mx matrix like 
-if (1) { //set to 0 for debugging
-	$input = fread(STDIN, 1024);
-} else {
-	$input = "1.234567";
-}
-echo(round($input,3));
-?&gt;
+	<string>#!/usr/bin/env ruby
+# creator: tim.bates@ed.ac.uk
+# license = GPL
+# Converted from PHP to Ruby
+# Purpose: Round selected number to 3 decimal places
 
+input = STDIN.read.to_s.strip
+print input.to_f.round(3)
 </string>
 	<key>input</key>
 	<string>selection</string>
@@ -34,7 +29,7 @@ echo(round($input,3));
 	<key>outputLocation</key>
 	<string>replaceInput</string>
 	<key>scope</key>
-	<string>source.r </string>
+	<string>source.r</string>
 	<key>uuid</key>
 	<string>B0AD9693-5726-431F-860F-73687B7A4B76</string>
 	<key>version</key>

@@ -6,41 +6,44 @@
 	<string>nop</string>
 	<key>command</key>
 	<string>#!/usr/bin/env ruby
-# author tim.bates@ed.ac.uk
-# created: 22:02:2014
-# Converted from PHP to Ruby
-# Toggle Rd/roxygen \emph{…} on the selection (or current word via fallbackInput)
+# Override of Markdown.tmbundle "New Item" (same UUID).
+# Uses Rtim Support/lib/markdown.rb (Ruby 1.9+ compatible).
 
-input = (ENV['TM_SELECTED_TEXT'] || STDIN.read).to_s
-marker = '\\emph{'
+$:.unshift ENV['TM_BUNDLE_SUPPORT']
+$:.unshift ENV['TM_SUPPORT_PATH']
 
-# Strip surrounding \emph{…} if present (toggle off)
-if input =~ /\A\\emph\{(.*)\}\z/m
-	print $1
-else
-	print "#{marker}#{input}}"
-end
+require 'lib/markdown'
+require 'lib/escape'
+
+listtxt = $stdin.read
+list = Markdown::List.parse(listtxt)
+
+offsetline = ENV['TM_LINE_NUMBER'].to_i - ENV['TM_INPUT_START_LINE'].to_i
+index = ENV['TM_LINE_INDEX'].to_i
+
+list.break(offsetline, index) { |l| e_sn(l) }
+print list.to_s
 </string>
 	<key>fallbackInput</key>
-	<string>word</string>
+	<string>scope</string>
 	<key>input</key>
 	<string>selection</string>
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>keyEquivalent</key>
-	<string>@i</string>
+	<string></string>
 	<key>name</key>
-	<string>Rd emphasis (italic)</string>
+	<string>New Item</string>
 	<key>outputCaret</key>
 	<string>afterOutput</string>
 	<key>outputFormat</key>
-	<string>text</string>
+	<string>snippet</string>
 	<key>outputLocation</key>
 	<string>replaceInput</string>
 	<key>scope</key>
-	<string>source.r</string>
+	<string>text.html.markdown markup.list</string>
 	<key>uuid</key>
-	<string>1F2330F1-1394-4D2C-B813-F65791BEB744</string>
+	<string>622F0B69-EB98-4EB9-8DC8-2AC56FF2501E</string>
 	<key>version</key>
 	<integer>2</integer>
 </dict>

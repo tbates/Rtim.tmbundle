@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+# Convert a Markdown list (or plain lines) into a GitHub-style task list.
+# - item / * item / 1. item  →  - [ ] item
+# Existing - [x] / - [ ] items are normalized; blank lines kept; indent preserved.
+
+input = (ENV['TM_SELECTED_TEXT'] || STDIN.read).to_s
+lines = input.split("\n", -1)
+
+out = lines.map do |line|
+	if line.strip.empty?
+		line
+	elsif line =~ /\A(\s*)(?:[-*+]|\d+\.)\s+\[([ xX])\]\s+(.*)\z/
+		# Already a task item — normalize marker to "-" and checkbox case
+		indent, check, rest = $1, $2, $3
+		box = check.downcase == 'x' ? 'x' : ' '
+		"#{indent}- [#{box}] #{rest}"
+	elsif line =~ /\A(\s*)(?:[-*+]|\d+\.)\s+(.*)\z/
+		indent, rest = $1, $2
+		if rest =~ /\A\[([ xX])\]\s+(.*)\z/
+			box = $1.downcase == 'x' ? 'x' : ' '
+			"#{indent}- [#{box}] #{$2}"
+		else
+			"#{indent}- [ ] #{rest}"
+		end
+	else
+		# Plain line → task item (preserve leading indent)
+		indent = line[/^\s*/]
+		"#{indent}- [ ] #{line.lstrip}"
+	end
+end
+
+print out.join("\n")
+</string>
+	<key>fallbackInput</key>
+	<string>line</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>name</key>
+	<string>List to GitHub todo</string>
+	<key>outputCaret</key>
+	<string>heuristic</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>replaceInput</string>
+	<key>scope</key>
+	<string>text.html.markdown, text.html.markdown.multimarkdown, text.plain</string>
+	<key>uuid</key>
+	<string>AEC9AF99-3B6C-49AE-B61D-FBC8941C1C89</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>

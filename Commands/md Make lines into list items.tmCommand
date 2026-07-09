@@ -5,29 +5,21 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#!/usr/bin/php
-&lt;?php
-// author tim.bates@ed.ac.uk
-// version 1.0
-// created: 22:10:2012
-// wraps the selection in * 
+	<string>#!/usr/bin/env ruby
+# author tim.bates@ed.ac.uk
+# version 1.0
+# created: 22:10:2012
+# Converted from PHP to Ruby
+# Prefix each selected line with a list marker (snippet tab-stop for * vs - vs 1.)
 
-$input     = $_ENV["TM_SELECTED_TEXT"];
-// $input = "B12
-// B6
-// Niacin
-// Phosphatidylserine
-// no gluten, no caseine (dairy)
-// ";
-$lines = explode('
-', $input);
+input = ENV['TM_SELECTED_TEXT'] || STDIN.read.to_s
+lines = input.split("\n", -1)
 
-$out = "";
-foreach ($lines as $key =&gt; $value) {
-	 $out .= "\${1:*} $value\n";
-}
-echo $out;
-?&gt;
+out = ''
+lines.each do |value|
+	out &lt;&lt; "${1:*} #{value}\n"
+end
+print out
 </string>
 	<key>input</key>
 	<string>selection</string>
