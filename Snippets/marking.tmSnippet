@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>The student demonstrated knowledge and understanding of the subject matter which was ${1|good,shallow,excellent|}.
 
-They showed ${2|adequate,to little,creative|} thinking, and ${3|adequate,lacked,showed strong|} independent analytic thought.
+They showed ${2|adequate,too little,creative|} thinking, and ${3|adequate,lacked,showed strong|} independent analytic thought.
 
 The thesis question is ${4|adequately,poorly,well justified|}, and a ${5|clear,muddled,compelling|} case is made supported with $5 evidence.
 

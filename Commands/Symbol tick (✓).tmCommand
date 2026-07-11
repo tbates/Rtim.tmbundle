@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+# Insert ✓ at \tick (or caret). Eat up to two spaces before the insert point.
+# Uses whole-line replace (input=line / replaceInput).
+#
+# Important: with input=line, TM_INPUT_START_LINE_INDEX is the start of the
+# *line*, not the tab-trigger. Locate \tick via caret (TM_LINE_INDEX) instead.
+
+raw  = STDIN.read.to_s
+nl   = raw[/\r?\n\z/]
+line = raw.sub(/\r?\n\z/, '')
+line = ENV['TM_CURRENT_LINE'].to_s if line.empty?
+
+trigger = '\\tick'
+tlen    = trigger.length
+
+# 0-based caret column within the line (usually end of the tab-trigger)
+caret = ENV['TM_LINE_INDEX'].to_i
+caret = 0 if caret &lt; 0
+caret = line.length if caret &gt; line.length
+
+before = nil
+rest   = nil
+
+# 1) Trigger immediately before the caret (normal tab-trigger case)
+if caret &gt;= tlen &amp;&amp; line[(caret - tlen)...caret] == trigger
+	before = line[0...(caret - tlen)].to_s
+	rest   = line[caret..-1].to_s
+# 2) Trigger still on the line (search backward from caret, then forward)
+elsif (idx = line.rindex(trigger, caret))
+	before = line[0...idx].to_s
+	rest   = line[(idx + tlen)..-1].to_s
+elsif (idx = line.index(trigger))
+	before = line[0...idx].to_s
+	rest   = line[(idx + tlen)..-1].to_s
+# 3) Trigger already consumed by TextMate — insert at caret
+else
+	before = line[0...caret].to_s
+	rest   = line[caret..-1].to_s
+end
+
+# Up to two spaces immediately before the insert point
+eaten = 0
+while eaten &lt; 2 &amp;&amp; before.end_with?(' ')
+	before = before[0...-1]
+	eaten += 1
+end
+
+# Checkbox padding only: "- [\tick  ]" / "- [  ]" with caret in box → tidy to "- [✓]"
+if rest =~ /\A {1,2}\]/
+	rest = rest.sub(/\A {1,2}/, '')
+end
+
+def e_sn(s)
+	s.to_s.gsub(/[\\$`]/) { |m| '\\' + m }
+end
+
+print e_sn(before) + '✓$0' + e_sn(rest)
+print nl if nl
+</string>
+	<key>fallbackInput</key>
+	<string>line</string>
+	<key>input</key>
+	<string>line</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>name</key>
+	<string>tick (✓)</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>snippet</string>
+	<key>outputLocation</key>
+	<string>replaceInput</string>
+	<key>tabTrigger</key>
+	<string>\tick</string>
+	<key>uuid</key>
+	<string>E9300372-3798-4D01-957B-E4A8532B36F1</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>
