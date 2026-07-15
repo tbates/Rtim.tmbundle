@@ -79,7 +79,7 @@ print nl if nl
 	<key>outputLocation</key>
 	<string>replaceInput</string>
 	<key>tabTrigger</key>
-	<string>\tick</string>
+	<string>\t</string>
 	<key>uuid</key>
 	<string>E9300372-3798-4D01-957B-E4A8532B36F1</string>
 	<key>version</key>
