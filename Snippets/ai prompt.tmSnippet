@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>Act as a [specific role/expert]. Your objective is to [briefly state the primary goal].
+
+&lt;context&gt;
+[Provide the necessary background. Treat this as the raw data and hypotheses the model needs to understand the operating environment. E.g., "We are analyzing opportunity costs for a capital allocation decision..."]
+&lt;/context&gt;
+
+&lt;task&gt;
+[State exactly what needs to be done. E.g., "Analyze the provided dataset, identify the three largest cost-utility mismatches, and propose alternative capital allocations."]
+&lt;/task&gt;
+
+&lt;rules&gt;
+- [Constraint 1: e.g., "Do not use qualitative generalizations; rely strictly on quantitative metrics."]
+- [Constraint 2: e.g., "If assumptions must be made to bridge data gaps, explicitly surface them."]
+- [Constraint 3: e.g., "Exclude any analysis of sunk costs."]
+&lt;/rules&gt;
+
+&lt;output_format&gt;
+Provide the final output strictly in the following format:
+1. Executive Summary (max 3 sentences)
+2. Markdown Table detailing the top 3 mismatches (Columns: Asset, Stated Utility, Actual Cost, Opportunity Cost)
+3. Proposed Alternatives (Bullet points)
+&lt;/output_format&gt;
+
+&lt;input_data&gt;
+[Insert any raw text, data, code, or variables here]
+&lt;/input_data&gt;</string>
+	<key>name</key>
+	<string>ai prompt</string>
+	<key>uuid</key>
+	<string>DCC0A6AE-84BA-4744-9D7D-551A452E35F0</string>
+</dict>
+</plist>
