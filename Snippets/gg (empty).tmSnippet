@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>p = ggplot(data = ${1:df}, aes(x = ${2:x}, y = ${3:y}))</string>
+	<string>p = ggplot(${1:df}, aes(x = ${2:x}, y = ${3:y}, color=${4:kind}))</string>
 	<key>name</key>
 	<string>ggplot (empty)</string>
 	<key>scope</key>
