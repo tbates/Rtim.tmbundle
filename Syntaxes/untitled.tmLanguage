@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array/>
+	<key>injectionSelector</key>
+	<string>L:source.r</string>
+	<key>name</key>
+	<string>R roxy grammar injection</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>begin</key>
+			<string>^\s*(#')\s*(@examples|@examplesIf).*$</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.comment.roxygen.r</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.roxygen.tag.r</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>^\s*(#')\s*(@[a-zA-Z]+)|^(?!\s*#')</string>
+			<key>name</key>
+			<string>meta.roxygen.examples.r</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>^\s*#'\s?</string>
+					<key>name</key>
+					<string>punctuation.definition.comment.roxygen.r</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>source.r</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>markdown.roxy.r.injection</string>
+	<key>uuid</key>
+	<string>2866B727-8DC5-4D97-BA5B-5B0CAA84BF73</string>
+</dict>
+</plist>
