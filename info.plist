@@ -140,6 +140,7 @@
 					<string>97263C7A-5025-4952-BFE7-BF6B153AF2D8</string>
 					<string>1EFB2733-CEF0-423F-9E37-75C1B35A9F17</string>
 					<string>F0AB00CC-09DD-47AA-9604-6D2674C66FE8</string>
+					<string>0A6644C1-0C8D-4475-A705-7D0ABF3A5B08</string>
 				</array>
 				<key>name</key>
 				<string>Development</string>
@@ -197,7 +198,6 @@
 					<string>------------------------------------</string>
 					<string>20DE005A-102E-449B-BCD5-211DC2A3926B</string>
 					<string>78711ABC-5A41-45F1-9919-D5DB4B612E70</string>
-					<string>0A6644C1-0C8D-4475-A705-7D0ABF3A5B08</string>
 					<string>B0AD9693-5726-431F-860F-73687B7A4B76</string>
 					<string>------------------------------------</string>
 					<string>574D9B0D-B85E-47A8-9196-9D12A43B97A3</string>
@@ -215,6 +215,8 @@
 					<string>33C8B090-D361-40A7-9F02-B756EA77826D</string>
 					<string>3D1CA889-3B9D-4848-82F6-F66B7902CB04</string>
 					<string>90E05B16-7327-4762-9DDB-C823619E62BA</string>
+					<string>DCC0A6AE-84BA-4744-9D7D-551A452E35F0</string>
+					<string>18E9EACD-7854-44C6-94A9-41FAB21CA11F</string>
 				</array>
 				<key>name</key>
 				<string>Misc</string>

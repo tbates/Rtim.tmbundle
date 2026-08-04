@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>gh run list --limit 100 --json databaseId -q '.[].databaseId' | xargs -I{} gh run delete {}</string>
+	<key>name</key>
+	<string>gh delete build runs</string>
+	<key>tabTrigger</key>
+	<string>gh</string>
+	<key>uuid</key>
+	<string>18E9EACD-7854-44C6-94A9-41FAB21CA11F</string>
+</dict>
+</plist>

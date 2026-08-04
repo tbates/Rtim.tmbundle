@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>Act as a [specific role/expert]. Your objective is to [briefly state the primary goal].
+	<string>Act as an expert ${1:programmer,historian,philosopher,capital allocator}. Your objective is to [briefly state the primary goal].
 
 &lt;context&gt;
 [Provide the necessary background. Treat this as the raw data and hypotheses the model needs to understand the operating environment. E.g., "We are analyzing opportunity costs for a capital allocation decision..."]
@@ -31,6 +31,8 @@ Provide the final output strictly in the following format:
 &lt;/input_data&gt;</string>
 	<key>name</key>
 	<string>ai prompt</string>
+	<key>tabTrigger</key>
+	<string>ai</string>
 	<key>uuid</key>
 	<string>DCC0A6AE-84BA-4744-9D7D-551A452E35F0</string>
 </dict>
