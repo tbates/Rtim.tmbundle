@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>[${1:link}](${2:url})</string>
 	<key>name</key>
-	<string>Link</string>
+	<string>[Link]()</string>
 	<key>scope</key>
 	<string>text.html.markdown, text.html.markdown.multimarkdown</string>
 	<key>tabTrigger</key>
