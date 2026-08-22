@@ -6,6 +6,8 @@
 	<array/>
 	<key>injectionSelector</key>
 	<string>L:text.html.markdown</string>
+	<key>isDisabled</key>
+	<true/>
 	<key>name</key>
 	<string>Rmd grammar injection</string>
 	<key>patterns</key>
