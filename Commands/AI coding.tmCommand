@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -wEutf-8
+require 'json'
+require 'net/http'
+require 'uri'
+api_key = ENV['LLAMA_API_KEY'] || ENV['META_API_KEY'] || ''
+api_url = ENV['LLAMA_API_URL'] || 'https://api.llama.com/compat/v1/chat/completions'
+model   = ENV['LLAMA_MODEL'] || 'Llama-4-Maverick-17B-128E-Instruct-FP8' # or your Muse Spark id
+prefix  = ENV['TM_SPARK_PREFIX'] || 'write me R code using ggplot and following my style to: '
+
+# TextMate gives us this
+selection = ENV['TM_SELECTED_TEXT']
+if selection.nil? || selection.empty?
+  selection = STDIN.read
+end
+selection = selection.to_s.strip
+exit 0 if selection.empty?
+
+# Optional style file - put a good example of your ggplot style in ~/.R_style_example.R
+style_hint = ''
+style_path = File.expand_path('~/.R_style_example.R')
+if File.exist?(style_path)
+  style_hint = File.read(style_path)[0,3000] rescue ''
+end
+
+system_prompt = &lt;&lt;~SYS
+  You are an expert R programmer. Respond with ONLY valid R code.
+    - Use ggplot2
+    - No explanation, no markdown fences, just code
+    - Assume tidyverse available
+SYS
+
+user_content = "#{prefix}#{selection}"
+unless style_hint.empty?
+  user_content = "Example of my R style to follow:\n#{style_hint}\n\nTask: #{prefix}#{selection}"
+end
+
+payload = {
+  model: model,
+  messages: [
+    { role: "system", content: system_prompt },
+    { role: "user", content: user_content }
+  ],
+  temperature: 0.2
+}
+
+begin
+  uri = URI.parse(api_url)
+  http = Net::HTTP.new(uri.host, uri.port)
+  http.use_ssl = uri.scheme == 'https'
+  http.read_timeout = 60
+
+  req = Net::HTTP::Post.new(uri.request_uri)
+  req['Authorization'] = "Bearer #{api_key}"
+  req['Content-Type'] = 'application/json'
+  req.body = payload.to_json
+
+  res = http.request(req)
+
+  unless res.is_a?(Net::HTTPSuccess)
+    print "# API error #{res.code}\n# #{res.body[0,500]}\n#{selection}"
+    exit 0
+  end
+
+  data = JSON.parse(res.body)
+  text = data.dig('choices', 0, 'message', 'content').to_s
+rescue =&gt; e
+  print "# Ruby error: #{e.message}\n#{selection}"
+  exit 0
+end
+
+# strip ```r fences if model adds them
+text = text.strip
+if text.start_with?('```')
+  lines = text.lines
+  lines.shift
+  lines.pop if lines.last&amp;.strip&amp;.start_with?('```')
+  text = lines.join
+end
+
+print text.strip</string>
+	<key>keyEquivalent</key>
+	<string>^@g</string>
+	<key>name</key>
+	<string>AI coding</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>uuid</key>
+	<string>D8665DB9-7A62-4FEE-BCA6-A0AFDA4D2B55</string>
+</dict>
+</plist>
