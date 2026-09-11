@@ -7,7 +7,7 @@
 	<key>contactName</key>
 	<string>Tim Bates</string>
 	<key>description</key>
-	<string>Tim Bates&apos; helpers for &lt;a href=&quot;http://www.r-project.org/&quot;&gt;R&lt;/a&gt; the free software environment for statistical computing and graphics.</string>
+	<string>Tim Bates' helpers for &lt;a href="http://www.r-project.org/"&gt;R&lt;/a&gt; the free software environment for statistical computing and graphics.</string>
 	<key>mainMenu</key>
 	<dict>
 		<key>items</key>
@@ -33,39 +33,6 @@
 		</array>
 		<key>submenus</key>
 		<dict>
-			<key>5D5ACE95-50C5-4FB9-BEC5-20D2E7BFF3E2</key>
-			<dict>
-				<key>items</key>
-				<array>
-					<string>5BB3CEFD-D327-4621-B221-54F674560D5E</string>
-					<string>D2883438-1037-4792-93CB-CCBABECB45D8</string>
-					<string>C0082FD8-DF1C-49A1-A9AB-076DF8981490</string>
-					<string>9EE55686-A342-4830-9E32-9555EA844EDC</string>
-					<string>02458127-5199-4566-B246-BD4888543D5B</string>
-					<string>F26F1838-E653-4F41-8793-F44400669C21</string>
-					<string>2DA37A29-78E6-4A5D-AB91-B1283C084D59</string>
-					<string>78B3AAFF-DA09-437B-A9CA-FAC94C2673B9</string>
-					<string>AEC9AF99-3B6C-49AE-B61D-FBC8941C1C89</string>
-					<string>622F0B69-EB98-4EB9-8DC8-2AC56FF2501E</string>
-					<string>000B399B-FB71-49EF-B799-A1200A3865AB</string>
-					<string>A9482998-0340-44AA-B87D-86CB462F952C</string>
-					<string>B2345092-190C-4658-98EB-68202BF38C64</string>
-					<string>8E0C5B67-373E-4DF2-AFA4-2332246F79D3</string>
-					<string>864ED863-A6EA-470B-82E9-53C365B3D293</string>
-					<string>BF645D58-62F1-46FD-8FB1-45003424DDD6</string>
-					<string>A62D9EFB-5591-4760-B862-A04607ABFBA9</string>
-					<string>EAB95F98-E67E-459D-9D71-D11AD243699B</string>
-					<string>81EE56B3-6E80-457F-A3BB-5274ECDD9E37</string>
-					<string>ECF95C69-08CD-450F-80A8-344ABAA0355D</string>
-					<string>1E9F7153-B12F-4E45-BEE7-EA221FFC4AE4</string>
-					<string>1DD138D0-6AFB-4D39-801F-0CDEBBA1F1C0</string>
-					<string>DED2B784-6795-499A-843D-33D4AA628080</string>
-					<string>CEB068AC-B01B-48CD-B48B-78CA470E0752</string>
-					<string></string>
-				</array>
-				<key>name</key>
-				<string>Markdown</string>
-			</dict>
 			<key>1C361765-0167-41E3-8DA3-B0ECBFA69A7D</key>
 			<dict>
 				<key>items</key>
@@ -102,6 +69,58 @@
 				</array>
 				<key>name</key>
 				<string>Summary and tables</string>
+			</dict>
+			<key>5D5ACE95-50C5-4FB9-BEC5-20D2E7BFF3E2</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>5BB3CEFD-D327-4621-B221-54F674560D5E</string>
+					<string>D2883438-1037-4792-93CB-CCBABECB45D8</string>
+					<string>C0082FD8-DF1C-49A1-A9AB-076DF8981490</string>
+					<string>9EE55686-A342-4830-9E32-9555EA844EDC</string>
+					<string>02458127-5199-4566-B246-BD4888543D5B</string>
+					<string>F26F1838-E653-4F41-8793-F44400669C21</string>
+					<string>2DA37A29-78E6-4A5D-AB91-B1283C084D59</string>
+					<string>78B3AAFF-DA09-437B-A9CA-FAC94C2673B9</string>
+					<string>AEC9AF99-3B6C-49AE-B61D-FBC8941C1C89</string>
+					<string>622F0B69-EB98-4EB9-8DC8-2AC56FF2501E</string>
+					<string>000B399B-FB71-49EF-B799-A1200A3865AB</string>
+					<string>A9482998-0340-44AA-B87D-86CB462F952C</string>
+					<string>B2345092-190C-4658-98EB-68202BF38C64</string>
+					<string>8E0C5B67-373E-4DF2-AFA4-2332246F79D3</string>
+					<string>864ED863-A6EA-470B-82E9-53C365B3D293</string>
+					<string>BF645D58-62F1-46FD-8FB1-45003424DDD6</string>
+					<string>A62D9EFB-5591-4760-B862-A04607ABFBA9</string>
+					<string>EAB95F98-E67E-459D-9D71-D11AD243699B</string>
+					<string>81EE56B3-6E80-457F-A3BB-5274ECDD9E37</string>
+					<string>ECF95C69-08CD-450F-80A8-344ABAA0355D</string>
+					<string>1E9F7153-B12F-4E45-BEE7-EA221FFC4AE4</string>
+					<string>1DD138D0-6AFB-4D39-801F-0CDEBBA1F1C0</string>
+					<string>DED2B784-6795-499A-843D-33D4AA628080</string>
+					<string>CEB068AC-B01B-48CD-B48B-78CA470E0752</string>
+					<string></string>
+				</array>
+				<key>name</key>
+				<string>Markdown</string>
+			</dict>
+			<key>6B420082-C197-4FA3-8113-6D4D69878BBC</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>E082A0AE-5412-414D-8A87-2E0BEB165AEA</string>
+				</array>
+				<key>name</key>
+				<string>Latex</string>
+			</dict>
+			<key>720D262D-F772-437C-B721-FFDD9E3E41EF</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>193DE262-BD66-4CFA-922C-8583CE689D69</string>
+					<string>2AEEEB3F-E57A-46CF-8126-0A8C7C5CAD4A</string>
+				</array>
+				<key>name</key>
+				<string>SQL</string>
 			</dict>
 			<key>7FBA7991-CD5D-4BEC-A6F5-6F0BFD531556</key>
 			<dict>
@@ -154,6 +173,19 @@
 				</array>
 				<key>name</key>
 				<string>distributions</string>
+			</dict>
+			<key>A1A016D8-2BFB-47B8-A3BE-3E7ACE8CA5AA</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>DB8AA3C8-80AA-4B1A-B042-D014C97B6DC5</string>
+					<string>FC3DD5E2-E3CE-4AF3-ADA1-25E17AE6288B</string>
+					<string>86C04D9D-5363-4885-A34F-523A8BB31949</string>
+					<string>6A4AED05-BF49-46CE-807A-F0673ADB394E</string>
+					<string>0A4C97B4-41A3-4719-B3EA-3ED07BDF3461</string>
+				</array>
+				<key>name</key>
+				<string>RegEx</string>
 			</dict>
 			<key>B03BB508-410C-4786-85E3-EF088984246A</key>
 			<dict>
@@ -221,25 +253,6 @@
 				<key>name</key>
 				<string>Misc</string>
 			</dict>
-			<key>720D262D-F772-437C-B721-FFDD9E3E41EF</key>
-			<dict>
-				<key>items</key>
-				<array>
-					<string>193DE262-BD66-4CFA-922C-8583CE689D69</string>
-					<string>2AEEEB3F-E57A-46CF-8126-0A8C7C5CAD4A</string>
-				</array>
-				<key>name</key>
-				<string>SQL</string>
-			</dict>
-			<key>6B420082-C197-4FA3-8113-6D4D69878BBC</key>
-			<dict>
-				<key>items</key>
-				<array>
-					<string>E082A0AE-5412-414D-8A87-2E0BEB165AEA</string>
-				</array>
-				<key>name</key>
-				<string>Latex</string>
-			</dict>
 			<key>BB2A3619-622D-416A-B387-8BE4154B44B8</key>
 			<dict>
 				<key>items</key>
@@ -297,19 +310,6 @@
 				</array>
 				<key>name</key>
 				<string>graphs</string>
-			</dict>
-			<key>A1A016D8-2BFB-47B8-A3BE-3E7ACE8CA5AA</key>
-			<dict>
-				<key>items</key>
-				<array>
-					<string>DB8AA3C8-80AA-4B1A-B042-D014C97B6DC5</string>
-					<string>FC3DD5E2-E3CE-4AF3-ADA1-25E17AE6288B</string>
-					<string>86C04D9D-5363-4885-A34F-523A8BB31949</string>
-					<string>6A4AED05-BF49-46CE-807A-F0673ADB394E</string>
-					<string>0A4C97B4-41A3-4719-B3EA-3ED07BDF3461</string>
-				</array>
-				<key>name</key>
-				<string>RegEx</string>
 			</dict>
 			<key>CC89A8D8-CBBD-4A78-8FF2-69AD5DF91B2E</key>
 			<dict>
@@ -388,6 +388,8 @@
 					<string>5A790E06-04AD-43ED-8474-3C4FE105F76F</string>
 					<string>3AD23259-29A9-4FB4-BE04-C6E3F715CA73</string>
 					<string>F571BFC8-A5B8-4469-B7F3-0F448E154CFF</string>
+					<string>8D18DE9A-D50B-4C52-A912-4B72FD4D0061</string>
+					<string>D5E4A6B0-F442-43A0-959D-E19BD6A59EFB</string>
 					<string>C0CA6897-C419-4BB8-9E14-346C4C28044E</string>
 					<string>C6452736-3FA3-4989-B396-BD9FA69B46DA</string>
 					<string>D5436FF8-F734-458D-B822-F1C8BB731E68</string>
