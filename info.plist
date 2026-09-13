@@ -50,22 +50,24 @@
 			<dict>
 				<key>items</key>
 				<array>
-					<string>6C7D8769-B11A-4F27-AD35-61BA409CD136</string>
 					<string>FD8BCC7E-2F9E-4EBA-B6D8-BCA02C60EE98</string>
-					<string>EF8E994C-F721-4594-B67C-63B97140ED92</string>
 					<string>F0B1B5D9-8775-4D6E-9AEE-9F0A855562F4</string>
+					<string>8BB45E0D-1249-4391-9552-2FE8EA225AE6</string>
+					<string>24D2F81D-2EE2-4C43-982E-06E6A586B1A0</string>
 					<string>BF96EC5A-EC41-4C1B-8A1C-CFC981C53AC7</string>
+					<string>EF8E994C-F721-4594-B67C-63B97140ED92</string>
+					<string>6C7D8769-B11A-4F27-AD35-61BA409CD136</string>
 					<string>9B129448-A553-42DA-A22F-0D3B7D1C57D0</string>
+					<string>356C1F6F-4F62-4E47-989A-CAB0B11E703A</string>
+					<string>------------------------------------</string>
 					<string>7BB266AB-53D8-4191-B98D-ABDC208DB94F</string>
 					<string>16117AFC-7FAF-47C3-86A5-94F8C6EBDA0A</string>
 					<string>B86FD5D0-2982-4DD5-B34F-B753133618D9</string>
+					<string>------------------------------------</string>
 					<string>38B3BC07-2F08-490E-995B-65AAAA4107B2</string>
 					<string>ACD54832-36EB-4072-AD48-58288AC0283F</string>
 					<string>C9F5B223-1A41-4DB3-83F7-9488BBC08FE2</string>
 					<string>F1B871ED-D9D0-406E-B202-9B1C494D48CC</string>
-					<string>------------------------------------</string>
-					<string>8BB45E0D-1249-4391-9552-2FE8EA225AE6</string>
-					<string>24D2F81D-2EE2-4C43-982E-06E6A586B1A0</string>
 				</array>
 				<key>name</key>
 				<string>Summary and tables</string>
@@ -316,7 +318,6 @@
 			<dict>
 				<key>items</key>
 				<array>
-					<string>356C1F6F-4F62-4E47-989A-CAB0B11E703A</string>
 					<string>DE13D299-0108-4DD8-93E7-94CFE20EA12F</string>
 					<string>14864C0B-B319-4287-B06B-EEF1E42A1461</string>
 					<string>6602BDA8-4694-4DF4-8997-0A88E7E34D98</string>

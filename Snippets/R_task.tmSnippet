@@ -9,7 +9,7 @@
 	[ ] Test if lm($1 ~ $4{IV})
 </string>
 	<key>name</key>
-	<string>research task</string>
+	<string>TODO research task</string>
 	<key>tabTrigger</key>
 	<string>task</string>
 	<key>uuid</key>

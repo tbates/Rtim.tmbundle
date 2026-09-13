@@ -6,9 +6,10 @@
 	<string># ===================
 # = 1. Descriptives =
 # ===================
-df\$One = 1
-umx_aggregate(age ~ One, data = df, what = "mean_sd", digits = 2)
-umx_aggregate(age ~ Sex, data = df, what = "mean_sd", digits = 2)
+Demographics are shown in Table 1
+umxAPA(df[, c("N", "E", "O","SD4Psycho")], report="html")
+umx_cor(df[,c("TIPI_C", "howmany_30secs", "NASA_Effort1","NASA_Frustration1"")])
+
 </string>
 	<key>name</key>
 	<string>descriptives</string>

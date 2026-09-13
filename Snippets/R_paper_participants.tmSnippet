@@ -3,8 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:require(doBy)}
+	<string># ===================
+# = 1. Participants =
+# ===================
+df\$One = 1
+umx_aggregate(age ~ One, data = df, what = "mean_sd", digits = 2)
+umx_aggregate(age ~ Sex, data = df, what = "mean_sd", digits = 2)
+
+${1:libs(doBy)}
 summaryBy(${2:age} ~ ${3:Gender}, data = ${3:fest}, FUN = function(x) { round(c(n=length(x), mean = mean(x,na.rm=T), SD = sd(x,na.rm=T)),2) } )
+
 </string>
 	<key>name</key>
 	<string>Participants (summaryBy)</string>
