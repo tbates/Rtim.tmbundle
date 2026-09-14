@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>qplot(${1:x}, ${2:y}, data = ${3:data}, geom = c("point" ${4:, "jitter", "smooth"}) ${5:, colour= ${6:var_for_colour}} ${7:, shape= ${8:var_for_shape}})
-</string>
+	<string>ggplot(${1:df, aes(x = ${2:x}, y = ${3:y}${5:, colour = ${6:var_for_colour}}${7:, shape = ${8:var_for_shape}})) +
+  geom_point()${4: + geom_jitter() + geom_smooth()}</string>
 	<key>name</key>
-	<string>qplot.xy + smooth</string>
+	<string>gg xy + smooth</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

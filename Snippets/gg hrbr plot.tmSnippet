@@ -20,7 +20,7 @@ p = p + theme_${5|ipsum,ft_rc,ipsum_es,ipsum_gs,ipsum_ps,ipsum_pub,ipsum_rc,ipsu
 p
 </string>
 	<key>name</key>
-	<string>gg hrbr qplot + lm</string>
+	<string>gg hrbr plot + lm</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

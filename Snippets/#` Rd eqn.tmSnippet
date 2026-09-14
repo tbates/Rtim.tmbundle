@@ -3,9 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>\\${1|eqn,deqn|}{${2:$x=\frac\{1+y\}\{1+2z^2\}$}</string>
+	<string>${1|$,$$|}z = \frac{\bar{x} - \mu}{\sigma/\sqrt{n}}$1
+</string>
 	<key>name</key>
-	<string>#` eqn/deqn</string>
+	<string>#` eqn/deqn (inline/display math)</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

@@ -3,9 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>qplot(${1:x}, data = ${2:data}, geom = c("histogram"${3:,"density"}) )</string>
+	<string>ggplot(df, aes(x = ${1:Age})) + geom_histogram(bins=30) + labs(x = $1, title = "title")
+</string>
 	<key>name</key>
-	<string>qplot.histogram</string>
+	<string>gg histogram</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>
