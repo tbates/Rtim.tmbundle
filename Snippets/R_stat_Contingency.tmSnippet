@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>xtabs(formula=${1:Freq ~ Gender + Admit}, data=${2:DF})) #summary() will do chi^2</string>
 	<key>name</key>
-	<string>Contingency</string>
+	<string>xtabs Contingency</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

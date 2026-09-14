@@ -6,7 +6,7 @@
 	<string>model = glm(Survived ~. , family=binomial(link='logit'), data = df)
 </string>
 	<key>name</key>
-	<string>logistic</string>
+	<string>glm logistic</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>
