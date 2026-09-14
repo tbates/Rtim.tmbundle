@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>ggplot(${1:df, aes(x = ${2:x}, y = ${3:y}${5:, colour = ${6:var_for_colour}}${7:, shape = ${8:var_for_shape}})) +
+	<string>ggplot(${1:df}, aes(x = ${2:x}, y = ${3:y}${5:, colour = ${6:var_for_colour}}${7:, shape = ${8:var_for_shape}})) +
   geom_point()${4: + geom_jitter() + geom_smooth()}</string>
 	<key>name</key>
 	<string>gg xy + smooth</string>
