@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>p = p + annotate("text", x= 3, y = 30, label = expression(R^2 == beta + 1 ~ hello), family="Optima")</string>
 	<key>name</key>
-	<string>annotate</string>
+	<string>+ annotate</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

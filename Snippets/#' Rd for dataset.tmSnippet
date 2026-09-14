@@ -22,7 +22,7 @@
 #' str(DATA_NAME) ; plot(DATA_NAME) ...
 </string>
 	<key>name</key>
-	<string>#' Rd for dataset</string>
+	<string>#' roxygen stub for datasets</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>

@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>\${${1:tab stop}/${2:regexp}/${3:format}/${4|i,g,ig,options|}}</string>
 	<key>name</key>
-	<string>transformation</string>
+	<string>oniguruma transformation</string>
 	<key>scope</key>
 	<string>source.regexp.oniguruma, text.tm-snippet, string.regexp</string>
 	<key>tabTrigger</key>

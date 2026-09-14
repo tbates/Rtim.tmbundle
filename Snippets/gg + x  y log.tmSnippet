@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>+ scale_${1|x,y|}_continuous(trans="${2|log,log10|}")</string>
 	<key>name</key>
-	<string>gg + x  y log</string>
+	<string>+ x  y log</string>
 	<key>scope</key>
 	<string>ssource.r</string>
 	<key>tabTrigger</key>
