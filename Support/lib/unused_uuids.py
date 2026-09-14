@@ -20,6 +20,7 @@ import plistlib
 import re
 import shutil
 import sys
+import tempfile
 import time
 
 UUID_RE = re.compile(
@@ -165,8 +166,14 @@ def strip_orphans(bundle):
     plist_path = os.path.join(bundle, "info.plist")
     with open(plist_path, "rb") as handle:
         raw = handle.read()
-    backup = "%s.orphan-bak-%s" % (
-        plist_path, time.strftime("%Y%m%d-%H%M%S")
+    # Safety copy goes to the OS temp dir, never into the bundle: bak files
+    # beside info.plist end up committed as noise, and a missing cleanup
+    # once took info.plist itself with it.
+    backup = os.path.join(
+        tempfile.gettempdir(),
+        "%s.orphan-bak-%s" % (
+            os.path.basename(bundle), time.strftime("%Y%m%d-%H%M%S")
+        ),
     )
     shutil.copyfile(plist_path, backup)
     fmt = (
