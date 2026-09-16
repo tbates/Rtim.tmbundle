@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env python3
+"""Trim whitespace from both ends of every input line (TUI paste cleanup)."""
+import sys
+
+def main():
+    data = sys.stdin.read()
+    sys.stdout.write("\n".join(line.strip() for line in data.split("\n")))
+
+if __name__ == "__main__":
+    main()
+</string>
+	<key>fallbackInput</key>
+	<string>line</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>name</key>
+	<string>Trim Whitespace from Line Ends</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>replaceInput</string>
+	<key>scope</key>
+	<string></string>
+	<key>uuid</key>
+	<string>857104F2-4E96-4F4A-A667-D1A5883A2175</string>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>
