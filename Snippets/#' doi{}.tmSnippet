@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>\doi{${1:10.1001/archpedi.153.5.446}}</string>
+	<key>name</key>
+	<string>Roxy: \doi{}</string>
+	<key>tabTrigger</key>
+	<string>rox</string>
+	<key>uuid</key>
+	<string>9BF39EFB-36DF-4D51-94F2-DA002F77D6FE</string>
+</dict>
+</plist>
