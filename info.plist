@@ -155,6 +155,8 @@
 					<string>1EFB2733-CEF0-423F-9E37-75C1B35A9F17</string>
 					<string>F0AB00CC-09DD-47AA-9604-6D2674C66FE8</string>
 					<string>F047BD64-E6B1-439A-BAE1-274A42EDA666</string>
+					<string>9BF39EFB-36DF-4D51-94F2-DA002F77D6FE</string>
+					<string>857104F2-4E96-4F4A-A667-D1A5883A2175</string>
 				</array>
 				<key>name</key>
 				<string>Development</string>
@@ -304,6 +306,7 @@
 					<string>0FA029BD-0BC0-4DCE-9FBB-62B83C3E2DAC</string>
 					<string>B16CC354-7D96-404A-8DA8-850704D84387</string>
 					<string>F4FA9D95-2A4C-41D0-9808-1ACDFD3C913B</string>
+					<string>F3ABF162-9453-48AB-95C2-396D09AD794D</string>
 				</array>
 				<key>name</key>
 				<string>graphs</string>

@@ -3,14 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>+ scale_${1|x,y|}_continuous(trans="${2|log,log10|}")</string>
+	<string>☰</string>
 	<key>name</key>
-	<string>+ x|y log</string>
-	<key>scope</key>
-	<string>source.r</string>
+	<string>☰ Hamburger (U+2630)</string>
 	<key>tabTrigger</key>
-	<string>gg</string>
+	<string>\hamburger</string>
 	<key>uuid</key>
-	<string>6E4CA806-50AB-4E3A-BAD9-BC1FC938A280</string>
+	<string>6796A8A5-5F8D-4E08-897B-F29F33EC9C5E</string>
 </dict>
 </plist>

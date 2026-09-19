@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>∈</string>
 	<key>name</key>
-	<string>∈ logic in</string>
+	<string>∈ logical "in"</string>
 	<key>tabTrigger</key>
 	<string>\in</string>
 	<key>uuid</key>

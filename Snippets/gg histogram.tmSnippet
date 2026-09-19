@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>ggplot(df, aes(x = ${1:Age})) + geom_histogram(bins=30) + labs(x = $1, title = "title")
+	<string>p = ggplot(df, aes(x = ${1:Age})) + geom_histogram(bins=30) + labs(x = "$1", title = "Graph of $1")
 </string>
 	<key>name</key>
 	<string>gg histogram</string>
