@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>xattr -dr com.apple.quarantine ~/Downloads/TextMate.app</string>
+	<key>name</key>
+	<string>zsh quarantine removal</string>
+	<key>uuid</key>
+	<string>F49413AC-F398-4182-AC31-7950A09C0974</string>
+</dict>
+</plist>
