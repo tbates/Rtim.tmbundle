@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env bash
+# Thin launcher: the real implementation lives in Support/lib so it stays
+# editable, testable, and out of the plist XML.
+cands=( "$HOME/Library/Application Support/TextMate/Bundles/Rtim.tmbundle/Support/lib/gh_artifact_usage.sh" )
+for d in "$HOME"/bin/tm/bundles/*/Support/lib/gh_artifact_usage.sh; do
+  cands+=( "$d" )
+done
+for p in "${cands[@]}"; do
+  if [[ -f "$p" ]]; then exec bash "$p"; fi
+done
+echo "gh_artifact_usage.sh not found." &gt;&amp;2
+exit 1</string>
+	<key>input</key>
+	<string>none</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>name</key>
+	<string>gh show artifacts</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>newWindow</string>
+	<key>uuid</key>
+	<string>7404EA55-5320-43B2-A86F-61C40F13178C</string>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>

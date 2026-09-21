@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -wEutf-8
+# Thin launcher: the real implementation lives in Support/lib so it stays
+# editable, testable, and out of the plist XML.
+candidates = [
+  File.expand_path('~/Library/Application Support/TextMate/Bundles/Rtim.tmbundle/Support/lib/gh_artifact_cleaner.rb'),
+  *Dir[File.expand_path('~/bin/tm/bundles/*/Support/lib/gh_artifact_cleaner.rb')].sort,
+]
+lib = candidates.find { |p| File.file?(p) }
+abort 'gh_artifact_cleaner.rb not found.' if lib.nil?
+load lib</string>
+	<key>fallbackInput</key>
+	<string>line</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>name</key>
+	<string>gh delete artifacts from selected repo</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>toolTip</string>
+	<key>uuid</key>
+	<string>FF975AAA-7621-4DAF-B2DF-63FE1CC4F405</string>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>
