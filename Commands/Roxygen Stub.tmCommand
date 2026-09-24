@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -wEutf-8
+# rox: roxygen stub filled from the function header under the caret,
+# or from the selection when the header runs over more than one line.
+
+$:.unshift ENV['TM_BUNDLE_SUPPORT']
+require 'lib/roxygen_stub'
+
+text = STDIN.read
+text = ENV['TM_CURRENT_LINE'].to_s if text.nil? || text.empty?
+begin
+	header = RoxygenStub.parse(text)
+rescue RoxygenStub::Error =&gt; e
+	$stderr.puts e.message
+	exit 1
+end
+print RoxygenStub.snippet(header)
+</string>
+	<key>fallbackInput</key>
+	<string>line</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>name</key>
+	<string>#` roxygen stub</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>snippet</string>
+	<key>outputLocation</key>
+	<string>replaceInput</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>rox</string>
+	<key>uuid</key>
+	<string>894EDD25-C5F8-47FC-B0A8-1525D3FF9C95</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>
