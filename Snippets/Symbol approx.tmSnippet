@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>≈</string>
 	<key>name</key>
-	<string>approx</string>
+	<string>approx ≈</string>
 	<key>tabTrigger</key>
 	<string>\approx</string>
 	<key>uuid</key>

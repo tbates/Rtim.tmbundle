@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>𝜎</string>
 	<key>name</key>
-	<string>sigma (mathematical lower-case 𝜎)</string>
+	<string>sigma (lower-case 𝜎)</string>
 	<key>tabTrigger</key>
 	<string>\sigma</string>
 	<key>uuid</key>

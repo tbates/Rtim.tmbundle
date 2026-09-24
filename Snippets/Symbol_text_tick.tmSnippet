@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>∴</string>
 	<key>name</key>
-	<string>therefore (∴) \u2234</string>
+	<string>∴ therefore (ergo) \u2234</string>
 	<key>tabTrigger</key>
 	<string>\therefore</string>
 	<key>uuid</key>
