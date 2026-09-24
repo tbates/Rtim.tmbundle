@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array/>
+	<key>injectionSelector</key>
+	<string>comment.line.number-sign.r</string>
+	<key>name</key>
+	<string>R Section Banner</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.section.banner.r</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>\G[ \t]*=+[ \t]*(?=[^\n]*[[:alpha:]])([^\n]+?)[ \t]*=+[ \t]*\x23[ \t]*$</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.r.injection.section-banner</string>
+	<key>uuid</key>
+	<string>513BFBB3-B62D-4333-95CC-D2E3D9E0E77F</string>
+</dict>
+</plist>
