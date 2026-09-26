@@ -17,6 +17,39 @@ end
 
 module Markdown
 
+	# TM_LINE_INDEX counts UTF-8 bytes; Ruby 2+ String indexing counts characters.
+	# Convert a TextMate byte column into a character column for List#break.
+	def Markdown.byte_col_to_char_col(line, byte_col)
+		line = line.to_s
+		return 0 if byte_col <= 0
+		return byte_col if line.empty?
+		return line.length if byte_col >= line.bytesize
+		line.byteslice(0, byte_col).length
+	end
+
+	# Prefix for a new list item mirroring the given line: its indent and
+	# bullet, the next number for numbered lists, a fresh box for todos.
+	# With sub=true, one indent level deeper and numbered lists restart at 1.
+	def Markdown.new_item_prefix(line, sub = false)
+		line = line.to_s
+		unit = ""
+		if sub
+			unit = ENV['TM_SOFT_TABS'] == 'NO' ? "\t" : " " * ENV['TM_TAB_SIZE'].to_i
+		end
+		if (m = line.match(/^(\s*-\s*\[.\]\s*)/))
+			return unit + m[1].sub(/\[.\]/, "[ ]").sub(/\s*\z/, " ")
+		end
+		if (m = line.match(/^(\s*)([0-9]+)(\.\s*)/))
+			num = sub ? 1 : m[2].to_i + 1
+			return "#{unit}#{m[1]}#{num}. "
+		end
+		if (m = line.match(/^(\s*(?:\*|-)\s*)/))
+			return unit + m[1].sub(/\s*\z/, " ")
+		end
+		unit + "* "
+	end
+
+
 	class Insert
 
 		def initialize(str)

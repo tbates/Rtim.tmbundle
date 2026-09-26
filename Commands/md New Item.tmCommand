@@ -15,14 +15,21 @@ $:.unshift ENV['TM_SUPPORT_PATH']
 require 'lib/markdown'
 require 'lib/escape'
 
-listtxt = $stdin.read
-list = Markdown::List.parse(listtxt)
+if ENV['TM_SELECTED_TEXT'].to_s.empty?
+	listtxt = $stdin.read
+	list = Markdown::List.parse(listtxt)
 
-offsetline = ENV['TM_LINE_NUMBER'].to_i - ENV['TM_INPUT_START_LINE'].to_i
-index = ENV['TM_LINE_INDEX'].to_i
+	offsetline = ENV['TM_LINE_NUMBER'].to_i - ENV['TM_INPUT_START_LINE'].to_i
+	# TM_LINE_INDEX is UTF-8 bytes; Ruby 2+ indexes by character.
+	index = Markdown.byte_col_to_char_col(ENV['TM_CURRENT_LINE'], ENV['TM_LINE_INDEX'].to_i)
 
-list.break(offsetline, index) { |l| e_sn(l) }
-print list.to_s
+	list.break(offsetline, index) { |l| e_sn(l) }
+	print list.to_s
+else
+	# Selection: delete it and start a new item with what follows it.
+	# Output replaces the selection, so emit just the break + new prefix.
+	print "\n" + e_sn(Markdown.new_item_prefix(ENV['TM_CURRENT_LINE'])) + "$0"
+end
 </string>
 	<key>fallbackInput</key>
 	<string>scope</string>
