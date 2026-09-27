@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array/>
+	<key>injectionSelector</key>
+	<string>entity.name.function.r</string>
+	<key>name</key>
+	<string>R Excluded Function Names</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>match</key>
+			<string>(?&lt;![[:alnum:]_.`])(error|warning)(?![[:alnum:]_.`])</string>
+			<key>name</key>
+			<string>entity.name.function.excluded.r</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.r.injection.function-excluded</string>
+	<key>uuid</key>
+	<string>2C1A39A0-F904-4434-A865-EBD2927E8129</string>
+</dict>
+</plist>

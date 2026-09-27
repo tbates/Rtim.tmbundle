@@ -5,11 +5,11 @@
 	<key>name</key>
 	<string>R Symbol List: Exclude error</string>
 	<key>scope</key>
-	<string>entity.name.function.r</string>
+	<string>entity.name.function.excluded.r</string>
 	<key>settings</key>
 	<dict>
-		<key>symbolTransformation</key>
-		<string>s/^\s*(error|warning)\s*$//;</string>
+		<key>showInSymbolList</key>
+		<integer>0</integer>
 	</dict>
 	<key>uuid</key>
 	<string>4195CA06-81B4-4FCC-AC2A-BD3C84D9DC4A</string>
