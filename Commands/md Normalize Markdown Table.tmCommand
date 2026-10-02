@@ -5,110 +5,22 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#!/usr/bin/env ruby
-
-# This work is licensed under a Creative Commons Attribution-Share Alike 3.0 Unported License.
-# Dr. Drang
-# http://www.leancrew.com/all-this/2012/03/improved-markdown-table-commands-for-textmate/
-# Converted from Python to Ruby
-
-def just(string, type, n)
-  # Justify a string to length n according to type.
-  case type
-  when '::' then string.center(n)
-  when '-:' then string.rjust(n)
-  when ':-' then string.ljust(n)
-  else string
-  end
-end
-
-def normtable(text)
-  # Aligns the vertical bars in a text table.
-
-  # Start by turning the text into a list of lines.
-  lines = text.split(/\r?\n/)
-  rows = lines.length
-
-  # Figure out the cell formatting.
-  # First, find the separator line.
-  formatline = nil
-  formatrow = nil
-  lines.each_with_index do |line, i|
-    if (line.chars.uniq - '|:.-'.chars).empty?
-      formatline = line
-      formatrow = i
-      break
-    end
-  end
-
-  # Delete the separator line from the content.
-  lines.delete_at(formatrow)
-
-  # Determine how each column is to be justified.
-  formatline = formatline.gsub(/\A +| +\z/, '')
-  formatline = formatline[1..-1] if formatline[0] == '|'
-  formatline = formatline[0..-2] if formatline[-1] == '|'
-  fstrings = formatline.split('|')
-  justify = fstrings.map do |cell|
-    ends = cell[0] + cell[-1]
-    if ends == '::'
-      '::'
-    elsif ends == '-:'
-      '-:'
-    else
-      ':-'
-    end
-  end
-
-  # Assume the number of columns in the separator line is the number
-  # for the entire table.
-  columns = justify.length
-
-  # Extract the content into a matrix.
-  content = lines.map do |line|
-    line = line.gsub(/\A +| +\z/, '')
-    line = line[1..-1] if line[0] == '|'
-    line = line[0..-2] if line[-1] == '|'
-    cells = line.split('|')
-    # Put exactly one space at each end as "bumpers."
-    cells.map { |x| ' ' + x.strip + ' ' }
-  end
-
-  # Append cells to rows that don't have enough.
-  content.each do |row|
-    row &lt;&lt; '' while row.length &lt; columns
-  end
-
-  # Get the width of the content in each column. The minimum width will
-  # be 2, because that's the shortest length of a formatting string and
-  # because that matches an empty column with "bumper" spaces.
-  widths = Array.new(columns, 2)
-  content.each do |row|
-    columns.times do |i|
-      widths[i] = [row[i].length, widths[i]].max
-    end
-  end
-
-  # Add whitespace to make all the columns the same width
-  formatted = content.map do |row|
-    '|' + row.zip(justify, widths).map { |s, t, n| just(s, t, n) }.join('|') + '|'
-  end
-
-  # Recreate the format line with the appropriate column widths.
-  formatline = '|' + justify.zip(widths).map { |s, n| s[0] + '-' * (n - 2) + s[-1] }.join('|') + '|'
-
-  # Insert the formatline back into the table.
-  formatted.insert(formatrow, formatline)
-
-  # Return the formatted table.
-  formatted.join("\n")
-end
-
-# Read the input, process, and print.
-puts normtable(STDIN.read)
-</string>
+	<string>#!/usr/bin/env ruby -wEutf-8
+# Thin wrapper: real work lives in Support/lib/markdown_table.rb.
+$:.unshift ENV['TM_BUNDLE_SUPPORT']
+require 'lib/markdown_table'
+STDIN.set_encoding(Encoding::UTF_8)
+STDOUT.set_encoding(Encoding::UTF_8)
+input = STDIN.read
+if ENV['TM_SELECTED_TEXT'].to_s.empty?
+  # No selection: the whole document arrived via fallback input, so
+  # normalize the table around the cursor line, if any.
+  print MarkdownTable.normalize_at_cursor(input, ENV['TM_LINE_NUMBER'].to_i)
+else
+  print MarkdownTable.normalize(input)
+end</string>
 	<key>fallbackInput</key>
-	<string>none</string>
+	<string>document</string>
 	<key>input</key>
 	<string>selection</string>
 	<key>inputFormat</key>
