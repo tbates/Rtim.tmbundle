@@ -5,30 +5,31 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#!/usr/bin/env ruby
-# Override of Markdown.tmbundle "New Subitem" (same UUID).
-# Uses Rtim Support/lib/markdown.rb (Ruby 1.9+ compatible).
+	<string>#!/usr/bin/env ruby -wEutf-8
+# Override of Markdown.tmbundle "New Subitem"
+# Uses Rtim Support/lib/markdown_list.rb.
 
 $:.unshift ENV['TM_BUNDLE_SUPPORT']
 $:.unshift ENV['TM_SUPPORT_PATH']
 
-require 'lib/markdown'
+require 'lib/markdown_list'
 require 'lib/escape'
+
+STDIN.set_encoding(Encoding::UTF_8)
+STDOUT.set_encoding(Encoding::UTF_8)
 
 if ENV['TM_SELECTED_TEXT'].to_s.empty?
 	listtxt = $stdin.read
-	list = Markdown::List.parse(listtxt)
 
 	offsetline = ENV['TM_LINE_NUMBER'].to_i - ENV['TM_INPUT_START_LINE'].to_i
 	# TM_LINE_INDEX is UTF-8 bytes; Ruby 2+ indexes by character.
-	index = Markdown.byte_col_to_char_col(ENV['TM_CURRENT_LINE'], ENV['TM_LINE_INDEX'].to_i)
+	index = MarkdownList.byte_col_to_char_col(ENV['TM_CURRENT_LINE'], ENV['TM_LINE_INDEX'].to_i)
 
-	list.break(offsetline, index, "$0", true) { |l| e_sn(l) }
-	print list.to_s
+	print MarkdownList.break_item(listtxt, offsetline, index, true) { |l| e_sn(l) }
 else
 	# Selection: delete it and start a new sub-item with what follows it.
 	# Output replaces the selection, so emit just the break + new prefix.
-	print "\n" + e_sn(Markdown.new_item_prefix(ENV['TM_CURRENT_LINE'], true)) + "$0"
+	print "\n" + e_sn(MarkdownList.new_item_prefix(ENV['TM_CURRENT_LINE'], true)) + "$0"
 end
 </string>
 	<key>fallbackInput</key>
@@ -50,7 +51,7 @@ end
 	<key>scope</key>
 	<string>text.html.markdown markup.list</string>
 	<key>uuid</key>
-	<string>000B399B-FB71-49EF-B799-A1200A3865AB</string>
+	<string>CEAD359E-166F-4A1D-AC9F-2257F7BAE668</string>
 	<key>version</key>
 	<integer>2</integer>
 </dict>
