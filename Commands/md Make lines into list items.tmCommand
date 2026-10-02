@@ -5,21 +5,13 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#!/usr/bin/env ruby
-# author tim.bates@ed.ac.uk
-# version 1.0
-# created: 22:10:2012
-# Converted from PHP to Ruby
-# Prefix each selected line with a list marker (snippet tab-stop for * vs - vs 1.)
-
-input = ENV['TM_SELECTED_TEXT'] || STDIN.read.to_s
-lines = input.split("\n", -1)
-
-out = ''
-lines.each do |value|
-	out &lt;&lt; "${1:*} #{value}\n"
-end
-print out
+	<string>#!/usr/bin/env ruby -wEutf-8
+# Thin wrapper: real work lives in Support/lib/markdown_list.rb.
+$:.unshift ENV['TM_BUNDLE_SUPPORT']
+require 'lib/markdown_list'
+STDIN.set_encoding(Encoding::UTF_8)
+STDOUT.set_encoding(Encoding::UTF_8)
+print MarkdownList.lines_to_items(STDIN.read)
 </string>
 	<key>input</key>
 	<string>selection</string>
