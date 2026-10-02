@@ -2,18 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>beforeRunningCommand</key>
-	<string>nop</string>
 	<key>command</key>
-	<string>#!/usr/bin/perl -p
-# http://www.leancrew.com/all-this/2012/11/markdown-table-scripts-for-bbedit/
-# For each line...
-$n = s/\t/\|/g;       # tabs to pipes, saving the count
-s/^/\|/;              # pipe at beginning
-s/$/\|/;              # pipe at end
-
-# Add the formatting line above the second line.
-printf "|" . "--|"x($n+1) . "\n" if $. == 2</string>
+	<string>#!/usr/bin/env ruby -wEutf-8
+# Thin wrapper: real work lives in Support/lib/markdown_table.rb.
+$:.unshift ENV['TM_BUNDLE_SUPPORT']
+require 'lib/markdown_table'
+STDIN.set_encoding(Encoding::UTF_8)
+STDOUT.set_encoding(Encoding::UTF_8)
+print MarkdownTable.tabbed_to_table(STDIN.read)</string>
 	<key>input</key>
 	<string>selection</string>
 	<key>inputFormat</key>
