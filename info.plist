@@ -86,8 +86,8 @@
 					<string>2DA37A29-78E6-4A5D-AB91-B1283C084D59</string>
 					<string>78B3AAFF-DA09-437B-A9CA-FAC94C2673B9</string>
 					<string>AEC9AF99-3B6C-49AE-B61D-FBC8941C1C89</string>
-					<string>622F0B69-EB98-4EB9-8DC8-2AC56FF2501E</string>
-					<string>000B399B-FB71-49EF-B799-A1200A3865AB</string>
+					<string>91C2F5FE-5110-4E81-9A42-B30B84B978BF</string>
+					<string>CEAD359E-166F-4A1D-AC9F-2257F7BAE668</string>
 					<string>A9482998-0340-44AA-B87D-86CB462F952C</string>
 					<string>B2345092-190C-4658-98EB-68202BF38C64</string>
 					<string>8E0C5B67-373E-4DF2-AFA4-2332246F79D3</string>
@@ -160,6 +160,7 @@
 					<string>FF975AAA-7621-4DAF-B2DF-63FE1CC4F405</string>
 					<string>7404EA55-5320-43B2-A86F-61C40F13178C</string>
 					<string>F49413AC-F398-4182-AC31-7950A09C0974</string>
+					<string>55960162-5267-4D63-8096-B339BF7D02E3</string>
 				</array>
 				<key>name</key>
 				<string>Development</string>
@@ -358,6 +359,7 @@
 					<string>E7A6C25A-5D0F-4158-BEB1-9A060367CBBC</string>
 					<string>E41F647E-3A6E-4F34-AFF2-266FC186D124</string>
 					<string>196D1E59-3353-4D02-B0F6-C0D2230E3367</string>
+					<string>7273F771-71B9-42EC-988C-26CFDAACE4CF</string>
 				</array>
 				<key>name</key>
 				<string>String and File utilities</string>
