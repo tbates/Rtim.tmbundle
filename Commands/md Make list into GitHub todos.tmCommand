@@ -5,38 +5,13 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#!/usr/bin/env ruby
-# Convert a Markdown list (or plain lines) into a GitHub-style task list.
-# - item / * item / 1. item  →  - [ ] item
-# Existing - [x] / - [ ] items are normalized; blank lines kept; indent preserved.
-
-input = (ENV['TM_SELECTED_TEXT'] || STDIN.read).to_s
-lines = input.split("\n", -1)
-
-out = lines.map do |line|
-	if line.strip.empty?
-		line
-	elsif line =~ /\A(\s*)(?:[-*+]|\d+\.)\s+\[([ xX])\]\s+(.*)\z/
-		# Already a task item — normalize marker to "-" and checkbox case
-		indent, check, rest = $1, $2, $3
-		box = check.downcase == 'x' ? 'x' : ' '
-		"#{indent}- [#{box}] #{rest}"
-	elsif line =~ /\A(\s*)(?:[-*+]|\d+\.)\s+(.*)\z/
-		indent, rest = $1, $2
-		if rest =~ /\A\[([ xX])\]\s+(.*)\z/
-			box = $1.downcase == 'x' ? 'x' : ' '
-			"#{indent}- [#{box}] #{$2}"
-		else
-			"#{indent}- [ ] #{rest}"
-		end
-	else
-		# Plain line → task item (preserve leading indent)
-		indent = line[/^\s*/]
-		"#{indent}- [ ] #{line.lstrip}"
-	end
-end
-
-print out.join("\n")
+	<string>#!/usr/bin/env ruby -wEutf-8
+# Thin wrapper: real work lives in Support/lib/markdown_list.rb.
+$:.unshift ENV['TM_BUNDLE_SUPPORT']
+require 'lib/markdown_list'
+STDIN.set_encoding(Encoding::UTF_8)
+STDOUT.set_encoding(Encoding::UTF_8)
+print MarkdownList.list_to_todos(STDIN.read)
 </string>
 	<key>fallbackInput</key>
 	<string>line</string>
