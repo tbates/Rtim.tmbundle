@@ -148,32 +148,31 @@ def nothing?(plan)
   plan[:run_ids].empty? && plan[:artifact_ids].empty?
 end
 
-def osascript(source)
-  Open3.capture2e("osascript", "-e", source)
+def tm_ui
+  support = ENV["TM_SUPPORT_PATH"]
+  abort_usage("TextMate dialog support is not available.") if support.nil? || support.empty?
+  require support + "/lib/ui" unless defined?(TextMate) && TextMate.const_defined?(:UI)
+  TextMate::UI
 end
 
 def choose_what
-  src = <<~'APP'
-    tell application "TextMate" to activate
-    set picked to choose from list {"failed runs", "all runs", "all but most recent 2"} with title "gh delete artifacts" with prompt "Delete what?" default items {"failed runs"} OK button name "Next" cancel button name "Cancel"
-    if picked is false then error number -128
-    return item 1 of picked
-  APP
-  out, status = osascript(src)
-  return nil unless status.success?
-  label = out.strip
-  { "failed runs" => :failed, "all runs" => :all, "all but most recent 2" => :keep2 }[label]
+  picked = tm_ui.request_item(
+    :title => "gh delete artifacts",
+    :prompt => "Delete what?",
+    :items => ["failed runs", "all runs", "all but most recent 2"],
+    :default => "failed runs",
+    :button1 => "Next",
+    :button2 => "Cancel",
+  )
+  { "failed runs" => :failed, "all runs" => :all, "all but most recent 2" => :keep2 }[picked]
 end
 
 def choose_only_artifacts
-  src = <<~'APP'
-    tell application "TextMate" to activate
-    set r to display dialog "Delete only the artifacts, or the runs as well (logs and artifacts)?" buttons {"Cancel", "Runs and artifacts", "Only artifacts"} default button "Only artifacts" with title "gh delete artifacts"
-    return button returned of r
-  APP
-  out, status = osascript(src)
-  return nil unless status.success?
-  case out.strip
+  # button1 is Return. Cancel is Escape because NSAlert binds that title.
+  res = tm_ui.alert(:informational, "gh delete artifacts",
+    "Delete only the artifacts, or the runs as well (logs and artifacts)?",
+    "Only artifacts", "Runs and artifacts", "Cancel")
+  case res
   when "Only artifacts" then true
   when "Runs and artifacts" then false
   else nil
@@ -181,12 +180,12 @@ def choose_only_artifacts
 end
 
 def ask(message)
-  esc = message.gsub("\\", "\\\\").gsub('"', '\\"')
-  dialog = %(display dialog "#{esc}" buttons {"Cancel", "Browse", "Delete"} default button "Cancel" with title "gh delete artifacts")
-  out, status = osascript(%(tell application "TextMate" to activate\n#{dialog}))
-  return :cancel unless status.success?
-  m = out.match(/button returned:(\w+)/)
-  m ? m[1].downcase.to_sym : :cancel
+  res = tm_ui.alert(:warning, "gh delete artifacts", message, "Cancel", "Browse", "Delete")
+  case res
+  when "Browse" then :browse
+  when "Delete" then :delete
+  else :cancel
+  end
 end
 
 def actions_url(repo, what)
