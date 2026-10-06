@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>gh_message_search("${1:searchfor}", "~/bin/${2|OpenMx,umx,tm/bundles/Rtim.tmbundle|}")</string>
+	<key>name</key>
+	<string>gh_message_search</string>
+	<key>tabTrigger</key>
+	<string>gh_</string>
+	<key>uuid</key>
+	<string>C440FCEC-3C95-431E-93D7-00178232054F</string>
+</dict>
+</plist>
