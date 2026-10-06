@@ -15,14 +15,12 @@ candidates = [
 lib = candidates.find { |p| File.file?(p) }
 abort 'gh_artifact_cleaner.rb not found.' if lib.nil?
 load lib</string>
-	<key>fallbackInput</key>
-	<string>line</string>
 	<key>input</key>
-	<string>selection</string>
+	<string>none</string>
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>name</key>
-	<string>gh delete artifacts from selected repo</string>
+	<string>gh delete artifacts from repo</string>
 	<key>outputFormat</key>
 	<string>text</string>
 	<key>outputLocation</key>
