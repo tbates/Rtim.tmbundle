@@ -16,8 +16,6 @@ print MarkdownTable.tabbed_to_table(STDIN.read)</string>
 	<string>selection</string>
 	<key>inputFormat</key>
 	<string>text</string>
-	<key>isDisabled</key>
-	<true/>
 	<key>keyEquivalent</key>
 	<string>^~@t</string>
 	<key>name</key>
