@@ -3,16 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>library("umx"); umxVersion(min = "4.30.00") # version these analyses were conducted under
+	<string>library("umx"); umxVersion(min = "4.7.00") # version these analyses were conducted under
 libs(c("naniar", "car", "lme4", "ggplot2", "emmeans", "afex", "cowplot", "visreg", "pwr", "memisc", "hrbrthemes", "jtools"))
 
 # =======================
 # = Study 1 replicate X =
 # =======================
-# prolific:
-# researchbox:
+# prolific.com:
+# qualtrics.com:
+# researchbox.org:
+# aspredicted.org:
 
-# TODO: Make a TODO list!
+# TODO:
+- [] Make a TODO List!
 
 # =============
 # = Load Data =
@@ -35,7 +38,7 @@ df\$Sex = factor(df\$Sex, levels=c("Male", "Female"), labels = c("Male", "Female
 # df = umx_rename(df, from = c('old1', 'old2'), to = c('new1', 'new2'))
 
 # ================
-# = Score Scales =
+# = Score Scales =#
 # ================
 
 tipiTxt = c("Disagree strongly", "Disagree a little", "Disagree moderately", "Neither agree nor disagree", "Agree a little", "Agree moderately", "Agree strongly")
@@ -50,25 +53,27 @@ df = umx_score_scale(name="TIPI_C", base = "TIPI_C", pos = 1, rev = 2, alpha = T
 # write.csv(df, file = paste0(base, "study2data.csv"))
 # df = read.csv(file = paste0(base, "study2data.csv"), row.names = 1)
 
-# ===================
-# = 1. Demographics =
-# ===================
+# =================
+# = Participants =#
+# =================
 df\$One = 1
 umx_aggregate(Age  ~ One, data = df, what = "mean_sd", digits = 2)
 umx_aggregate(Age  ~ Sex, data = df, what = "mean_sd", digits = 2)
 umx_aggregate(Race ~ One, data = df, what = "mean_sd", digits = 2)
 
-# ===================
-# = 1. Descriptives =
-# ===================
+# =================
+# = Descriptives =#
+# =================
 Demographics are shown in Table 1
 umxAPA(df[, c("N", "E", "O","SD4Psycho")], report="html")
-umx_cor(df[,c("TIPI_C", "howmany_30secs", "NASA_Effort1","NASA_Frustration1"")])
+umx_cor(df[,c("TIPI_C", "howmany_30secs", "NASA_Effort1","NASA_Frustration1")])
 
 
 # ===================
-# = Test Hypotheses =
+# = Test Hypotheses =#
 # ===================
+
+# = We test if dogs like cats =#
 m1 = lm(DV ~ Age + Sex); umxAPA(m1, std = TRUE)
 
 </string>
