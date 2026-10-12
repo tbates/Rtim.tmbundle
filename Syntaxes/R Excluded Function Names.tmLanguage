@@ -2,19 +2,39 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>comment</key>
+	<string>Re-scopes definitions named error or warning so the symbol-list exclusion preference can hide them. Anchored on source.r (an input scope) with the identical span as the base definition rule, so ordering resolves deterministically: it cannot work anchored on entity.name.function.r, which only ever exists as grammar output.</string>
 	<key>fileTypes</key>
 	<array/>
 	<key>injectionSelector</key>
-	<string>entity.name.function.r</string>
+	<string>L:(source.r - (string | comment))</string>
 	<key>name</key>
 	<string>R Excluded Function Names</string>
 	<key>patterns</key>
 	<array>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.excluded.r</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.operator.assignment.r</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.r</string>
+				</dict>
+			</dict>
 			<key>match</key>
-			<string>(?&lt;![[:alnum:]_.`])(error|warning)(?![[:alnum:]_.`])</string>
+			<string>(?&lt;![[:alnum:]_.`])(error|warning)(?![[:alnum:]_.`])\s*((?:&lt;?&lt;-|=(?!=)))\s*(function)</string>
 			<key>name</key>
-			<string>entity.name.function.excluded.r</string>
+			<string>meta.function.r</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
