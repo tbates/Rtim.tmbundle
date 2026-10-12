@@ -378,7 +378,7 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#9ece6a1f</string>
+				<string>#202020</string>
 				<key>foreground</key>
 				<string>#9ece6a</string>
 			</dict>
@@ -405,6 +405,28 @@
 			<dict>
 				<key>fontStyle</key>
 				<string>strikethrough</string>
+				<key>foreground</key>
+				<string>#6c6c6c</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markup: Math</string>
+			<key>scope</key>
+			<string>markup.other.math</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#bb9af7</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markup: Math Delimiters</string>
+			<key>scope</key>
+			<string>punctuation.definition.math</string>
+			<key>settings</key>
+			<dict>
 				<key>foreground</key>
 				<string>#6c6c6c</string>
 			</dict>
