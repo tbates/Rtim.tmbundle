@@ -4,6 +4,8 @@
 <dict>
 	<key>fileTypes</key>
 	<array/>
+	<key>hideFromUser</key>
+	<true/>
 	<key>injectionSelector</key>
 	<string>comment.line.number-sign.r</string>
 	<key>name</key>

@@ -6,6 +6,8 @@
 	<string>Re-scopes definitions named error or warning so the symbol-list exclusion preference can hide them. Anchored on source.r (an input scope) with the identical span as the base definition rule, so ordering resolves deterministically: it cannot work anchored on entity.name.function.r, which only ever exists as grammar output.</string>
 	<key>fileTypes</key>
 	<array/>
+	<key>hideFromUser</key>
+	<true/>
 	<key>injectionSelector</key>
 	<string>L:(source.r - (string | comment))</string>
 	<key>name</key>

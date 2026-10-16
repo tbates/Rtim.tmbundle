@@ -40,13 +40,14 @@ df\$Sex = factor(df\$Sex, levels=c("Male", "Female"), labels = c("Male", "Female
 # ================
 # = Score Scales =#
 # ================
-
+umx_scale_reliabilities(action="init")
 tipiTxt = c("Disagree strongly", "Disagree a little", "Disagree moderately", "Neither agree nor disagree", "Agree a little", "Agree moderately", "Agree strongly")
-df = umx_score_scale(name="TIPI_N", base = "TIPI_N", pos = 1, rev = 2, alpha = TRUE, score ="total", min=1, max = 7, mapStrings= tipiTxt, data = df) #
-df = umx_score_scale(name="TIPI_E", base = "TIPI_E", pos = 1, rev = 2, alpha = TRUE, score ="total", min=1, max = 7, mapStrings= tipiTxt, data = df) #
-df = umx_score_scale(name="TIPI_O", base = "TIPI_O", pos = 1, rev = 2, alpha = TRUE, score ="total", min=1, max = 7, mapStrings= tipiTxt, data = df) #
-df = umx_score_scale(name="TIPI_A", base = "TIPI_A", pos = 2, rev = 1, alpha = TRUE, score ="total", min=1, max = 7, mapStrings= tipiTxt, data = df) #
-df = umx_score_scale(name="TIPI_C", base = "TIPI_C", pos = 1, rev = 2, alpha = TRUE, score ="total", min=1, max = 7, mapStrings= tipiTxt, data = df) #
+df = umx_score_scale(name="TIPI_N", base = "TIPI_N", pos = 1, rev = 2, alpha = TRUE, score ="total", min=1, max = 7, mapStrings= tipiTxt, data = df)
+df = umx_score_scale(name="TIPI_E", base = "TIPI_E", pos = 1, rev = 2, alpha = TRUE, score ="total", min=1, max = 7, mapStrings= tipiTxt, data = df)
+df = umx_score_scale(name="TIPI_O", base = "TIPI_O", pos = 1, rev = 2, alpha = TRUE, score ="total", min=1, max = 7, mapStrings= tipiTxt, data = df)
+df = umx_score_scale(name="TIPI_A", base = "TIPI_A", pos = 2, rev = 1, alpha = TRUE, score ="total", min=1, max = 7, mapStrings= tipiTxt, data = df)
+df = umx_score_scale(name="TIPI_C", base = "TIPI_C", pos = 1, rev = 2, alpha = TRUE, score ="total", min=1, max = 7, mapStrings= tipiTxt, data = df)
+umx_scale_reliabilities(action="show")
 
 # Export anonymized df for researchbox
 # df = prolific_anonymize(df, PID = "PID", alsoDrop = c("QID1210817776", "Timer_First.Click","Timer_Last.Click","Timer_Page.Submit","Timer_Click.Count", 'timer60_First.Click', 'timer60_Last.Click', 'timer60_Page.Submit', 'timer60_Click.Count'), baseOffset = 1e4)
