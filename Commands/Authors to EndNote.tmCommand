@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -wEutf-8
+# creator: tim.bates@ed.ac.uk
+# Purpose: Convert copied author lists (Chicago, APA, MLA, semicolon/comma delimited, etc.)
+#          into clean EndNote author format (one author per line: &quot;LastName, FirstName Middle&quot;).
+
+PARTICLES = %w[van von de da del della di du la le den ter ten].freeze
+SUFFIXES  = %w[jr jr. sr sr. ii iii iv v phd md esq esq.].freeze
+
+def clean_input(str)
+  text = str.strip
+  # Remove surrounding quotes
+  text = text.gsub(/^[\&quot;&#x27;“‘`]+|[\&quot;&#x27;”’`]+$/, &quot;&quot;).strip
+  # Remove trailing parenthetical year or year before/after period, e.g. (2021) or 2021.
+  text = text.sub(/\.?\s*\(?\b(1[89]\d\d|20\d\d)[a-z]?\)?\.?\s*$/, &quot;&quot;)
+  # Remove et al.
+  text = text.sub(/,?\s+et\s+al\.?\s*$/i, &quot;&quot;)
+  # Remove trailing sentence period if not an initial or suffix
+  text = text.sub(/(?&lt;!\b[A-Z])(?&lt;!\bJr)(?&lt;!\bSr)(?&lt;!\bIII)(?&lt;!\bIV)(?&lt;!\bII)\.\s*$/, &quot;&quot;)
+  text
+end
+
+def looks_like_initials_or_given_name?(s)
+  cleaned = s.gsub(/[^\w\s-]/, &quot;&quot;)
+  words = cleaned.strip.split(/\s+/)
+  return true if words.length == 1
+  return true if words.all? { |w| w.length == 1 }
+  return true if words.length == 2 &amp;&amp; (words[1].length == 1 || words[0].length == 1 || %w[jr sr ii iii iv].include?(words[1].downcase))
+  false
+end
+
+def looks_like_full_name?(s)
+  cleaned = s.gsub(/[^\w\s-]/, &quot;&quot;)
+  words = cleaned.strip.split(/\s+/)
+  return false if words.length &lt; 2
+  return false if looks_like_initials_or_given_name?(s)
+  true
+end
+
+def to_endnote_name(str)
+  str = str.strip.sub(/,\s*$/, &quot;&quot;)
+  return str if str.empty?
+
+  if str.include?(&quot;,&quot;)
+    parts = str.split(/\s*,\s*/)
+    if parts.length == 2
+      if SUFFIXES.include?(parts[1].downcase.sub(/\.$/, &quot;&quot;))
+        return &quot;#{to_endnote_name(parts[0])}, #{parts[1]}&quot;
+      else
+        return &quot;#{parts[0]}, #{parts[1]}&quot;
+      end
+    elsif parts.length == 3 &amp;&amp; SUFFIXES.include?(parts[2].downcase.sub(/\.$/, &quot;&quot;))
+      return &quot;#{parts[0]}, #{parts[1]}, #{parts[2]}&quot;
+    end
+    return str
+  end
+
+  words = str.split(/\s+/)
+  return str if words.length == 1
+
+  suffix = nil
+  if SUFFIXES.include?(words.last.downcase.sub(/\.$/, &quot;&quot;))
+    suffix = words.pop
+  end
+
+  if words.length &gt;= 2
+    if words.length &gt;= 3 &amp;&amp; %w[van von].include?(words[-3].downcase) &amp;&amp; %w[der den].include?(words[-2].downcase)
+      last_name = words.slice!(-3..-1).join(&quot; &quot;)
+    elsif %w[van von de da del della di du la le den ter ten].include?(words[-2].downcase)
+      last_name = words.slice!(-2..-1).join(&quot; &quot;)
+    else
+      last_name = words.pop
+    end
+    first_names = words.join(&quot; &quot;)
+    res = &quot;#{last_name}, #{first_names}&quot;
+    res += &quot;, #{suffix}&quot; if suffix
+    res
+  else
+    str
+  end
+end
+
+def parse_author_list(raw_input)
+  text = clean_input(raw_input)
+  return [] if text.empty?
+
+  # Semicolon separated
+  if text.include?(&quot;;&quot;)
+    raw_authors = text.split(/\s*;\s*/).map { |a| a.sub(/^\s*(and|&amp;)\s+/i, &quot;&quot;).strip }.reject(&amp;:empty?)
+    return raw_authors.map { |a| to_endnote_name(a) }
+  end
+
+  # Multiple lines where each line is already a separate author
+  lines = text.split(/\n+/).map(&amp;:strip).reject(&amp;:empty?)
+  if lines.length &gt; 1 &amp;&amp; lines.none? { |l| l =~ /,\s*$/ || l =~ /^\s*(and|&amp;)\s+/i }
+    return lines.map { |a| to_endnote_name(a) }
+  end
+
+  flat = text.gsub(/\s*\n\s*/, &quot; &quot;).gsub(/[ \t]+/, &quot; &quot;)
+
+  # Split Oxford comma / and / &amp; before the final author
+  parts = flat.split(/\s*,\s*(?:and|&amp;)\s+|\s+(?:and|&amp;)\s+/i)
+  last_author = parts.length &gt; 1 ? parts.pop.strip : nil
+
+  tokens = parts.join(&quot;, &quot;).split(/\s*,\s*/).map(&amp;:strip).reject(&amp;:empty?)
+
+  # Merge suffixes (Jr., III) into the previous token
+  merged_tokens = []
+  tokens.each do |tok|
+    if SUFFIXES.include?(tok.downcase.sub(/\.$/, &quot;&quot;)) &amp;&amp; !merged_tokens.empty?
+      merged_tokens[-1] = &quot;#{merged_tokens[-1]}, #{tok}&quot;
+    else
+      merged_tokens &lt;&lt; tok
+    end
+  end
+  tokens = merged_tokens
+
+  authors = []
+
+  if tokens.empty?
+    authors &lt;&lt; last_author if last_author
+    return authors.map { |a| to_endnote_name(a) }
+  end
+
+  if tokens.length == 1 &amp;&amp; last_author.nil?
+    return [to_endnote_name(tokens[0])]
+  end
+
+  # Check if Chicago style: First author is Last, First; subsequent authors are First Last
+  if tokens.length &gt;= 2 &amp;&amp; !looks_like_full_name?(tokens[0]) &amp;&amp; looks_like_initials_or_given_name?(tokens[1]) &amp;&amp; (tokens.length == 2 || looks_like_full_name?(tokens[2]))
+    authors &lt;&lt; &quot;#{tokens[0]}, #{tokens[1]}&quot;
+    tokens[2..-1].each { |t| authors &lt;&lt; t }
+  elsif tokens.length &gt;= 2 &amp;&amp; tokens.length.even? &amp;&amp; (0...tokens.length).step(2).all? { |i| !looks_like_full_name?(tokens[i]) &amp;&amp; looks_like_initials_or_given_name?(tokens[i+1]) }
+    tokens.each_slice(2) do |last, first|
+      authors &lt;&lt; &quot;#{last}, #{first}&quot;
+    end
+  else
+    tokens.each { |t| authors &lt;&lt; t }
+  end
+
+  if last_author &amp;&amp; !last_author.empty?
+    authors &lt;&lt; last_author
+  end
+
+  authors.map { |a| to_endnote_name(a) }
+end
+
+input = STDIN.read
+authors = parse_author_list(input)
+puts authors.join(&quot;\n&quot;)
+</string>
+	<key>fallbackInput</key>
+	<string>line</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>name</key>
+	<string>Authors to EndNote</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>replaceInput</string>
+	<key>scope</key>
+	<string></string>
+	<key>uuid</key>
+	<string>3BF3914C-DB1F-4F75-B1BF-93C61717E3E8</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>
