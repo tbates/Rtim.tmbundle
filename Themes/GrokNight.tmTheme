@@ -315,6 +315,17 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>Markup: List Bullet</string>
+			<key>scope</key>
+			<string>punctuation.definition.list</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#bb9af7</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Markup: Heading</string>
 			<key>scope</key>
 			<string>markup.heading</string>

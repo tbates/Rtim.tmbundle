@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -wEutf-8
+# Thin launcher: the real implementation lives in Support/lib so it stays
+# editable, testable, and out of the plist XML. The first path keeps working
+# after Rtim moves to ~/bin/tm/bundles because Application Support then holds
+# a symlink to it; the scan covers direct checkouts anywhere.
+candidates = [
+  File.expand_path('~/Library/Application Support/TextMate/Bundles/Rtim.tmbundle/Support/lib/theme_colors.rb'),
+  *Dir[File.expand_path('~/bin/tm/bundles/*/Support/lib/theme_colors.rb')].sort,
+]
+lib = candidates.find { |p| File.file?(p) }
+abort 'theme_colors.rb not found.' if lib.nil?
+load lib
+ThemeColors.show
+</string>
+	<key>input</key>
+	<string>none</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>name</key>
+	<string>Show theme colors</string>
+	<key>outputFormat</key>
+	<string>html</string>
+	<key>outputLocation</key>
+	<string>newWindow</string>
+	<key>uuid</key>
+	<string>A4829886-4D44-41E3-A87C-02A6AAA24C54</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>
