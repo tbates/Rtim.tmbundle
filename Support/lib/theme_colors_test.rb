@@ -14,7 +14,7 @@ def assert_equal(want, got)
 	raise "want #{want.inspect}, got #{got.inspect}" unless want == got
 end
 
-GROK = File.expand_path('../../Themes/GrokNight.tmTheme', __dir__)
+FIX = File.expand_path('Fixture.tmTheme', __dir__)
 
 check('hex forms collapse to lowercase rrggbb / rrggbbaa') do
 	assert_equal('#aabbcc', ThemeColors.normalize('#abc'))
@@ -33,9 +33,9 @@ check('near-gray is equal channels or one off') do
 	assert_equal(false, ThemeColors.near_gray?('#ff9e64'))
 end
 
-check('GrokNight groups shared colors and names the scopes') do
-	inv = ThemeColors.inventory(ThemeColors.read_theme(GROK), GROK)
-	assert_equal('GrokNight', inv[:name])
+check('Fixture groups shared colors and names the scopes') do
+	inv = ThemeColors.inventory(ThemeColors.read_theme(FIX), FIX)
+	assert_equal('Fixture', inv[:name])
 	orange = inv[:uses]['#ff9e64'].map { |u| u.scope }
 	assert_equal(['constant', 'constant.language', 'constant.numeric'], orange.compact.sort)
 	gray = inv[:uses]['#e1e1e1'].map { |u| u.where }
@@ -58,17 +58,25 @@ check('GrokNight groups shared colors and names the scopes') do
 end
 
 check('chromatic colors run red toward purple, with pink beside red') do
-	inv = ThemeColors.inventory(ThemeColors.read_theme(GROK), GROK)
+	inv = ThemeColors.inventory(ThemeColors.read_theme(FIX), FIX)
+	# The hue wheel is cut at its widest gap, so assert cyclic order
+	# starting from red rather than an absolute list order.
 	order = inv[:colors]
+	order = order.rotate(order.index('#db4b4b'))
 	%w[#db4b4b #ff9e64 #9ece6a #7aa2f7 #bb9af7].each_cons(2) do |a, b|
 		raise "#{a} should precede #{b}" unless order.index(a) < order.index(b)
 	end
-	raise 'pink separated from red' unless (order.index('#f7768e') - order.index('#db4b4b')).abs <= 3
-	raise 'dark red separated from red' unless (order.index('#420e14') - order.index('#db4b4b')).abs <= 3
+	# Adjacency is cyclic: the wheel may start anywhere, so measure the
+	# shorter way around rather than absolute list distance.
+	n = order.length
+	[[ '#f7768e', 'pink' ], [ '#420e14', 'dark red' ]].each do |hex, label|
+		d = (order.index(hex) - order.index('#db4b4b')).abs
+		raise "#{label} separated from red" unless [d, n - d].min <= 2
+	end
 end
 
 check('the page carries a swatch and the scope text') do
-	page = ThemeColors.page_for(GROK)
+	page = ThemeColors.page_for(FIX)
 	raise 'missing swatch' unless page.include?('data-hex="#ff9e64"')
 	raise 'missing scope' unless page.include?('constant.numeric')
 	raise 'missing gray heading' unless page.include?('Near-grays, light to dark')

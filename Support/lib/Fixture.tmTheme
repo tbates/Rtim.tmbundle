@@ -1,0 +1,26 @@
+{
+	author = Fixture;
+	name = Fixture;
+	semanticClass = "theme.dark.fixture";
+	settings = (
+		{ settings = { background = "#111111"; foreground = "#e1e1e1"; }; },
+		{ name = Variable; scope = "variable"; settings = { foreground = "#e1e1e1"; }; },
+		{ name = "Markup: List"; scope = "markup.list"; settings = { foreground = "#e1e1e1"; }; },
+		{ name = Constant; scope = "constant"; settings = { foreground = "#ff9e64"; }; },
+		{ name = "Constant Language"; scope = "constant.language"; settings = { foreground = "#ff9e64"; }; },
+		{ name = "Constant Numeric"; scope = "constant.numeric"; settings = { foreground = "#ff9e64"; }; },
+		{ name = Comment; scope = "comment"; settings = { foreground = "#3c3c3d"; }; },
+		{ name = Solid; scope = "markup.raw"; settings = { background = "#242424"; }; },
+		{ name = Fade; scope = "markup.quote"; settings = { background = "#24242460"; }; },
+		{ name = Purple; scope = "entity.name"; settings = { foreground = "#4c3a6e"; }; },
+		{ name = "Faded Red"; scope = "invalid.illegal"; settings = { foreground = "#db4b4b90"; }; },
+		{ name = Red; scope = "markup.deleted"; settings = { foreground = "#db4b4b"; }; },
+		{ name = Green; scope = "string"; settings = { foreground = "#9ece6a"; }; },
+		{ name = Blue; scope = "keyword.operator"; settings = { foreground = "#7aa2f7"; }; },
+		{ name = Violet; scope = "entity.other"; settings = { foreground = "#bb9af7"; }; },
+		{ name = Pink; scope = "markup.heading"; settings = { foreground = "#f7768e"; }; },
+		{ name = "Dark Red"; scope = "markup.changed"; settings = { foreground = "#420e14"; }; },
+		{ name = "Markup: Bold"; scope = "markup.bold"; settings = { fontStyle = "bold"; }; },
+		{ name = "Markup: Italic"; scope = "markup.italic"; settings = { fontStyle = "italic"; }; }
+	);
+}
