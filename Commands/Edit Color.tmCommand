@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -wEutf-8
+# Thin launcher: the real implementation lives in Support/lib so it stays
+# editable, testable, and out of the plist XML. The first path keeps working
+# from an installed bundle; the scan covers direct checkouts anywhere.
+candidates = [
+  File.expand_path('~/Library/Application Support/TextMate/Bundles/Bundle Development.tmbundle/Support/lib/edit_color.rb'),
+  *Dir[File.expand_path('~/bin/tm/bundles/*/Support/lib/edit_color.rb')].sort,
+]
+lib = candidates.find { |p| File.file?(p) }
+abort 'edit_color.rb not found.' if lib.nil?
+load lib
+EditColor.run
+</string>
+	<key>fallbackInput</key>
+	<string>line</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>name</key>
+	<string>Edit Color…</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>replaceInput</string>
+	<key>scope</key>
+	<string>meta.scope.dictionary-item.foreground.plist, meta.scope.dictionary-item.background.plist</string>
+	<key>uuid</key>
+	<string>D31EA401-6771-4517-B098-F54D7BDF3094</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>
