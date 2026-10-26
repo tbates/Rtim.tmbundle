@@ -6,6 +6,8 @@
 	<string>nop</string>
 	<key>command</key>
 	<string>#!/usr/bin/env ruby -wEutf-8
+# Shows graphically all of a theme's defined colors and their scopes in an html window.
+
 # Thin launcher: the real implementation lives in Support/lib so it stays
 # editable, testable, and out of the plist XML. The first path keeps working
 # after Rtim moves to ~/bin/tm/bundles because Application Support then holds
@@ -25,6 +27,8 @@ ThemeColors.show
 	<string>text</string>
 	<key>name</key>
 	<string>Show theme colors</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
 	<key>outputFormat</key>
 	<string>html</string>
 	<key>outputLocation</key>

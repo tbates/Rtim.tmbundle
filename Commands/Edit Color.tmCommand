@@ -6,6 +6,9 @@
 	<string>nop</string>
 	<key>command</key>
 	<string>#!/usr/bin/env ruby -wEutf-8
+# Active in Theme property lists.
+# Choose a color in the apple color selecting, defaulting to the current #rrggbb containing the carat/selection.
+
 # Thin launcher: the real implementation lives in Support/lib so it stays
 # editable, testable, and out of the plist XML. The first path keeps working
 # from an installed bundle; the scan covers direct checkouts anywhere.
@@ -26,12 +29,14 @@ EditColor.run
 	<string>text</string>
 	<key>name</key>
 	<string>Edit Color…</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
 	<key>outputFormat</key>
 	<string>text</string>
 	<key>outputLocation</key>
 	<string>replaceInput</string>
 	<key>scope</key>
-	<string>meta.scope.dictionary-item.foreground.plist, meta.scope.dictionary-item.background.plist</string>
+	<string>string.quoted.single.plist, string.quoted.double.plist, meta.tag.string.xml.plist, string.quoted.single.xml.plist, string.quoted.double.xml.plist</string>
 	<key>uuid</key>
 	<string>D31EA401-6771-4517-B098-F54D7BDF3094</string>
 	<key>version</key>
