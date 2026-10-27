@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env bash
+# Thin launcher: the real implementation lives in Support/lib so it stays
+# editable, testable, and out of the plist XML.
+if [[ -n "$TM_BUNDLE_SUPPORT" &amp;&amp; -f "$TM_BUNDLE_SUPPORT/lib/muse_open_session.rb" ]]; then
+  exec ruby "$TM_BUNDLE_SUPPORT/lib/muse_open_session.rb"
+fi
+for p in "$HOME/Library/Application Support/TextMate/Bundles/Rtim.tmbundle/Support/lib/muse_open_session.rb" "$HOME"/bin/tm/bundles/*/Support/lib/muse_open_session.rb; do
+  if [[ -f "$p" ]]; then exec ruby "$p"; fi
+done
+echo "muse_open_session.rb not found." &gt;&amp;2
+exit 1</string>
+	<key>input</key>
+	<string>none</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>name</key>
+	<string>Open Muse Session</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>discard</string>
+	<key>uuid</key>
+	<string>F1F2D6C4-AEF5-4A99-9A0D-7F138BC67A24</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>
