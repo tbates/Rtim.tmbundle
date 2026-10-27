@@ -38,7 +38,7 @@ EditColor.run
 	<key>scope</key>
 	<string>string.quoted.single.plist, string.quoted.double.plist, meta.tag.string.xml.plist, string.quoted.single.xml.plist, string.quoted.double.xml.plist</string>
 	<key>uuid</key>
-	<string>D31EA401-6771-4517-B098-F54D7BDF3094</string>
+	<string>FE4A31A3-A8E8-41BD-9F5C-2D66E79BE773</string>
 	<key>version</key>
 	<integer>2</integer>
 </dict>
