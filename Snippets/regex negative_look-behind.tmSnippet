@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>(?&lt;!${1:negative look-behind for})</string>
+	<string>(?&lt;!${1:negative_look_behind_for})</string>
 	<key>name</key>
 	<string>Negative look-behind</string>
 	<key>scope</key>
-	<string>source.regexp.oniguruma, text.tm-snippet, string.regexp, source.r</string>
+	<string>source.regexp.oniguruma, text.tm-snippet, string.regexp</string>
 	<key>tabTrigger</key>
 	<string>look</string>
 	<key>uuid</key>
