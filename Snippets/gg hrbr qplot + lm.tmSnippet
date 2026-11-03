@@ -20,7 +20,7 @@ p = p + labs(x= "Fuel efficiency (mpg)", y= "Weight (tons)",
 p + theme_${1:ipsum|ft_rc}()
 </string>
 	<key>name</key>
-	<string>gg hrbr plot</string>
+	<string>gg hrbr plot + lm</string>
 	<key>scope</key>
 	<string>source.r</string>
 	<key>tabTrigger</key>
