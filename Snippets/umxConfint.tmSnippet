@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>$1 = umxConfint(${1:m1}, parm="${2|smart,existing,all|}", run=TRUE, type="${3|profile,wald|}")</string>
+	<key>name</key>
+	<string>umxConfint</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>umxConfint</string>
+	<key>uuid</key>
+	<string>9EFE575D-A407-42C1-BA40-998A227B7178</string>
+</dict>
+</plist>
