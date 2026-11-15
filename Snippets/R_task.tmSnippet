@@ -3,13 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>3. Run ${1:Barnum} study
-	[${2|✓, |}] Upload $1 as block on qualtrics.
-	[ ] Run ${3:in IQ dataset}.
-	[ ] Test if lm($1 ~ $4{IV})
-</string>
+	<string># - [ ] </string>
 	<key>name</key>
-	<string>TODO research task</string>
+	<string>TODO task</string>
 	<key>tabTrigger</key>
 	<string>task</string>
 	<key>uuid</key>

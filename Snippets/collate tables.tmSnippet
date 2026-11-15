@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>umx_table_collate("init")
+umx_table_collate("show", report = "html")
+umx_table_collate("off")
+</string>
+	<key>name</key>
+	<string>collate tables</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>collate</string>
+	<key>uuid</key>
+	<string>15362BC9-EA95-4C04-8294-F7D4B1D25D1D</string>
+</dict>
+</plist>

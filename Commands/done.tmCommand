@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+# done: check off the first unchecked box on the line, else start one.
+# input=line / replaceInput, outputFormat=text ($-safe for R code like df$x).
+# Scope: source.r. Tab trigger 'done' (converted from the done snippet).
+raw  = STDIN.read.to_s
+nl   = raw[/\r?\n\z/]
+line = raw.sub(/\r?\n\z/, '')
+
+# Excise the just-typed trigger when it sits immediately before the caret.
+caret = ENV['TM_LINE_INDEX'].to_i
+caret = 0 if caret &lt; 0
+caret = line.length if caret > line.length
+line = line[0...caret].to_s.sub(/done\z/, '') + line[caret..-1].to_s
+
+if line.sub!(/(#+\s*'?\s*(?:(?:[-*+]|\d+[.)])\s*)?)\[ ?\]/, '\1[✓]')
+  # checked off in place
+elsif line =~ /\[[xX✓]\]/
+  # already checked: leave untouched
+elsif line.sub!(/\A\s*(?:[-*+]|\d+[.)])\s*\[ ?\]\s*/, '')
+  line = '# - [✓] ' + line
+else
+  line = '# - [✓] ' + line
+end
+print line
+print nl if nl
+</string>
+	<key>input</key>
+	<string>line</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>name</key>
+	<string>done</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>replaceInput</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>done</string>
+	<key>uuid</key>
+	<string>2607B4D9-899A-4B46-AD90-C746AD8EE834</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>
