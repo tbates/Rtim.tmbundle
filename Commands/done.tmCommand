@@ -7,8 +7,9 @@
 	<key>command</key>
 	<string>#!/usr/bin/env ruby
 # done: check off the first unchecked box on the line, else start one.
-# input=line / replaceInput, outputFormat=text ($-safe for R code like df$x).
-# Scope: source.r. Tab trigger 'done' (converted from the done snippet).
+# R (source.r in scope): boxes live in #-comments, new boxes at column 0.
+# Elsewhere (markdown/plain): bare boxes, indent preserved (nesting matters).
+# input=line / replaceInput, outputFormat=text ($-safe). Tab trigger 'done'.
 raw  = STDIN.read.to_s
 nl   = raw[/\r?\n\z/]
 line = raw.sub(/\r?\n\z/, '')
@@ -19,14 +20,24 @@ caret = 0 if caret &lt; 0
 caret = line.length if caret > line.length
 line = line[0...caret].to_s.sub(/done\z/, '') + line[caret..-1].to_s
 
-if line.sub!(/(#+\s*'?\s*(?:(?:[-*+]|\d+[.)])\s*)?)\[ ?\]/, '\1[✓]')
-  # checked off in place
-elsif line =~ /\[[xX✓]\]/
-  # already checked: leave untouched
-elsif line.sub!(/\A\s*(?:[-*+]|\d+[.)])\s*\[ ?\]\s*/, '')
-  line = '# - [✓] ' + line
+if ENV['TM_SCOPE'].to_s.include?('source.r')
+  if line.sub!(/(#+\s*'?\s*(?:(?:[-*+]|\d+[.)])\s*)?)\[ ?\]/, '\1[✓]')
+    # checked off in place
+  elsif line =~ /\[[xX✓]\]/
+    # already checked: leave untouched
+  elsif line.sub!(/\A\s*(?:[-*+]|\d+[.)])\s*\[ ?\]\s*/, '')
+    line = '# - [✓] ' + line
+  else
+    line = '# - [✓] ' + line
+  end
 else
-  line = '# - [✓] ' + line
+  if line.sub!(/((?:(?:[-*+]|\d+[.)])\s*)?)\[ ?\]/, '\1[✓]')
+    # checked off in place
+  elsif line =~ /\[[xX✓]\]/
+    # already checked: leave untouched
+  else
+    line = line.sub(/\A(\s*)/) { $1 + '- [✓] ' }
+  end
 end
 print line
 print nl if nl
@@ -44,7 +55,7 @@ print nl if nl
 	<key>outputLocation</key>
 	<string>replaceInput</string>
 	<key>scope</key>
-	<string>source.r</string>
+	<string>source.r, text.html.markdown, text.plain</string>
 	<key>tabTrigger</key>
 	<string>done</string>
 	<key>uuid</key>

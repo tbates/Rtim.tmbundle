@@ -6,6 +6,8 @@
 	<string># - [ ] </string>
 	<key>name</key>
 	<string>TODO task</string>
+	<key>scope</key>
+	<string>source.r</string>
 	<key>tabTrigger</key>
 	<string>task</string>
 	<key>uuid</key>

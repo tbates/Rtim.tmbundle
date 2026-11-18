@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env bash
+# goto: envy_todo.r.md, line "fix model #34" → open envy.r at line 34.
+# Thin launcher. The real implementation is Support/lib/goto_todo.rb.
+if [[ -n "$TM_BUNDLE_SUPPORT" &amp;&amp; -f "$TM_BUNDLE_SUPPORT/lib/goto_todo.rb" ]]; then
+  exec ruby -wEutf-8 "$TM_BUNDLE_SUPPORT/lib/goto_todo.rb"
+fi
+for p in "$HOME/Library/Application Support/TextMate/Bundles/Rtim.tmbundle/Support/lib/goto_todo.rb" "$HOME"/bin/tm/bundles/*/Support/lib/goto_todo.rb; do
+  if [[ -f "$p" ]]; then exec ruby -wEutf-8 "$p"; fi
+done
+echo "goto_todo.rb not found." &gt;&amp;2
+exit 1</string>
+	<key>input</key>
+	<string>none</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>name</key>
+	<string>goto</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>text.html.markdown, text.html.markdown.multimarkdown, text.plain</string>
+	<key>tabTrigger</key>
+	<string>goto</string>
+	<key>uuid</key>
+	<string>04931D12-F9AC-4B6B-9E6C-644B7CFCD7CB</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>
