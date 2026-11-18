@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>cd /Users/timothybates/bin/OpenMx &amp;&amp; R --vanilla --slave -f inst/tools/testModels.R &gt; ~/passing-nightly-$(date +%F).log 2&gt;&amp;1</string>
+	<key>name</key>
+	<string>run GenomixMx models passing</string>
+	<key>uuid</key>
+	<string>D142CEE5-7E15-4518-9BAA-5C0D0F6A4F4E</string>
+</dict>
+</plist>
